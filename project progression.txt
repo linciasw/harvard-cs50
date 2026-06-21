@@ -1,0 +1,57 @@
+Project Progression
+
+Beginner
+Tip Calculator
+Savings Goal Calculator
+Tax Bracket Calculator
+Compound Interest Simulator
+Salary to hourly wage converter
+
+
+Intermediate
+Emergency Fund Checker
+Debt Payoff Calculator
+Loan Eligibility Checker
+Retirement Savings Calculator
+Mortgage Calculator
+Net Worth Tracker
+Expense Tracker
+
+
+Advanced Python
+Bank Account System
+Portfolio Tracker
+Loan Management System
+Receipt Parser
+Statement Categorizer
+
+
+Pandas
+Bank Statement Analyzer
+Monthly Spending Analysis
+Subscription Detector
+Income vs Expense Analyzer
+
+
+Streamlit
+Personal Finance Dashboard
+Budget Dashboard
+Net Worth Dashboard
+Financial Report Generator
+
+
+Toward Quant Programming
+Stock Return Analyzer
+Portfolio Performance Analyzer
+Monte Carlo Retirement Simulator
+Portfolio Risk Calculator
+Backtesting Engine
+Moving Average Strategy Tester
+
+
+SaaS-Level Projects
+Statement Analyzer SaaS
+Budgeting SaaS
+Cashflow Dashboard for Freelancers
+Subscription Tracker SaaS
+Financial KPI Dashboard for Small Businesses
