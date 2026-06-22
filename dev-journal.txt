@@ -27,3 +27,6 @@ outline
 - learnt that i can create a .ipynb file and that creates a jupyter notebook 
 
 
+22nd june
+- 
+
