@@ -28,5 +28,9 @@ outline
 
 
 22nd june
+- started lecture zero - functions and variables
+- figured out how to change folder location on python terminal: cd "folder name"
+- learnt about multi function arguments
+- learnt a little about how to read documentation and how important it is
 - 
 
