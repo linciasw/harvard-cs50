@@ -5,6 +5,8 @@ https://www.youtube.com/watch?v=VkCQqKIbCFA&list=PLdtqDMvm2lvTASUE94XrjcyCe6seYt
 harvard cs50 
 16 hours 
 https://www.youtube.com/watch?v=OvKCESUCWII&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V
+59:30
+
 
 
 harvard cs50 docs
@@ -13,11 +15,15 @@ https://cs50.harvard.edu/python/
 
 
 outline
-- watch brief course 
 - watch harvard cs50 
 - read harvard cs50 notes
 - read textbooks 
-- build projects after each module 
+- read documentation
+- do harvard problem sets after each video lesson 
+
+
+NEXT SESSION 
+- int
 
 
 21st june 
@@ -32,5 +38,11 @@ outline
 - figured out how to change folder location on python terminal: cd "folder name"
 - learnt about multi function arguments
 - learnt a little about how to read documentation and how important it is
+
+
+23rd june
+- learnt how to read documentation a little
+- went through the course notes a little
+- learnt different methods for strings (strip, title, split etc)
 - 
 
