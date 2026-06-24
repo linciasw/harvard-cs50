@@ -91,6 +91,12 @@ comment
 #single and double quotes are interchangeable 
 
 
+#INT
+#no decimal point in integers
+#+ - * / % 
+
+#interactive mode: typing in python in the terminal to then type code and it'll run instantly 
+#ctrl + z then enter to get out of interactive mode
 
 
 

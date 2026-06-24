@@ -23,7 +23,7 @@ outline
 
 
 NEXT SESSION 
-- int
+- floating point values
 
 
 21st june 
@@ -44,5 +44,10 @@ NEXT SESSION
 - learnt how to read documentation a little
 - went through the course notes a little
 - learnt different methods for strings (strip, title, split etc)
-- 
+
+
+24th june
+- learnt about interactive mode
+- created calculator.py
+- learnt about type conversion 
 
