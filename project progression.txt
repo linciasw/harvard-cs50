@@ -24,6 +24,9 @@ Portfolio Tracker
 Loan Management System
 Receipt Parser
 Statement Categorizer
+Debt Snowball calculator 
+FIRE Calculator 
+Rental Property Analyzer
 
 
 Pandas
