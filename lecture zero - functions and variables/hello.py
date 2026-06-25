@@ -41,7 +41,7 @@ first, last = name.split(" ")
 
 
 
-#f-strings (got added to python recently)
+#f-strings (got added to python 3.16)
 #print(f"hello, {name}")
 
 #to call split
