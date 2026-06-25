@@ -74,7 +74,7 @@ print(f"hello, {first}")
 #return values and variables
 #operators; = is the assignment operator 
 #comments can be used as pseudocode; can use either the hash (#) or ("""") 
-#parameters; positional (first thing passed gets printed first etc), named (end, sep)
+#parameters: inputs we can provide when using function; positional (first thing passed gets printed first etc), named (end, sep)
 
 
 
@@ -99,7 +99,13 @@ comment
 #ctrl + z then enter to get out of interactive mode
 
 
+#FLOAT
+#a number that has a decimal point in it
+#no limit on how big an int can be but there's a limit to how precise a float can be because of the limits of computer memory
 
 
+
+#round 
+#documentation: round(number[, ndigits])
 
 

@@ -51,3 +51,10 @@ NEXT SESSION
 - created calculator.py
 - learnt about type conversion 
 
+
+
+25th june
+- learnt floats
+- learnt numeric formatting (round)
+- learnt format string with numbers
+

@@ -14,8 +14,33 @@ print(z)
 
 
 #TYPE CONVERSION
-x = int(input("What's x? "))
-y = int(input("What's y? "))
+#x = int(input("What's x? "))
+#y = int(input("What's y? "))
+x = float(input("What's x? "))
+y = float(input("What's y? "))
 
 
-print(x + y)
+#rounds the number up
+#z = round(x + y)
+
+z = x / y
+
+#rounds to a certain amount of digits; 
+#documentation: round(number[, ndigits])
+#z = round(x / y, 2)
+
+
+
+#how to round to a certain amount of digits using f string 
+print(f"{z:.2f}")
+
+
+#print(z)
+
+#this will add a , to indicate a thousand
+#print(f"{z:,}")
+
+
+
+
+#print(x + y)
