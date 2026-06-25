@@ -45,7 +45,7 @@ first, last = name.split(" ")
 #print(f"hello, {name}")
 
 #to call split
-print(f"hello, {first}")
+print(f"hello, {name}")
 
 
 

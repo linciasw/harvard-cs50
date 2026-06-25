@@ -23,7 +23,7 @@ outline
 
 
 NEXT SESSION 
-- floating point values
+- defining functions 
 
 
 21st june 
@@ -57,4 +57,7 @@ NEXT SESSION
 - learnt floats
 - learnt numeric formatting (round)
 - learnt format string with numbers
+- learnt about functions: defining them and main 
+
+
 

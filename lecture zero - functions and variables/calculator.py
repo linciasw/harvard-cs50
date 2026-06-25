@@ -35,8 +35,6 @@ z = x / y
 print(f"{z:.2f}")
 
 
-
-
 #print(z)
 
 #this will add a , to indicate a thousand
