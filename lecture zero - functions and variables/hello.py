@@ -75,7 +75,7 @@ print(f"hello, {name}")
 #operators; = is the assignment operator 
 #comments can be used as pseudocode; can use either the hash (#) or ("""") 
 #parameters: inputs we can provide when using function; positional (first thing passed gets printed first etc), named (end, sep)
-
+#scope: a variable only exists within the function it was created 
 
 
 

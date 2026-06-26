@@ -23,7 +23,7 @@ hello(name)
 """
 
 
-
+#scope: name has to be passed to the hello function as it will only exist in the main function 
 def main():
     name = input("What's your name?")
     hello(name)
