@@ -22,7 +22,7 @@ outline
 
 
 NEXT SESSION 
-- defining functions 
+- start lecture 1 - conditionals 
 
 
 21st june 
