@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=VkCQqKIbCFA&list=PLdtqDMvm2lvTASUE94XrjcyCe6seYt
 harvard cs50 
 16 hours 
 https://www.youtube.com/watch?v=OvKCESUCWII&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V
-
+10:00
 
 
 harvard cs50 docs
@@ -22,7 +22,7 @@ outline
 
 
 NEXT SESSION 
-- start lecture 1 - conditionals 
+- continue lecture 1, elif
 
 
 21st june 
@@ -63,5 +63,12 @@ NEXT SESSION
 - learnt about scope
 - learnt about return values 
 - finished lecture 
+- copied notes taken to chatgpt and he made notes for me 
+
+
+27th june
+- starter lecture 1 - conditionals
+- learnt about comparison operators 
+- learnt about the if conditional 
 
 

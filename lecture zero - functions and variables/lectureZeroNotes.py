@@ -303,6 +303,259 @@ print(y)
 # 5. Print using f-string
 
 
+
+# ==================================
+# DEEP UNDERSTANDING
+# ==================================
+"""
+These concepts will appear throughout the rest of CS50 and Python.
+I don't need to master them today, but I should revisit them often.
+"""
+
+
+# ==================================
+# 1. HOW FUNCTIONS WORK
+# ==================================
+
+"""
+A function is a reusable block of code that performs a task.
+
+Think of every function call like this:
+
+Arguments
+    ↓
+Function executes
+    ↓
+Return value (sometimes)
+"""
+
+# Example
+
+name = input("What's your name? ").strip().title()
+
+"""
+Step-by-step:
+
+1. input() asks the user for input.
+2. input() RETURNS a string.
+3. strip() RETURNS a new string with whitespace removed.
+4. title() RETURNS another new string with each word capitalized.
+5. The final value is stored inside 'name'.
+
+Notice that every method returns a value that the next method uses.
+"""
+
+# Another example
+
+length = len("banana")
+
+"""
+Arguments:
+"banana"
+
+↓
+
+len()
+
+↓
+
+Returns:
+6
+
+↓
+
+Stored in variable 'length'
+"""
+
+
+# ==================================
+# 2. RETURN VALUES
+# ==================================
+
+"""
+One of the most important ideas in programming.
+
+A function may:
+• perform an action
+• return a value
+• or both
+"""
+
+# Performs an action
+
+print("Hello")
+
+"""
+print() displays text.
+
+It is mainly used for OUTPUT.
+"""
+
+# Returns a value
+
+name = input("Name: ")
+
+"""
+input() returns whatever the user types.
+
+If the user types:
+
+Bob
+
+input() returns:
+
+"Bob"
+
+That value gets stored in the variable.
+"""
+
+# Another example
+
+length = len("apple")
+
+"""
+len() returns:
+
+5
+
+which gets assigned to length.
+"""
+
+# IMPORTANT
+
+"""
+Ask yourself whenever you use a function:
+
+"What value does this function return?"
+
+Understanding return values will make writing your own functions much easier later.
+"""
+
+
+# ==================================
+# 3. STRINGS ARE IMMUTABLE
+# ==================================
+
+"""
+Immutable means "cannot be changed."
+
+Strings cannot be modified in place.
+
+Methods create NEW strings instead.
+"""
+
+name = "john"
+
+# This DOES NOT permanently change name
+
+name.title()
+
+print(name)
+
+# Output:
+# john
+
+# Correct
+
+name = name.title()
+
+print(name)
+
+# Output:
+# John
+
+"""
+Most string methods return a NEW string.
+
+If you want to keep the result,
+assign it back to the variable.
+"""
+
+
+# ==================================
+# 4. READING DOCUMENTATION
+# ==================================
+
+"""
+Every programmer reads documentation.
+
+You do NOT have to memorize it.
+
+Learn how to understand it.
+"""
+
+# Example documentation
+
+# print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+"""
+How to read this:
+
+objects
+    Things you want to print.
+
+sep=' '
+    Optional separator between objects.
+
+end='\\n'
+    What gets printed after everything.
+
+file=sys.stdout
+    Where output is sent (usually the terminal).
+
+flush=False
+    Advanced option that forces output immediately.
+
+For now, focus on:
+
+• What does the function do?
+• What arguments are required?
+• Which arguments are optional?
+• What does it return?
+"""
+
+# Another example
+
+# round(number[, ndigits])
+
+"""
+number
+    Required
+
+ndigits
+    Optional
+
+Examples:
+
+round(3.14)
+
+round(3.14159, 2)
+"""
+
+
+# ==================================
+# QUESTIONS TO ASK YOURSELF
+# ==================================
+
+"""
+Whenever learning something new, ask:
+
+1. What problem does this solve?
+
+2. What does it return?
+
+3. Does it modify the original object?
+
+4. What arguments can I pass?
+
+5. What mistakes do beginners make?
+
+6. Can I explain it in my own words?
+
+These six questions will help you understand concepts
+instead of memorizing syntax.
+"""
+
 # ==================================
 # END OF LECTURE 0
 # ==================================
