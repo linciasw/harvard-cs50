@@ -83,7 +83,8 @@ NEXT SESSION
 
 
 29th june
-- continued with conditionals; elif else or 
+- continued with conditionals; elif else or not equal 
+- did some practice exercise in work 
 
 
 

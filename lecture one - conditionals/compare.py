@@ -49,10 +49,12 @@ else:
 
 
 # or
+"""
 if x < y or x > y:
     print("x is not equal to y")
 else:
     print("x is equal to y")
+"""
 
 
 # it's good to get into the habit of asking:
@@ -60,6 +62,29 @@ else:
 # could my code be simpler?
 # could i ask fewer questions?
 # could i tighten it up?
+
+
+# not equal 
+"""
+if x != y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y")
+"""
+
+if x == y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y")
+
+
+# in python, indentation is important, the code will not work
+
+
+
+
+
+
 
 
 
