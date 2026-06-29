@@ -83,6 +83,7 @@ NEXT SESSION
 
 
 29th june
-- 
+- continued with conditionals; elif else or 
+
 
 
