@@ -22,7 +22,8 @@ outline
 
 
 NEXT SESSION 
-- continue lecture 1, elif
+- finish practice exercises
+- get practice exerices to pratice return arguments, functions 
 
 
 21st june 
@@ -67,8 +68,17 @@ NEXT SESSION
 
 
 27th june
-- starter lecture 1 - conditionals
+- started lecture 1 - conditionals
 - learnt about comparison operators 
 - learnt about the if conditional 
+
+
+28th june
+- started practice exercises; practiceExercise.py
+- thought of creating a user menu, will do after conditionals lecture
+
+
+29th june
+- 
 
 
