@@ -7,17 +7,22 @@ harvard cs50
 11 lectures
 https://www.youtube.com/watch?v=OvKCESUCWII&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V
 lecutre 1 - conditionals 
-21:40
+25:00
 
 
 harvard cs50 docs
 https://cs50.harvard.edu/python/
 
 
+30 days of python github repo 
+https://github.com/Asabeneh/30-Days-Of-Python
+
+
 
 learning material
 - watch harvard cs50 
 - read harvard cs50 notes
+- read 30 days of python notes
 - read textbooks 
 - read documentation
 - do harvard problem sets after each video lesson 
@@ -83,7 +88,13 @@ NEXT SESSION
 
 
 29th june
-- continued with conditionals; elif else or 
+- continued with conditionals; elif else or not equal 
+- did some practice exercise in work 
+
+
+30th june
+- continued with conditionals; if and elif
+- created grade.py
 
 
 

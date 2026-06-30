@@ -103,7 +103,6 @@ def ftoc():
 ftoc()
 """
 
-
 # ======
 # write a function that calculates 15% tip on a bill
 # ======
