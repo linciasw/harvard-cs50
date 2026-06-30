@@ -95,6 +95,9 @@ NEXT SESSION
 30th june
 - continued with conditionals; if and elif
 - created grade.py
+- did a couple more practice exercises, creating functions 
+- created parity.py
+- learnt a bit about the modulo operator 
 
 
 

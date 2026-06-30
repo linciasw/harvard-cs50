@@ -123,9 +123,16 @@ tip()
 # ======
 # write a function that calculates 12.5% tax on a bill
 # ======
-
+"""
 def tax():
-    bill = 
+    bill = float(input("Enter the bill amount: "))
+    tax = bill * 0.125
+
+    Total = float(bill + tax)
+    print(f"Total: ${Total:.2f}") 
+
+tax()
+"""
 
 
 
@@ -133,7 +140,16 @@ def tax():
 # ======
 # write a function that calculates monthly savings
 # ======
+"""
+def savings():
+    monthly_savings = int(input("Monthly savings: "))
+    month = int(input("Months: "))
+    Total = monthly_savings * month 
 
+    print(f"Total savings = {Total}")
+
+savings()
+"""
 
 # ======
 # write a function that calculates loan interest
