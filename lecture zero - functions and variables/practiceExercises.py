@@ -93,7 +93,6 @@ ctof()
 # write a function that calculates fahrenheit to celsius
 # ======
 
-
 # ======
 # write a function that calculates 15% tip on a bill
 # ======
