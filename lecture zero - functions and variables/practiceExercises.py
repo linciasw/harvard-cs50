@@ -92,16 +92,43 @@ ctof()
 # ======
 # write a function that calculates fahrenheit to celsius
 # ======
+"""
+def ftoc():
+    fahrenheit = int(input("Enter temperature in Fahrenheit: "))
+    celsius = (fahrenheit - 32) * 5 / 9
+
+    print(f"{fahrenheit}°F = {celsius:.2f}°C") # copied symbol from google
+
+
+ftoc()
+"""
 
 
 # ======
 # write a function that calculates 15% tip on a bill
 # ======
+"""
+def tip():
+    bill = float(input("Enter the bill amount: "))
+    tip_amount = bill * 0.15
+    print(f"Tip amount: ${tip_amount:.2f}")
+
+    Total = bill + tip_amount
+    print(f"Total bill with tip: ${Total:.2f}")
+
+tip()
+"""
+
 
 
 # ======
 # write a function that calculates 12.5% tax on a bill
 # ======
+
+def tax():
+    bill = 
+
+
 
 
 # ======

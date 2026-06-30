@@ -1,5 +1,5 @@
 
-# Ask user for their name
+#ask user for their name
 #name = input("What's your name? ") #input only accepts text to prompt user
 name = input("What's your name?").strip().title()
 
