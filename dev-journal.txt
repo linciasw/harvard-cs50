@@ -93,6 +93,8 @@ NEXT SESSION
 
 
 30th june
-- 
+- continued with conditionals; if and elif
+- created grade.py
+
 
 
