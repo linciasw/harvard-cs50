@@ -100,4 +100,12 @@ NEXT SESSION
 - learnt a bit about the modulo operator 
 
 
+01st july
+- finished grade.py
+- researched the modulo operator 
+- learnt a little about pythonic expressions 
+- created house.py
+- 
+
+
 
