@@ -11,7 +11,7 @@ lecutre 1 - conditionals
 
 
 harvard cs50 docs
-https://cs50.harvard.edu/python/
+https://cs50.harvard.edu/python/weeks/
 
 
 30 days of python github repo 
@@ -29,10 +29,15 @@ learning material
 - get chatgpt exercise
 
 
+
 NEXT SESSION 
-- finish practice exercises
-- get practice exerices to pratice return arguments, functions 
-- continue conditionals
+- make notes on side effects short
+- start shorts for conditionals
+- read notes for lecture
+- do problem sets for functions and variables lecture
+- do problem sets for conditionals 
+- make notes on conditionals
+
 
 
 21st june 
@@ -110,7 +115,7 @@ NEXT SESSION
 02nd july 
 - to highlight multiple lines of code: highlight, then shift + """
 - match 
-- 
+- did some light browsing on home page resources, just need to get through loops to go onto new things 
 
 
 
