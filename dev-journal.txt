@@ -105,6 +105,11 @@ NEXT SESSION
 - researched the modulo operator 
 - learnt a little about pythonic expressions 
 - created house.py
+
+
+02nd july 
+- to highlight multiple lines of code: highlight, then shift + """
+- match 
 - 
 
 
