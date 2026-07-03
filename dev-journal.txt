@@ -125,5 +125,7 @@ NEXT SESSION
 - local versus global variables 
 - looked at conditionals short
 - did recommendations.py
+- started boolean expressions short 
+- created recommendationsBoolShort.py as it's an enhancement on that
 
 
