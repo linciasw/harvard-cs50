@@ -1,4 +1,5 @@
 # from shorts, not lecture 
+# conditionals; if, elif, else
 
 
 def main():
@@ -13,6 +14,7 @@ def main():
             recommend("Klondike")
         else: 
             print("Enter a valid number of players")
+            
     elif difficulty == "Casual":
         if players == "Multiplayer":
             recommend("Hearts")

@@ -127,5 +127,8 @@ NEXT SESSION
 - did recommendations.py
 - started boolean expressions short 
 - created recommendationsBoolShort.py as it's an enhancement on that
+- completed recommendationsBoolShort.py; using bools + conditionals
+- did playback.py problem set from harvard CS50 problem sets
+- learnt about join(); method for strings 
 
 
