@@ -33,9 +33,10 @@ learning material
 NEXT SESSION 
 - make notes on side effects short
 - start shorts for conditionals
-- read notes for lecture
+- read notes for conditionals lecture
+- read 30 days of python notes on conditionals
 - do problem sets for functions and variables lecture
-- do problem sets for conditionals 
+- do problem sets for conditionals lecture
 - make notes on conditionals
 
 
