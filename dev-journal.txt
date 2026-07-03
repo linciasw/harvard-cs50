@@ -119,3 +119,10 @@ NEXT SESSION
 
 
 
+3rd july 
+- reviewed the side effects short
+- made notes on it from chatgpt; list of side effects
+- local versus global variables 
+- 
+
+
