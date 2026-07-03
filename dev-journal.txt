@@ -123,6 +123,7 @@ NEXT SESSION
 - reviewed the side effects short
 - made notes on it from chatgpt; list of side effects
 - local versus global variables 
-- 
+- looked at conditionals short
+- did recommendations.py
 
 
