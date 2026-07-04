@@ -147,13 +147,15 @@ print(age + 1)
 # ==================================
 
 # Arithmetic operators
-# +  -  *  /  %
+# +  -  *  /  % **
 
 x = 10 + 5
 y = 10 / 2
 
 # MODULO gives remainder
 remainder = 10 % 3
+
+# ** is squared 
 
 
 # ==================================

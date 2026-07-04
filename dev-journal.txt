@@ -31,7 +31,7 @@ learning material
 
 
 NEXT SESSION 
-- do problem sets for functions and variables lecture
+- do tip.py
 - do problem sets for conditionals lecture
 - read notes for conditionals lecture
 - read 30 days of python notes on conditionals
@@ -133,6 +133,7 @@ NEXT SESSION
 
 4th july
 - created folders in lecture zero; problem sets, shorts
+- did a problem set to solve e = mc2
 - 
 
 
