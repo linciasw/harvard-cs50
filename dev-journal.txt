@@ -131,9 +131,13 @@ NEXT SESSION
 - learnt about join(); method for strings 
 
 
+
 4th july
 - created folders in lecture zero; problem sets, shorts
 - did a problem set to solve e = mc2
-- 
+- started loops lecture, because i was bored of condtionals
+
+
+
 
 
