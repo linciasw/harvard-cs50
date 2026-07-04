@@ -31,12 +31,10 @@ learning material
 
 
 NEXT SESSION 
-- make notes on side effects short
-- start shorts for conditionals
-- read notes for conditionals lecture
-- read 30 days of python notes on conditionals
 - do problem sets for functions and variables lecture
 - do problem sets for conditionals lecture
+- read notes for conditionals lecture
+- read 30 days of python notes on conditionals
 - make notes on conditionals
 
 
@@ -131,5 +129,10 @@ NEXT SESSION
 - completed recommendationsBoolShort.py; using bools + conditionals
 - did playback.py problem set from harvard CS50 problem sets
 - learnt about join(); method for strings 
+
+
+4th july
+- created folders in lecture zero; problem sets, shorts
+- 
 
 
