@@ -37,11 +37,10 @@ learning material
 
 
 NEXT SESSION 
-- do bank.py
-- do problem sets for conditionals lecture
+- continue doing problem sets for conditionals lecture
+- make notes on conditionals
 - read notes for conditionals lecture
 - read 30 days of python notes on conditionals
-- make notes on conditionals
 - transfer notes on identity is from picture on phone
 - research how to read documentation
 - 
@@ -145,6 +144,20 @@ NEXT SESSION
 - created folders in lecture zero; problem sets, shorts
 - did a problem set to solve e = mc2
 - started loops lecture, because i was bored of condtionals
+- tried to read the functions chapter in python crash-course
+
+
+5th july 
+- finished tip.py, last problem set for functions
+- learnt about the replace method for strings
+- did a couple of cs50 problem sets for condtionals
+- learnt about the startswith method for strings
+- learnt about the most common string methods; placed in bank.py and lectureZero notes
+- created a file for primitive data types and some of their methods; dataTypesMethods.py in my notes folder, lecture zero
+
+
+
+
 
 
 
