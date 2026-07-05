@@ -19,6 +19,12 @@ https://github.com/Asabeneh/30-Days-Of-Python
 
 
 
+W3 Schools
+https://www.w3schools.com/python/default.asp
+
+
+
+
 learning material
 - watch harvard cs50 
 - read harvard cs50 notes
@@ -36,6 +42,9 @@ NEXT SESSION
 - read notes for conditionals lecture
 - read 30 days of python notes on conditionals
 - make notes on conditionals
+- transfer notes on identity is from picture on phone
+- research how to read documentation
+- 
 
 
 

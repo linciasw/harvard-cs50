@@ -1,5 +1,5 @@
 """
-x = input("What's x? ") #user input will always be a string
+x = input("What's x? ") # user input will always be a string
 y = input("What's y? ")
 
 #this will print 12 because python is concatenating 2 strings 
