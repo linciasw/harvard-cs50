@@ -102,6 +102,17 @@ print(name)
 # Methods return NEW strings
 
 
+# list of common string methods:
+# .startswith()
+# .endswith()
+# .lower()
+# .upper()
+# .strip()
+# .replace()
+# .split()
+# .join()
+# .find()
+
 # ==================================
 # 5. SPLIT FUNCTION
 # ==================================
