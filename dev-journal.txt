@@ -157,7 +157,11 @@ NEXT SESSION
 
 
 
-
+6th july 
+- cntinued with while and for loops
+- lists got introduced
+- learnt about _ as a pythonic expression in for loops
+- learnt about the range function
 
 
 
