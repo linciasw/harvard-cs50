@@ -141,6 +141,10 @@ num = 10
 # Float
 pi = 3.14
 
+
+# Lists
+numbers = [1, 2, 3]
+
 # IMPORTANT:
 # input() returns STRING even if user types numbers
 
