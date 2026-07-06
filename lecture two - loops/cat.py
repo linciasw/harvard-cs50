@@ -67,7 +67,53 @@ print("meow")"""
 
 
 # to fix it, use escape character and put the last print to end with nothing 
-print("meow\n" * 3, end="")
+# print("meow\n" * 3, end="")
+
+
+
+
+# VALIDATING INPUT
+# let's say you want the user to enter something specific like an even number, 
+# you can write a program like so:
+# n = int(input("What's n? "))
+# if n < 0: 
+#     n = int(input("What's n? "))
+#     if n < 0:
+#         n = int(input("What's n? "))
+        # we could potentially be writing this for infinity 
+
+
+# an easier way to do this:
+# while True: # induce an infinite loop with while True because the answer to the True question is always True
+#     n = int(input("What's n? "))
+#     if n < 0:
+#         continue # contiinue here will keep us in the loop ie go back to the start 
+#     else:
+#         break 
+
+
+# alternatively:
+while True:
+    n = int(input("What's n? "))
+    if n > 0:
+        break 
+
+for _ in range(n): # don't forget: _ is a pythonic placeholder for i
+    print("meow")
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
