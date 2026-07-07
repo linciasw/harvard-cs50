@@ -163,7 +163,14 @@ NEXT SESSION
 - learnt about _ as a pythonic expression in for loops
 - learnt about the range function
 - did a problem set, extenions.py
-- 
+
+
+
+7th july 
+- finished learning loops and validating input; for, while
+- started lists 
+- learnt how to iterate through lists using for loops 
+- learnt how to use the function len
 
 
 

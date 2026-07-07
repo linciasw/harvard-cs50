@@ -13,5 +13,25 @@ students = ["Hermione", "Harry", "Ron"]
 
 # a better way of doing this, using a loop
 # you can use python to iterate over anything, not just strings
-for student in students: # student in this line is just another way of saying i for first index
-    print(student)
+# for student in students: 
+#     print(student) 
+# student on line 16 is just another way of saying i for first index
+# python initializes it to the first index for you
+
+
+# LEN 
+# to create a loop that starts at index 0 and ends at 2:
+# for i in range(len(students)):
+#     print(students[i])
+
+# this will print the index location 
+# for i in range(len(students)):
+#     print(i, students[i])
+
+
+# this will print a top 3
+for i in range(len(students)):
+    print(i + 1, students[i])
+
+
+
