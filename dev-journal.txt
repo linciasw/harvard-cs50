@@ -43,7 +43,6 @@ NEXT SESSION
 - read 30 days of python notes on conditionals
 - transfer notes on identity is from picture on phone
 - research how to read documentation
-- 
 
 
 
@@ -158,7 +157,7 @@ NEXT SESSION
 
 
 6th july 
-- cntinued with while and for loops
+- continued with while and for loops
 - lists got introduced
 - learnt about _ as a pythonic expression in for loops
 - learnt about the range function
@@ -171,6 +170,11 @@ NEXT SESSION
 - started lists 
 - learnt how to iterate through lists using for loops 
 - learnt how to use the function len
+- completed intepreter.py
+- finished lists
+- started dictionaries
+- learnt how to use a for loop with dictionaries
+
 
 
 
