@@ -38,12 +38,14 @@
 
 # DICTIONARIES
 # key-value pairs
-students = {
-    "Hermione": "Gryffindor",
-    "Harry": "Gryffindor",
-    "Ron": "Gryffindor",
-    "Draco": "Slytherin"
-}
+# ie words and definitions, just like an actual dictionary
+# uses curly brackets
+# students = {
+#     "Hermione": "Gryffindor",
+#     "Harry": "Gryffindor",
+#     "Ron": "Gryffindor",
+#     "Draco": "Slytherin"
+# }
 
 # to print out specific indexes
 # print(students["Hermione"])
@@ -64,6 +66,22 @@ students = {
 
 
 
+# LISTS OF DICTIONARIES 
+# to create >2 columns, we use lists of dictionaries
+
+students = [
+    {"name": "Hermione", "house": "Gryffindor", "patronus": "Otter"},
+    {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
+    {"name": "Ron", "house": "Gryffindor", "patronus": "Jack Russell terrier"},
+    {"name": "Draco", "house": "Gryffindor", "patronus": None} # None represents the absence of a value
+]
+
+# to print their names alone
+# for student in students:
+#     print(student["name"])
 
 
+# to print out more than one property
+for student in students:
+    print(student["name"], student["house"], student["patronus"], sep=", ")
 

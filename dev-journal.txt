@@ -176,6 +176,11 @@ NEXT SESSION
 - learnt how to use a for loop with dictionaries
 
 
+8th july
+- lists of dictionaries; to access >2 columns of data 
+- created meal.py
+
+
 
 
 
