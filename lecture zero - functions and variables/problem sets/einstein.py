@@ -1,10 +1,16 @@
 # e = mc2 
 
-mass = int(input("m: "))
 
-c = 300000000 ** 2
+def main():
 
-energy = mass * c
+    mass = int(input("m: "))
+    formula(mass)
 
-print(f"e: {energy}")
 
+def formula(mass):
+    c_squared = 300000000 ** 2
+    energy = mass * c_squared
+    print(f"e: {energy}")
+
+
+main()
