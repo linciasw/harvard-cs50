@@ -37,7 +37,8 @@ learning material
 
 
 NEXT SESSION 
-- continue doing problem sets for conditionals lecture
+- continue doing problem sets for conditionals lecture [DONE]
+- research if __name__ == "__main__":
 - make notes on conditionals
 - read notes for conditionals lecture
 - read 30 days of python notes on conditionals
@@ -179,6 +180,8 @@ NEXT SESSION
 8th july
 - lists of dictionaries; to access >2 columns of data 
 - created meal.py
+- finished meanl.py
+- 
 
 
 
