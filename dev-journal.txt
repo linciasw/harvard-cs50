@@ -180,8 +180,7 @@ NEXT SESSION
 8th july
 - lists of dictionaries; to access >2 columns of data 
 - created meal.py
-- finished meanl.py
-- 
+- finished meal.py
 
 
 

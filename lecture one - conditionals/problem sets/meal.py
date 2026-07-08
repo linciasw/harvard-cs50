@@ -26,7 +26,23 @@ def convert(time):
     else:
         print("")
 
-    
-    
+
+  
+# The if __name__ == "__main__": isn't there because main() doesn't work. 
+# It's there to stop main() from running when another Python file imports yours.
 if __name__ == "__main__":
     main()
+
+
+
+# if __name__ == "__main__":
+#     main()
+
+# is simply asking:
+# "Am I the file that the user started?"
+
+# If yes:
+# main()
+
+# If no:
+# Don't start—you're just being imported.
