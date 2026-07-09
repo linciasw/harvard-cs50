@@ -177,10 +177,18 @@ NEXT SESSION
 - learnt how to use a for loop with dictionaries
 
 
+
 8th july
 - lists of dictionaries; to access >2 columns of data 
 - created meal.py
 - finished meal.py
+- learnt about if __name__ == "__main__":
+
+
+
+9th july 
+- created markdown files for functions & variables and conditionals 
+- 
 
 
 
