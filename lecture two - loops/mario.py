@@ -21,6 +21,7 @@
 #     for _ in range(height):
 #         print("#")
 
+
 # what's nice about functions is that you can change the underlying 
 # implementation details of them, but so long as you don't change the 
 # name of the function or its parameters, or what it returns, no one
@@ -35,5 +36,21 @@
 
 # TO PRINT 3 HASHES LIKE SO: (HORIZONTAL)
 ###
+
+
+def main():
+    print_square(3)
+#     print_row(4)
+
+
+
+def print_square(size):
+    
+
+
+
+# def print_row(width):
+#     print("?" * width)
+
 
 main()

@@ -191,6 +191,10 @@ NEXT SESSION
 - learnt that you can change the code in a function to do the same thing but 
 once you don't change any parameters or anything else, no one will know;
 ie there are different ways of writing the same code 
+
+
+10th july 
+- did 4 minutes of the lecture 
 - 
 
 
