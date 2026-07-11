@@ -195,7 +195,14 @@ ie there are different ways of writing the same code
 
 10th july 
 - did 4 minutes of the lecture 
-- 
+
+
+11th july 
+- learned nested loops
+- also learnt that when you run a python program, the computer looks 
+for the first bit of code outside a function to run first, which is 
+usually main()
+- learnt how to decompose a program ie functions within functions
 
 
 

@@ -1,3 +1,8 @@
+# when Python runs this script, 
+# it looks for code that is outside of a function to execute first.
+# It goes all the way to the bottom and finds main()
+
+
 # TO PRINT 3 HASHES LIKE SO: (VERTICAL)
 #
 #
@@ -44,8 +49,45 @@ def main():
 
 
 
+
+# to print a grid, 3 x 3
+# nested loop
+"""
 def print_square(size):
+
+    # for each row in square 
+    # this loop is responsible for tracking which row we are currently building.
+    for i in range(size):
+
+        # for each brick in row 
+        for j in range(size):
+
+            # print brick, take off new line
+            print("#", end="")
+
+        # this is to print a new line at the end of every row
+        # when you call print with no arguments, you get a new line     
+        print()
+"""
+
+
+
+
+# instead of a nested loop, we can write code like below:
+# def print_square(size):
+#     for i in range(size):
+#          print("#" * size)
     
+
+
+# instead of the above, we can write it decomposed as below:
+def print_square(size):
+    for i in range(size):
+         print_row(size)
+
+
+def print_row(width):
+    print("#" * width)
 
 
 
