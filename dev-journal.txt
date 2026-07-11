@@ -37,6 +37,7 @@ learning material
 
 
 NEXT SESSION 
+- there are notes under the youtube video for loops
 - continue doing problem sets for conditionals lecture [DONE]
 - research if __name__ == "__main__":
 - make notes on conditionals
@@ -203,6 +204,7 @@ ie there are different ways of writing the same code
 for the first bit of code outside a function to run first, which is 
 usually main()
 - learnt how to decompose a program ie functions within functions
+- read a little bit of crash course python
 
 
 

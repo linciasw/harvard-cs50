@@ -1,4 +1,4 @@
-# when Python runs this script, 
+# when python runs this script, 
 # it looks for code that is outside of a function to execute first.
 # It goes all the way to the bottom and finds main()
 
