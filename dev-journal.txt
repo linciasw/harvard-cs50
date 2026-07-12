@@ -24,6 +24,9 @@ https://www.w3schools.com/python/default.asp
 
 
 
+pep 8 python style guide
+https://peps.python.org/pep-0008/
+
 
 learning material
 - watch harvard cs50 
@@ -205,6 +208,12 @@ for the first bit of code outside a function to run first, which is
 usually main()
 - learnt how to decompose a program ie functions within functions
 - read a little bit of crash course python
+
+
+12th july 
+- learnt about pep8 style guide for python
+- finished making notes from crash course textbook
+- 
 
 
 
