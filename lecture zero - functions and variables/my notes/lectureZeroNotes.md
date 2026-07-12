@@ -1,578 +1,725 @@
-# ==================================
-# CS50 - LECTURE 0: FUNCTIONS & VARIABLES
-# ==================================
-# Personal Python Learning Notebook
-# Do NOT delete examples. Modify and experiment.
+# CS50 Lecture 0: Functions & Variables
 
-# ==================================
-# 0. BIG IDEA
-# ==================================
-"""
-Python is an interpreter:
-- It reads code top to bottom
-- Converts it into instructions the computer understands
+> **Goal:** Understand the basic building blocks of Python—variables, functions, input/output, strings, and data types. These concepts form the foundation for everything else you'll learn.
 
-Core building blocks:
-- Functions → do things
-- Variables → store things
-- Data types → define what kind of thing it is
-"""
+---
 
-# ==================================
-# 1. VARIABLES
-# ==================================
+# Big Idea
 
-# Variables store values in memory
+Python is an **interpreted language**, meaning it reads your code **from top to bottom** and executes each instruction one at a time.
 
+The core building blocks are:
+
+- **Functions** → Perform tasks
+- **Variables** → Store values
+- **Data Types** → Describe what kind of value is stored
+
+---
+
+# Variables
+
+Variables store values in memory.
+
+```python
 name = "Lincia"
 age = 27
+```
 
-# Assignment operator
-# = means "store value", NOT equality
+## Assignment Operator (`=`)
 
-# IMPORTANT:
-# Variables can be overwritten
+The `=` operator **assigns** a value to a variable.
+
+```python
+name = "Lincia"
+```
+
+This means:
+
+> Store `"Lincia"` inside the variable `name`.
+
+It **does not** mean "equals."
+
+## Variables Can Be Reassigned
+
+Variables can be updated by assigning a new value.
+
+```python
 name = "John"
+```
 
-# PRACTICE
-city = "Chaguanas"
+The old value is replaced.
 
+---
 
-# ==================================
-# 2. INPUT + OUTPUT
-# ==================================
+# Input and Output
 
-# input() ALWAYS returns a STRING
+## `input()`
 
-name = input("What's your name? ").strip().title()
+The `input()` function asks the user for input.
 
-# print() outputs text to the screen
-print("Hello,", name)
+```python
+name = input("What's your name? ")
+```
 
-# f-string (best way to format strings)
-print(f"Hello, {name}")
+### Important
 
-# NOTE:
-# print automatically adds a newline at the end
+`input()` **always returns a string**, even if the user types a number.
 
-
-# ==================================
-# 3. FUNCTIONS
-# ==================================
-
-# A function performs a task
-
-print("Hello")
-len("hello")  # returns length of string
-round(3.14159, 2)
-
-# Functions can take inputs (arguments)
-
-# Example:
-print("Hello", "World")
-
-# print(*objects, sep=' ', end='\n')
-
-# IMPORTANT IDEA:
-# Functions can return values OR just perform actions
-
-
-# ==================================
-# 4. STRING METHODS
-# ==================================
-
-name = " john smith "
-
-# Remove whitespace
-name = name.strip()
-
-# Capitalize first letter
-name = name.capitalize()
-
-# Capitalize each word
-name = name.title()
-
-# Chain methods
-name = " john smith ".strip().title()
-
-print(name)
-
-# IMPORTANT:
-# Strings are IMMUTABLE (cannot be changed directly)
-# Methods return NEW strings
-
-
-# list of common string methods:
-# .startswith()
-# .endswith()
-# .lower()
-# .upper()
-# .strip()
-# .replace()
-# .split()
-# .join()
-# .find()
-
-# ==================================
-# 5. SPLIT FUNCTION
-# ==================================
-
-name = "John Smith"
-
-first, last = name.split(" ")
-
-print(first)
-print(last)
-
-# NOTE:
-# split() breaks a string into parts based on a separator
-
-
-# ==================================
-# 6. DATA TYPES
-# ==================================
-
-# String
-text = "hello"
-
-# Integer
-num = 10
-
-# Float
-pi = 3.14
-
-
-# Lists
-numbers = [1, 2, 3]
-
-# IMPORTANT:
-# input() returns STRING even if user types numbers
-
+```python
 age = input("Age: ")
-# age + 1  ❌ will fail
-
-
-# FIX:
-age = int(input("Age: "))
-print(age + 1)
-
-
-# ==================================
-# 7. OPERATORS
-# ==================================
-
-# Arithmetic operators
-# +  -  *  /  % **
-
-x = 10 + 5
-y = 10 / 2
-
-# MODULO gives remainder
-remainder = 10 % 3
-
-# ** is squared 
-
-
-# ==================================
-# 8. COMMENTS
-# ==================================
-
-# Single-line comment
-
-"""
-Multi-line comment (docstring style)
-Used for longer explanations
-"""
-
-# IMPORTANT:
-# Comments should explain WHY, not WHAT
-
-
-# ==================================
-# 9. PARAMETERS VS ARGUMENTS
-# ==================================
-
-# Parameter = placeholder in function definition
-# Argument = actual value passed in
-
-print("Hello")  # "Hello" is an argument
-
-
-# ==================================
-# 10. SCOPE
-# ==================================
-
-# Variables only exist where they are created
-
-def greet():
-    name = "Bob"
-    print(name)
-
-greet()
-
-# print(name)  ❌ ERROR (outside scope)
-
-
-# ==================================
-# 11. PRINT PARAMETERS
-# ==================================
-
-print("A", "B", "C", sep="-")
-print("Hello", end=" ")
-print("World")
-
-# sep = separator
-# end = what happens at end of print
-
-
-# ==================================
-# 12. ESCAPE CHARACTERS
-# ==================================
-
-print("He said \"Hello\"")
-
-# OR use single quotes outside
-print('He said "Hello"')
-
-
-# ==================================
-# 13. PYTHON INTERACTIVE MODE
-# ==================================
-
-# In terminal:
-# python
-# then type commands directly
-
-# exit with:
-# Ctrl + Z then Enter (Windows)
-
-
-# ==================================
-# 14. COMMON MISTAKES
-# ==================================
-
-# ❌ Missing quotes
-# print(Hello)
-
-# ✅ Correct
-print("Hello")
-
-# ❌ input returns string
-# age = input()
-# print(age + 1)
-
-# ✅ Fix
-age = int(input("Age: "))
-print(age + 1)
-
-
-# ==================================
-# 15. FLOAT VS INT LIMITATION
-# ==================================
-
-# int = unlimited size (practically)
-big_number = 999999999999999999
-
-# float = limited precision
-pi = 3.14159265358979323846
-
-# NOTE:
-# floats can lose precision due to memory limits
-
-
-# ==================================
-# 16. ROUND FUNCTION
-# ==================================
-
-# round(number[, ndigits])
-
-x = round(3.14159)
-y = round(3.14159, 2)
-
-print(x)
-print(y)
-
-
-# ==================================
-# 17. KEY TAKEAWAYS (IMPORTANT)
-# ==================================
-"""
-- input() always returns a string
-- Variables store values
-- Functions do work or return values
-- Methods modify or return new strings
-- Python runs top to bottom
-- = is assignment, not equality
-- Strings are immutable
-"""
-
-
-# ==================================
-# 18. MINI TEST (DO NOT SKIP)
-# ==================================
-
-# Try writing these without looking:
-
-# 1. Ask for name and print it
-# 2. Ask for age and print next year
-# 3. Format full name using title case
-# 4. Split full name into first/last
-# 5. Print using f-string
-
-
-
-# ==================================
-# DEEP UNDERSTANDING
-# ==================================
-"""
-These concepts will appear throughout the rest of CS50 and Python.
-I don't need to master them today, but I should revisit them often.
-"""
-
-
-# ==================================
-# 1. HOW FUNCTIONS WORK
-# ==================================
-
-"""
-A function is a reusable block of code that performs a task.
-
-Think of every function call like this:
-
-Arguments
-    ↓
-Function executes
-    ↓
-Return value (sometimes)
-"""
-
-# Example
-
-name = input("What's your name? ").strip().title()
-
-"""
-Step-by-step:
-
-1. input() asks the user for input.
-2. input() RETURNS a string.
-3. strip() RETURNS a new string with whitespace removed.
-4. title() RETURNS another new string with each word capitalized.
-5. The final value is stored inside 'name'.
-
-Notice that every method returns a value that the next method uses.
-"""
-
-# Another example
-
-length = len("banana")
-
-"""
-Arguments:
-"banana"
-
-↓
-
-len()
-
-↓
-
-Returns:
-6
-
-↓
-
-Stored in variable 'length'
-"""
-
-
-# ==================================
-# 2. RETURN VALUES
-# ==================================
-
-"""
-One of the most important ideas in programming.
-
-A function may:
-• perform an action
-• return a value
-• or both
-"""
-
-# Performs an action
-
-print("Hello")
-
-"""
-print() displays text.
-
-It is mainly used for OUTPUT.
-"""
-
-# Returns a value
-
-name = input("Name: ")
-
-"""
-input() returns whatever the user types.
+```
 
 If the user types:
 
+```
+25
+```
+
+Python stores:
+
+```python
+"25"
+```
+
+not
+
+```python
+25
+```
+
+To use the value as a number:
+
+```python
+age = int(input("Age: "))
+```
+
+---
+
+## `print()`
+
+The `print()` function displays output on the screen.
+
+```python
+print("Hello")
+```
+
+You can print multiple values.
+
+```python
+print("Hello", "World")
+```
+
+Output:
+
+```
+Hello World
+```
+
+---
+
+## f-Strings
+
+The recommended way to insert variables into text.
+
+```python
+name = "Lincia"
+
+print(f"Hello, {name}")
+```
+
+Output:
+
+```
+Hello, Lincia
+```
+
+---
+
+# Functions
+
+A function is a reusable block of code that performs a task.
+
+Examples:
+
+```python
+print("Hello")
+len("hello")
+round(3.14159, 2)
+```
+
+Functions can:
+
+- Perform an action
+- Return a value
+- Or both
+
+---
+
+## Function Arguments
+
+Arguments are the values passed into a function.
+
+```python
+print("Hello", "World")
+```
+
+Here:
+
+- `"Hello"` is an argument.
+- `"World"` is another argument.
+
+---
+
+# Return Values
+
+One of the most important programming concepts.
+
+A function may return a value that you can store or use later.
+
+Example:
+
+```python
+length = len("banana")
+```
+
+Process:
+
+```
+"banana"
+     ↓
+len()
+     ↓
+6
+     ↓
+Stored in length
+```
+
+Another example:
+
+```python
+name = input("Name: ")
+```
+
+If the user types:
+
+```
 Bob
+```
 
-input() returns:
+Then:
 
-"Bob"
+```python
+name == "Bob"
+```
 
-That value gets stored in the variable.
-"""
+---
 
-# Another example
+## Ask Yourself
 
-length = len("apple")
+Whenever you use a function, ask:
 
-"""
-len() returns:
+> **What value does this function return?**
 
-5
+Understanding return values makes programming much easier.
 
-which gets assigned to length.
-"""
+---
 
-# IMPORTANT
+# String Methods
 
-"""
-Ask yourself whenever you use a function:
+Strings have many built-in methods.
 
-"What value does this function return?"
+```python
+name = " john smith "
+```
 
-Understanding return values will make writing your own functions much easier later.
-"""
+## Remove Whitespace
 
+```python
+name.strip()
+```
 
-# ==================================
-# 3. STRINGS ARE IMMUTABLE
-# ==================================
+Removes spaces from both ends.
 
-"""
-Immutable means "cannot be changed."
+---
 
-Strings cannot be modified in place.
+## Capitalize First Letter
 
-Methods create NEW strings instead.
-"""
+```python
+name.capitalize()
+```
 
+Output:
+
+```
+John smith
+```
+
+---
+
+## Title Case
+
+```python
+name.title()
+```
+
+Output:
+
+```
+John Smith
+```
+
+---
+
+## Method Chaining
+
+You can call multiple methods in one line.
+
+```python
+name = " john smith ".strip().title()
+```
+
+Python performs them from left to right.
+
+---
+
+## Common String Methods
+
+| Method | Purpose |
+|---------|----------|
+| `.lower()` | Convert to lowercase |
+| `.upper()` | Convert to uppercase |
+| `.title()` | Capitalize each word |
+| `.capitalize()` | Capitalize first letter only |
+| `.strip()` | Remove surrounding whitespace |
+| `.replace()` | Replace text |
+| `.split()` | Split into a list |
+| `.join()` | Join a list into a string |
+| `.find()` | Find the position of text |
+| `.startswith()` | Check beginning of string |
+| `.endswith()` | Check ending of string |
+
+---
+
+# Strings Are Immutable
+
+Strings **cannot be changed in place**.
+
+Methods create **new strings** instead.
+
+Incorrect:
+
+```python
 name = "john"
-
-# This DOES NOT permanently change name
 
 name.title()
 
 print(name)
+```
 
-# Output:
-# john
+Output:
 
-# Correct
+```
+john
+```
 
+Correct:
+
+```python
 name = name.title()
 
 print(name)
+```
 
-# Output:
-# John
+Output:
 
+```
+John
+```
+
+Whenever you want to keep the result of a string method, assign it back to a variable.
+
+---
+
+# Splitting Strings
+
+`split()` breaks a string into parts.
+
+```python
+name = "John Smith"
+
+first, last = name.split(" ")
+```
+
+Result:
+
+```python
+first = "John"
+last = "Smith"
+```
+
+---
+
+# Data Types
+
+Python has several built-in data types.
+
+| Type | Description | Example |
+|------|-------------|---------|
+| `str` | Text | `"hello"` |
+| `int` | Whole numbers | `10` |
+| `float` | Decimal numbers | `3.14` |
+| `list` | Collection of values | `[1, 2, 3]` |
+
+---
+
+## Converting Input
+
+Since `input()` returns a string:
+
+```python
+age = input("Age: ")
+```
+
+This will fail:
+
+```python
+age + 1
+```
+
+Correct:
+
+```python
+age = int(input("Age: "))
+
+print(age + 1)
+```
+
+---
+
+# Operators
+
+## Arithmetic Operators
+
+| Operator | Meaning |
+|----------|---------|
+| `+` | Addition |
+| `-` | Subtraction |
+| `*` | Multiplication |
+| `/` | Division |
+| `//` | Floor Division |
+| `%` | Modulus (remainder) |
+| `**` | Exponentiation |
+
+Example:
+
+```python
+10 % 3
+```
+
+Output:
+
+```
+1
+```
+
+---
+
+# Comments
+
+Single-line comment:
+
+```python
+# This is a comment
+```
+
+Multi-line comment (docstring style):
+
+```python
 """
-Most string methods return a NEW string.
-
-If you want to keep the result,
-assign it back to the variable.
+Long explanation
 """
+```
 
+### Best Practice
 
-# ==================================
-# 4. READING DOCUMENTATION
-# ==================================
+Comments should explain **why**, not **what**.
 
-"""
-Every programmer reads documentation.
+---
 
-You do NOT have to memorize it.
+# Parameters vs Arguments
 
-Learn how to understand it.
-"""
+A common source of confusion.
 
-# Example documentation
+## Parameter
 
-# print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+A placeholder in a function definition.
 
-"""
-How to read this:
+```python
+def greet(name):
+```
 
-objects
-    Things you want to print.
+`name` is the parameter.
 
-sep=' '
-    Optional separator between objects.
+---
 
-end='\\n'
-    What gets printed after everything.
+## Argument
 
-file=sys.stdout
-    Where output is sent (usually the terminal).
+The actual value passed into the function.
 
-flush=False
-    Advanced option that forces output immediately.
+```python
+greet("Bob")
+```
 
-For now, focus on:
+`"Bob"` is the argument.
 
-• What does the function do?
-• What arguments are required?
-• Which arguments are optional?
-• What does it return?
-"""
+---
 
-# Another example
+# Scope
 
-# round(number[, ndigits])
+Variables only exist where they are created.
 
-"""
-number
-    Required
+```python
+def greet():
+    name = "Bob"
 
-ndigits
-    Optional
+print(name)
+```
+
+This produces an error because `name` only exists inside `greet()`.
+
+---
+
+# Print Parameters
+
+`print()` has useful optional parameters.
+
+## `sep`
+
+Separator between printed objects.
+
+```python
+print("A", "B", "C", sep="-")
+```
+
+Output:
+
+```
+A-B-C
+```
+
+---
+
+## `end`
+
+Controls what is printed at the end.
+
+```python
+print("Hello", end=" ")
+print("World")
+```
+
+Output:
+
+```
+Hello World
+```
+
+Normally, `print()` ends with a newline (`\n`).
+
+---
+
+# Escape Characters
+
+Use a backslash (`\`) to include special characters.
+
+```python
+print("He said \"Hello\"")
+```
+
+Or use single quotes outside:
+
+```python
+print('He said "Hello"')
+```
+
+---
+
+# Interactive Python Mode
+
+Run Python directly in your terminal:
+
+```text
+python
+```
+
+Then type Python commands one at a time.
+
+Exit on Windows:
+
+```text
+Ctrl + Z
+Enter
+```
+
+---
+
+# Common Beginner Mistakes
+
+## Missing Quotes
+
+Incorrect:
+
+```python
+print(Hello)
+```
+
+Correct:
+
+```python
+print("Hello")
+```
+
+---
+
+## Forgetting That `input()` Returns a String
+
+Incorrect:
+
+```python
+age = input("Age: ")
+
+print(age + 1)
+```
+
+Correct:
+
+```python
+age = int(input("Age: "))
+
+print(age + 1)
+```
+
+---
+
+# Integers vs Floats
+
+## Integers (`int`)
+
+Can represent extremely large whole numbers.
+
+```python
+999999999999999999
+```
+
+---
+
+## Floats (`float`)
+
+Store decimal numbers but have limited precision.
+
+```python
+3.14159265358979323846
+```
+
+Floating-point values may lose precision because of how computers store decimal numbers.
+
+---
+
+# The `round()` Function
+
+Syntax:
+
+```python
+round(number[, ndigits])
+```
 
 Examples:
 
-round(3.14)
+```python
+round(3.14159)
+```
 
+Output:
+
+```
+3
+```
+
+```python
 round(3.14159, 2)
-"""
+```
 
+Output:
 
-# ==================================
-# QUESTIONS TO ASK YOURSELF
-# ==================================
+```
+3.14
+```
 
-"""
-Whenever learning something new, ask:
+---
+
+# Reading Documentation
+
+Every programmer reads documentation.
+
+Don't try to memorize everything.
+
+Instead, learn to answer these questions:
+
+- What does the function do?
+- What arguments are required?
+- Which arguments are optional?
+- What does it return?
+
+Example:
+
+```python
+print(*objects, sep=' ', end='\n')
+```
+
+- `objects` → Values to print
+- `sep` → Separator between values
+- `end` → What is printed after the last value
+
+---
+
+# Six Questions to Ask When Learning Anything
+
+Whenever you encounter a new function, method, or concept, ask yourself:
 
 1. What problem does this solve?
-
 2. What does it return?
-
 3. Does it modify the original object?
-
-4. What arguments can I pass?
-
-5. What mistakes do beginners make?
-
+4. What arguments can it accept?
+5. What mistakes do beginners commonly make?
 6. Can I explain it in my own words?
 
-These six questions will help you understand concepts
-instead of memorizing syntax.
-"""
+These questions help you understand concepts instead of memorizing syntax.
 
-# ==================================
-# END OF LECTURE 0
-# ==================================
+---
+
+# Key Takeaways
+
+- Python executes code from top to bottom.
+- Variables store values.
+- `=` is the assignment operator, not equality.
+- Functions perform actions and/or return values.
+- `input()` always returns a string.
+- Use `int()` or `float()` to convert numeric input.
+- Strings are immutable; methods return new strings.
+- Methods can be chained together.
+- Variables only exist within their scope.
+- Read documentation to understand behavior instead of memorizing it.
+
+---
+
+# Mini Practice
+
+Try completing these without looking at your notes:
+
+1. Ask the user for their name and print a greeting.
+2. Ask the user for their age and print how old they'll be next year.
+3. Format a full name using title case.
+4. Split a full name into first and last names.
+5. Print a sentence using an f-string.
+
+> **Reminder:** You don't need to master everything after one lecture. Revisit these concepts often—they'll appear throughout the rest of CS50 and your Python journey.

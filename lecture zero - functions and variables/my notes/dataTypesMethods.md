@@ -1,100 +1,340 @@
-"""
-Python Primitive Data Types Cheat Sheet
-(int, float, str)
-"""
+# Python Primitive Data Types Cheat Sheet
 
-# =========================
-# INT (Integers)
-# =========================
+Python has several built-in data types. The three most common primitive data types are:
 
+- `int` – Whole numbers
+- `float` – Decimal numbers
+- `str` – Text (strings)
+
+---
+
+# Integers (`int`)
+
+Integers represent whole numbers.
+
+```python
 x = 10
+```
 
-# Arithmetic operators
-print(x + 5)   # addition
-print(x - 5)   # subtraction
-print(x * 5)   # multiplication
-print(x / 5)   # division (float result)
-print(x // 5)  # floor division
-print(x % 5)   # modulus (remainder)
-print(x ** 2)  # exponentiation
+## Arithmetic Operators
 
-# Useful built-in functions with ints
-print(abs(-10))     # absolute value
-print(pow(2, 3))    # power
-print(min(1, 2, 3))
-print(max(1, 2, 3))
+| Operator | Description | Example |
+|----------|-------------|---------|
+| `+` | Addition | `x + 5` |
+| `-` | Subtraction | `x - 5` |
+| `*` | Multiplication | `x * 5` |
+| `/` | Division (returns a float) | `x / 5` |
+| `//` | Floor Division | `x // 5` |
+| `%` | Modulus (remainder) | `x % 5` |
+| `**` | Exponentiation | `x ** 2` |
 
-# Type conversion
-print(int("10"))
-print(int(3.7))     # truncates decimal
+Example:
 
+```python
+print(x + 5)
+print(x - 5)
+print(x * 5)
+print(x / 5)
+print(x // 5)
+print(x % 5)
+print(x ** 2)
+```
 
-# =========================
-# FLOAT (Decimals)
-# =========================
+## Useful Built-in Functions
 
+```python
+abs(-10)        # 10
+pow(2, 3)       # 8
+min(1, 2, 3)    # 1
+max(1, 2, 3)    # 3
+```
+
+## Type Conversion
+
+Convert other data types into integers.
+
+```python
+int("10")   # 10
+int(3.7)    # 3 (decimal is truncated)
+```
+
+---
+
+# Floating-Point Numbers (`float`)
+
+Floats represent decimal numbers.
+
+```python
 y = 3.14
+```
 
-# Arithmetic (same as int)
+## Arithmetic
+
+Floats use the same arithmetic operators as integers.
+
+```python
 print(y + 2)
 print(y - 1)
 print(y * 3)
 print(y / 2)
+```
 
-# Rounding
-print(round(3.14159, 2))
+## Rounding
 
-# Type conversion
-print(float("3.14"))
-print(float(10))
+```python
+round(3.14159, 2)
+# Output: 3.14
+```
 
-# Floating point precision note
-print(0.1 + 0.2)  # not exactly 0.3
+## Type Conversion
 
+```python
+float("3.14")
+float(10)
+```
 
-# =========================
-# STRING (Text)
-# =========================
+## Floating-Point Precision
 
+Due to the way computers store decimal numbers, floating-point calculations are sometimes not exact.
+
+```python
+print(0.1 + 0.2)
+```
+
+Output:
+
+```python
+0.30000000000000004
+```
+
+This is normal behavior in Python (and most programming languages).
+
+---
+
+# Strings (`str`)
+
+Strings represent text.
+
+```python
 text = "hello world"
+```
 
-# Case methods
-print(text.lower())
-print(text.upper())
-print(text.title())
+---
 
-# Cleaning / replacing
-print(text.strip())
-print(text.replace("hello", "hi"))
+## Changing Letter Case
 
-# Splitting and joining
+```python
+text.lower()     # hello world
+text.upper()     # HELLO WORLD
+text.title()     # Hello World
+```
+
+---
+
+## Cleaning and Replacing Text
+
+### Remove whitespace
+
+```python
+text.strip()
+```
+
+### Replace text
+
+```python
+text.replace("hello", "hi")
+```
+
+Output:
+
+```
+hi world
+```
+
+---
+
+## Splitting and Joining
+
+### Split a string into a list
+
+```python
 words = text.split()
-print(words)
+```
 
-print(" ".join(["hi", "there"]))
+Output:
 
-# Searching
-print(text.find("world"))
-print(text.startswith("he"))
-print(text.endswith("ld"))
+```python
+['hello', 'world']
+```
 
-# Checking content
-print("123".isdigit())
-print("abc".isalpha())
-print("abc123".isalnum())
+### Join a list into a string
 
-# Length
-print(len(text))
+```python
+" ".join(["hi", "there"])
+```
 
+Output:
 
-# =========================
-# IMPORTANT TYPE BEHAVIOUR
-# =========================
+```
+hi there
+```
 
-print(type(10))      # int
-print(type(10.0))    # float
-print(type("10"))    # str
+---
 
-# String vs numeric behavior
-print("10" + "5")    # concatenation → "105"
-print(10 + 5)        # math → 15
+## Searching Strings
+
+### Find text
+
+```python
+text.find("world")
+```
+
+Returns the index where `"world"` begins.
+
+### Check how a string starts
+
+```python
+text.startswith("he")
+```
+
+Returns `True` or `False`.
+
+### Check how a string ends
+
+```python
+text.endswith("ld")
+```
+
+Returns `True` or `False`.
+
+---
+
+## Checking String Contents
+
+### Digits only
+
+```python
+"123".isdigit()
+```
+
+### Letters only
+
+```python
+"abc".isalpha()
+```
+
+### Letters and numbers
+
+```python
+"abc123".isalnum()
+```
+
+These methods return either `True` or `False`.
+
+---
+
+## Length of a String
+
+```python
+len(text)
+```
+
+Output:
+
+```python
+11
+```
+
+---
+
+# Checking Data Types
+
+Use the `type()` function to see what type of data a variable contains.
+
+```python
+type(10)      # int
+type(10.0)    # float
+type("10")    # str
+```
+
+---
+
+# Strings vs Numbers
+
+Python treats strings and numbers differently.
+
+## String Concatenation
+
+```python
+"10" + "5"
+```
+
+Output:
+
+```
+105
+```
+
+The strings are joined together.
+
+## Numeric Addition
+
+```python
+10 + 5
+```
+
+Output:
+
+```
+15
+```
+
+Numbers are added mathematically.
+
+---
+
+# Summary
+
+| Data Type | Purpose | Example |
+|-----------|---------|---------|
+| `int` | Whole numbers | `10` |
+| `float` | Decimal numbers | `3.14` |
+| `str` | Text | `"hello"` |
+
+### Common Integer Operations
+
+- `+` Addition
+- `-` Subtraction
+- `*` Multiplication
+- `/` Division
+- `//` Floor Division
+- `%` Modulus
+- `**` Exponentiation
+
+### Common String Methods
+
+- `.lower()`
+- `.upper()`
+- `.title()`
+- `.strip()`
+- `.replace()`
+- `.split()`
+- `.join()`
+- `.find()`
+- `.startswith()`
+- `.endswith()`
+- `.isdigit()`
+- `.isalpha()`
+- `.isalnum()`
+
+### Useful Functions
+
+- `abs()`
+- `pow()`
+- `min()`
+- `max()`
+- `round()`
+- `len()`
+- `type()`
+- `int()`
+- `float()`
