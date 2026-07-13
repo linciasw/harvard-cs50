@@ -41,13 +41,12 @@ learning material
 
 NEXT SESSION 
 - there are notes under the youtube video for loops
-- continue doing problem sets for conditionals lecture [DONE]
-- research if __name__ == "__main__":
-- make notes on conditionals
-- read notes for conditionals lecture
-- read 30 days of python notes on conditionals
-- transfer notes on identity is from picture on phone
+- watch loops shorts, 10 of them 
+- read chapter on loops, python crash course
+- do 10 practice exercises, including 5 from problem sets 
+- transfer notes on identity is from picture on phone 
 - research how to read documentation
+- research python style guide
 
 
 
@@ -213,7 +212,12 @@ usually main()
 12th july 
 - learnt about pep8 style guide for python
 - finished making notes from crash course textbook
-- 
+- started reading chapter 7, crash course, input and while loops
+
+
+13th july 
+- started cs50's shorts for loops, dictionaries
+
 
 
 
