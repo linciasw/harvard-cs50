@@ -217,6 +217,8 @@ usually main()
 
 13th july 
 - started cs50's shorts for loops, dictionaries
+- learnt different ways to update dictionaries
+- 
 
 
 
