@@ -224,7 +224,8 @@ usually main()
 
 14th july 
 - started second cs50 short for loops, dictionary methods
-- 
+- finished dictionary methods:
+keys(), pop(), clear(), items()
 
 
 
