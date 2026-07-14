@@ -1,3 +1,6 @@
+# DICTIONARIES
+
+
 """
 def main():
     spacecraft = {"name": "Voyager 1", "distance": 163}
@@ -21,7 +24,7 @@ def create_report(spacecraft):
 
 def main():
     spacecraft = {"name": "James Webb Space Telescope"}
-    # another way of creating a value
+    # another way of creating a value instead of including it right in the dictionary
     # spacecraft["distance"] = 0.01 
     
     # another way of creating a value 

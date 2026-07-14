@@ -218,8 +218,13 @@ usually main()
 13th july 
 - started cs50's shorts for loops, dictionaries
 - learnt different ways to update dictionaries
-- 
+- learnt how to access keys and values in dictionaries
 
+
+
+14th july 
+- started second cs50 short for loops, dictionary methods
+- 
 
 
 
