@@ -33,7 +33,7 @@ def main():
 
 
 
-# get prevents key errors if value does not exist 
+# get prevents key errors if value does not exist with the argument "Unknown"
 def create_report(spacecraft):
     return f"""
     ============== REPORT =============

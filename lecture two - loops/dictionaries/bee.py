@@ -8,7 +8,7 @@ def main():
     print("Your letters are: A I P C R H G")
 
     while len(WORDS) > 0:
-        print(f"{len(WORDS)} words left")
+        print(f"{len(WORDS)} words left") # len checks the number of 'key: value' pairs are in the dictionary
         guess = input("Guess a word: ")
 
 
@@ -42,10 +42,6 @@ def main():
     
     for word, points in WORDS.items():
         print(f"{word} was worth {points} points.")
-
-
-
-
 
 
 main()
