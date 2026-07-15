@@ -45,7 +45,17 @@ student = {"name": "John", "age": 25, "courses": {"Math", "CompSci"}}
 # print(student.values())
 
 # to print out both keys and values, items() method
-print(student.items())
+# print(student.items())
+
+
+# to loops through each key
+# for key in student:
+#     print(key)
+
+
+# to loops through both keys and values
+for key, value in student.items():
+    print(key, value)
 
 
 # print(student.get("phone", "Not Found"))

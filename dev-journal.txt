@@ -225,7 +225,20 @@ usually main()
 14th july 
 - started second cs50 short for loops, dictionary methods
 - finished dictionary methods:
-keys(), pop(), clear(), items()
+keys(), values(), pop(), clear(), items(), update(), get()
+
+
+15th july
+- watched corey schafer dictionary tutorial
+- learnt how to loop through a dictionary
+- learnt about """ for multi-line strings and docstrings
+- started researching f-strings a little bit
+https://realpython.com/python-f-strings/?utm_source=chatgpt.com
+https://docs.python.org/3/tutorial/inputoutput.html?utm_source=chatgpt.com#formatted-string-literals
+
+
+
+ 
 
 
 

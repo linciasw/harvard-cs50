@@ -1,5 +1,12 @@
 # DICTIONARIES
 
+# The important thing is: """ is not automatically a comment. In Python, triple quotes create a multi-line string.
+# """ is used for multi-line strings, and docstrings
+# a docstring is a special string in Python that is used to describe what a function, class, or module does.
+# the name comes from documentation string.
+# it usually goes immediately inside a function, class, or file after the definition line.
+
+
 
 """
 def main():
@@ -11,13 +18,13 @@ def main():
 
 def create_report(spacecraft):
     return f"""
-    # ============== REPORT =============
+#     ============== REPORT =============
 
-    # Name: {spacecraft["name"]}
-    # Distance: {spacecraft["distance"]} AU
+#     Name: {spacecraft["name"]}
+#     Distance: {spacecraft["distance"]} AU
 
-    # ===================================
-    # """
+#     ===================================
+#     """
 
 # main()
 
