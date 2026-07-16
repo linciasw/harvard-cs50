@@ -1,4 +1,5 @@
 # DICTIONARIES 
+# FROM CS50 SHORTS
 
 
 distances = {

@@ -1,4 +1,6 @@
 # DICTIONARIES
+# FROM CS50 SHORTS
+
 
 # The important thing is: """ is not automatically a comment. In Python, triple quotes create a multi-line string.
 # """ is used for multi-line strings, and docstrings
