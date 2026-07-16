@@ -1,4 +1,9 @@
 # FOR LOOPS
+# powerful when you know how many times you want to loop 
+# or when you want to do something for each item you 
+# have in some list 
+# or generally, anything iterable that can be iterated
+# over
 
 
 
