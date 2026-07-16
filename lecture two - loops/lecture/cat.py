@@ -1,8 +1,12 @@
-"""print("meow")
-print("meow")
-print("meow")"""
+
+# to print 3 lines of meow:
+# print("meow")
+# print("meow")
+# print("meow")
 
 
+
+# to do this a little better, we can use a while loop:
 # WHILE
 # you can count down 
 # i = 3

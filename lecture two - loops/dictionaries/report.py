@@ -3,10 +3,14 @@
 
 
 # The important thing is: """ is not automatically a comment. In Python, triple quotes create a multi-line string.
-# """ is used for multi-line strings, and docstrings
+# and is also commonly used for docstrings. 
 # a docstring is a special string in Python that is used to describe what a function, class, or module does.
 # the name comes from documentation string.
 # it usually goes immediately inside a function, class, or file after the definition line.
+
+
+# an f string offer a concise and efficient way to interpolate variables, objects, and expressions directly into strings. 
+# by prefixing a string with f or F, you can embed expressions within curly braces ({}), which are evaluated at runtime.
 
 
 

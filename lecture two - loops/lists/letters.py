@@ -2,9 +2,7 @@
 # powerful when you know how many times you want to loop 
 # or when you want to do something for each item you 
 # have in some list 
-# or generally, anything iterable that can be iterated
-# over
-
+# or generally, anything iterable that can be iterated over
 
 
 # this program works but it could be designed better 
@@ -35,7 +33,7 @@ def write_letter(receiver, sender):
         Dear {receiver},
 
         You are cordially invited to a ball at 
-        Peach's Castle thiss eveneing, 7:00 PM. 
+        Peach's Castle this eveneing, 7:00 PM. 
 
         Sincerely,
         {sender}
