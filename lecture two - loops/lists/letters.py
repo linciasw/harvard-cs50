@@ -33,7 +33,7 @@ def write_letter(receiver, sender):
         Dear {receiver},
 
         You are cordially invited to a ball at 
-        Peach's Castle this eveneing, 7:00 PM. 
+        Peach's Castle this evening, 7:00 PM. 
 
         Sincerely,
         {sender}
