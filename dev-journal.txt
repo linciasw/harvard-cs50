@@ -246,6 +246,11 @@ https://docs.python.org/3/tutorial/inputoutput.html?utm_source=chatgpt.com#forma
 17th july
 - watched the lists short
 - learnt list methods: append(), insert(), remove(), extend()
+
+
+18th july
+- started learning list and dictionary comprehensions 
+- created word counter program, it was kind of complicated with an import 
 - 
 
 
