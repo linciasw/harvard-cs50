@@ -40,7 +40,7 @@ learning material
 
 
 NEXT SESSION 
-- there are notes under the youtube video for loops
+- twatch a video on list & dictionary comprehensions
 - watch loops shorts, 10 of them 
 - read chapter on loops, python crash course
 - do 10 practice exercises, including 5 from problem sets 
@@ -251,7 +251,9 @@ https://docs.python.org/3/tutorial/inputoutput.html?utm_source=chatgpt.com#forma
 18th july
 - started learning list and dictionary comprehensions 
 - created word counter program, it was kind of complicated with an import 
-- 
+to read:
+https://realpython.com/list-comprehension-python/?utm_source=chatgpt.com
+https://realpython.com/python-dictionary-comprehension/?utm_source=chatgpt.com
 
 
 
