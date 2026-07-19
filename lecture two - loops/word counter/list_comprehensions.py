@@ -50,7 +50,7 @@ def main():
 
     most list comprehensions follow this pattern:
     new_list = [do_something(item) for item in collection/iterable if condition]
-    
+
     nb: do_something(item) could be a call to a method, 
     or any other valid expression that returns a value
 
@@ -63,6 +63,15 @@ def main():
     for item in collection:
         if condition:
             new_list.append(do_something(item))
+
+
+    Should you use list comprehensions or a for loop? 
+    Rather than adhere to a single rule that’s true in all cases, 
+    it’s more useful to ask yourself whether or not performance matters in your specific circumstance. 
+    If not, then it’s usually best to choose whatever approach leads to the cleanest code!
+
+    the timeit library is useful for timing how long it takes chunks of code to run. 
+    You can use timeit to compare the runtime.
     """
 
     # for word in words:

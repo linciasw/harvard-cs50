@@ -259,7 +259,9 @@ https://realpython.com/python-dictionary-comprehension/?utm_source=chatgpt.com
 
 19th july 
 - made some notes on coverting list comprehensions from for loops 
-- 
+- stumbled upon the concept of generators; they're used when handling huge 
+datasets that cannot be reasonably stored in memory 
+- learnt about the timeit library 
 
 
 
