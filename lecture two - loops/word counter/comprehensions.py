@@ -21,7 +21,7 @@ from helpers import get_words, save_counts
 
 def main():
     counts = {}
-    words = get_words("address.txt")
+    words = get_words("address.txt") # this counts title case words as separate, a new case-sensitive list needs to be created
 
     for word in words:
         if word in counts:

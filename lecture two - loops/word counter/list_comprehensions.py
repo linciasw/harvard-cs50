@@ -11,13 +11,59 @@ def main():
     counts = {}
     words = get_words("address.txt") # get_words creates a list
 
-    # list comprehension: to create a new list that's all lower case to ignore case
+    # list comprehension needed: to create a new list that's all lower case to ignore case
     # the program before was counting the title case words as separate
     # lowercase_words = [word.lower() for word in words]
 
     # narrower conditions 
     # lower case words that are > 4
     lowercase_words = [word.lower() for word in words if len(word) > 4]
+
+
+    """
+    a list comprehension is just a compact way of writing a for loop.
+    it's used for transforming, filtering and simplifying code. 
+
+    this list comprehension:
+    lowercase_words = [word.lower() for word in words if len(word) > 4] 
+
+    is equivalent to this for loop:
+    lowercase_words = []    # create an empty list first 
+    for word in words:      # got through every word 
+        if len(word) > 4:   # only keep words longer than 4 characters 
+            lowercase_words.append(word.lower())    # add the lowercase version 
+
+
+
+    the list comprehension has three parts:
+    - what to put in the new list: word.lower()
+    - where to get the values from: for word in words
+    - the condition: if len(word) > 4
+
+
+    a trick to use to read list comprehensions:
+    - read them from the middle outward:
+    instead of reading from left-to-right, think:
+    "for each word in words, if its length is greater than 4, put word.lower() into the new list."
+
+
+
+    most list comprehensions follow this pattern:
+    new_list = [do_something(item) for item in collection/iterable if condition]
+    
+    nb: do_something(item) could be a call to a method, 
+    or any other valid expression that returns a value
+
+    nb: the conditional in this list comprehension does filtering 
+
+
+    which expands to the below for loop:
+    new_list = []
+
+    for item in collection:
+        if condition:
+            new_list.append(do_something(item))
+    """
 
     # for word in words:
     for word in lowercase_words:

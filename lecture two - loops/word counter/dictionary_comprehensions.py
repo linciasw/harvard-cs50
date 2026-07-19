@@ -2,7 +2,7 @@
 
 """
 this program combines a list & dictionary comprehension 
-to cimplify the program into 4 lines as seen below.
+to simplify the program into 4 lines as seen below.
 
 
 the initial nest for, if loop is converted to a dictionary comprehension 
