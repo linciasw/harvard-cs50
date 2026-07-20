@@ -5,7 +5,7 @@ this program combines a list & dictionary comprehension
 to simplify the program into 4 lines as seen below.
 
 
-the initial nest for, if loop is converted to a dictionary comprehension 
+the initial nested for, if loop is converted to a dictionary comprehension 
 
 
     # nested for, if loop
