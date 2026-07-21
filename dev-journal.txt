@@ -269,7 +269,11 @@ datasets that cannot be reasonably stored in memory
 
 
 21st july
-- 
+- started exceptions
+- learnt about value errors, syntax errors
+- learnt about try & except 
+- defensive programming: thinking of what a malicious thing a user might do
+- started string methods shorts 
 
 
 

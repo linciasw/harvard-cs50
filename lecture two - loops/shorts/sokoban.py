@@ -1,4 +1,5 @@
 # LISTS METHODS
+# FROM CS50 SHORTS
 # append(), pop(), clear()
 
 # append(): to add items to the end of a list
