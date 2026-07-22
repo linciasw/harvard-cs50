@@ -276,6 +276,11 @@ datasets that cannot be reasonably stored in memory
 - started string methods shorts 
 
 
+22nd july 
+- finished string methods short
+- learnt a little about join()
+
+
 
  
 
