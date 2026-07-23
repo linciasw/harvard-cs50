@@ -288,6 +288,7 @@ datasets that cannot be reasonably stored in memory
 - watched the exceptions lecture a little bit
 - learnt about try, except NameError 
 - learnt how to fix NameError; by adding an else statement
+- learnt how to use a while loop with a try except block 
 
 
 
