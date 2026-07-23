@@ -282,6 +282,12 @@ datasets that cannot be reasonably stored in memory
 
 
 
+23rd july 
+- watched the string slicing short 
+- 
+
+
+
  
 
 
