@@ -41,6 +41,7 @@ learning material
 
 NEXT SESSION 
 - watch a video on list & dictionary comprehensions
+- research string slicing ie when would it be necessary
 - watch loops shorts, 10 of them 
 - read chapter on loops, python crash course
 - do 10 practice exercises, including 5 from problem sets 
@@ -284,7 +285,9 @@ datasets that cannot be reasonably stored in memory
 
 23rd july 
 - watched the string slicing short 
-- 
+- watched the exceptions lecture a little bit
+- learnt about try, except NameError 
+- learnt how to fix NameError; by adding an else statement
 
 
 
