@@ -1,3 +1,5 @@
+# LECTURE 
+
 # EXCEPTIONS
 # problems in your code 
 

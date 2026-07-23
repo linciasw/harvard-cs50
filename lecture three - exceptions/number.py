@@ -1,3 +1,5 @@
+# LECTURE
+
 # x = int(input("What's x? ")) # input is cat, the word
 # print(f"x is {x}")
 
@@ -16,16 +18,43 @@
 # TRY & EXCEPT 
 # to check if something unexpected has happened
 
+'''
 try:
     x = int(input("What's x? ")) 
 except ValueError:
     print("x is not an integer")
 
 print(f"x is {x}")
-
+'''
 
 # there is a way to catch all errors but this could 
 # potentially hide bugs in your code so try to 
 # explicitly state the type of error for except 
 # as much as possible
 
+
+#NameError 
+# name 'x' is not defined
+# nameError received with code above 
+# because of the order of operations:
+
+# When int(input(...)) raises a ValueError, 
+# execution jumps directly to the except block.
+# Since the assignment to x never completed, x doesn't exist. 
+# After the except block, your program still tries to execute:
+# print(f"x is {x}")
+# but there's no variable named x
+# to fix this, we can use the else keyword:
+
+try:
+    x = int(input("What's x? ")) 
+except ValueError:
+    print("x is not an integer")
+else:
+    print(f"x is {x}")
+
+
+
+# random information:
+# scope refers to the portion of code in which a variable exists 
+# input function always returns a string 
