@@ -292,9 +292,9 @@ datasets that cannot be reasonably stored in memory
 
 
 24th july 
-- watch the tuples short 
+- watched the tuples short 
 - learnt about tuples versus lists 
-- 
+- watched the while loops short
 
 
 
