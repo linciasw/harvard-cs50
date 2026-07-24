@@ -291,6 +291,12 @@ datasets that cannot be reasonably stored in memory
 - learnt how to use a while loop with a try except block 
 
 
+24th july 
+- watch the tuples short 
+- learnt about tuples versus lists 
+- 
+
+
 
  
 
