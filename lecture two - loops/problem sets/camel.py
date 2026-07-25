@@ -41,7 +41,7 @@ replace it with:
 def main():
     camel = input("camelCase: ")
 
-    snake = ""
+    snake = "" # create an empty string
 
     for letter in camel:
         if letter.isupper():

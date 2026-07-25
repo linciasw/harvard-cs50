@@ -298,7 +298,9 @@ datasets that cannot be reasonably stored in memory
 
 
 
- 
+ 25th july
+ - cameCase problem set
+ - learnt a little about string transformation 
 
 
 
