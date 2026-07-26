@@ -25,7 +25,7 @@ def main():
 
     while price > 0:
         print(f"Amount due: {price}")
-        coin = int(input(f"Insert coin: "))
+        coin = int(input("Insert coin: "))
 
         if coin == 25 or coin == 10 or coin == 5:
             price = price - coin

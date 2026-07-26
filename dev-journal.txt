@@ -306,7 +306,9 @@ datasets that cannot be reasonably stored in memory
 
  26th july 
  - started working on coke.py
- - 
+ - completed coke.py
+ - learnt a little more about when to choose a while loop versus a for loop
+ - learnt a little about the continue keyword
 
 
 
