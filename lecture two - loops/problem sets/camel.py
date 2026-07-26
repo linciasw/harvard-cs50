@@ -60,37 +60,37 @@ main()
 
 # USING A LIST + JOIN
 # this is the decomposed list comprehension seen below
-def main():
-    camel = input("camelCase: ")
+# def main():
+#     camel = input("camelCase: ")
 
-    snake = []
+#     snake = []
 
-    for letter in camel:
-        if letter.isupper():
-            snake.append("_")
-            snake.append(letter.lower())
-        else:
-            snake.append(letter)
+#     for letter in camel:
+#         if letter.isupper():
+#             snake.append("_")
+#             snake.append(letter.lower())
+#         else:
+#             snake.append(letter)
 
-    print("snake_case:", "".join(snake))
+#     print("snake_case:", "".join(snake))
 
 
-main()
+# main()
 
 
 
 
 # LIST COMPREHENSION
-def main():
-    camel = input("camelCase: ")
+# def main():
+#     camel = input("camelCase: ")
 
-    snake = "".join(
-        ["_" + letter.lower() if letter.isupper() else letter for letter in camel]
-    )
+#     snake = "".join(
+#         ["_" + letter.lower() if letter.isupper() else letter for letter in camel]
+#     )
 
-    print("snake_case:", snake)
+#     print("snake_case:", snake)
 
-main()
+# main()
 
 
 
