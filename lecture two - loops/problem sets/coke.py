@@ -5,6 +5,19 @@ Assume that the user will only input integers, and ignore any integer that isnâ€
 '''
 
 
+'''
+Use a while loop when you don't know how many repetitions.
+Use a for loop when you know the number of repetitions.
+In the problem below, we don't know how much coins the user
+would enter. It could be 2 25cents, 10 5 cents etc. 
+A while loop doesn't run a fixed number of timesâ€”it keeps checking a condition.
+continue means:
+"Stop this current loop iteration right now and go back to the top of the loop."
+but it's not necessary here. 
+the while loop runs until the end of the indentation and goes back to the top to
+check if price > 0 in all instances
+'''
+
 
 
 def main():
@@ -16,52 +29,10 @@ def main():
 
         if coin == 25 or coin == 10 or coin == 5:
             price = price - coin
-        else:
-            continue
+        # else:
+        #     continue
 
     print("Change owed: 0")
-
-
-
-
-
-    # while price > 0:
-    #     coin = int(input("Insert Coin: "))
-    #     change = price - coin
-    #     amount_due = 0
-
-
-    #     if coin == 25 or coin == 10 or coin == 5:
-    #         amount_due = price - change
-    #         print(f"Amount due: {amount_due}")
-    #         price = price - amount_due
-    #         print(price)
-    #     else:
-    #         continue
-
-
-            
-
-        # if amount_due > 0:
-        #     change = price - change
-        #     print(f"Amount due: {change}")
-        # else:
-        #     print("Changed owed: 0")
-
-
-
-
-
-        # if coin == 25 and change == 25:
-        #     print(f"Change due: {change}")
-        # elif coin == 10 and change == 40:
-        #     print(f"Change due: {change}")
-        # elif coin == 5 and change == 45:
-        #     print(f"Change due: {change}")
-        # elif coin 
-        # else:
-        #     change = 0
-        #     print("Change owed: 0")
 
 
 main()
