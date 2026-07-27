@@ -315,7 +315,8 @@ datasets that cannot be reasonably stored in memory
  27th july
  - completed twittr.py
  - encountered the "not in" operator 
- - 
+ - reviewed try, except a little 
+ - got an explanation for while True statement 
 
 
 
