@@ -2,10 +2,13 @@
 
 # x = int(input("What's x? ")) # input is cat, the word
 # print(f"x is {x}")
+# output is a ValueError: invalid literal for int() with base 10: 'cat'
+# This error occurs because you are passing the text string 'cat' into Python's int() function, 
+# which can only convert strings that contain numeric digits.
+# The Python int() built-in function expects a string literal that represents a valid base-10 whole number (like '123' or '-45'). 
+# Because letters like "c", "a",  and "t" have no numeric value in base-10, the interpreter throws a ValueError
 
 
-# value error
-# invalid literal for int() with base 10: 'hello'
 
 # error messages are written for comfortable programmers
 # write code with error handling in mind 
@@ -18,25 +21,15 @@
 
 # TRY & EXCEPT 
 # to check if something unexpected has happened
+# try:
+#     x = int(input("What's x? ")) # input is cat, the word
+# except ValueError:
+#     print("x is not an integer")
 
-'''
-try:
-    x = int(input("What's x? ")) 
-except ValueError:
-    print("x is not an integer")
+# print(f"x is {x}")
 
-print(f"x is {x}")
-'''
-
-# there is a way to catch all errors but this could 
-# potentially hide bugs in your code so try to 
-# explicitly state the type of error for except keyword
-# as much as possible
-
-
-# NameError 
-# name 'x' is not defined
-# nameError received with code above 
+# NameError: name 'x' is not defined
+# NameError received with code above 
 # because of the order of operations:
 
 # When int(input(...)) raises a ValueError, 
@@ -45,19 +38,26 @@ print(f"x is {x}")
 # After the except block, your program still tries to execute:
 # print(f"x is {x}")
 # but there's no variable named x
-# to fix this, we can use the else keyword:
-'''
-try:
-    x = int(input("What's x? ")) 
-except ValueError:
-    print("x is not an integer")
-else:
-    print(f"x is {x}")
-'''
+
+
+# to fix this, we can use the else keyword
+# if there is a ValueError, 
+# output will be "x is not an integer" and program will end however
+# if valid, it'll go the the else block
+# try:
+#     x = int(input("What's x? ")) 
+# except ValueError:
+#     print("x is not an integer")
+# else:
+#     print(f"x is {x}")
+
 
 
 # instead of ending the program after an invalid value is inputted, 
-# using the break keyword restarts the program 
+# using a while loop and the break keyword restarts the program 
+# while True: creates an infinite loop because the condition evaluating the loop is hardcoded to always be true. 
+# It will execute the code block inside it endlessly until it hits an explicit command to stop, 
+# like a break statement, a return statement, or an external system crash.
 # once a valid int value is inputted, break ends the while loop
 # essentially, the block will keep looping to the try statement until there's no valueError 
 # and only after it gets a value for x, it will go down to the else 
@@ -77,18 +77,21 @@ print(f"x is {x}")
 
 
 # you can also do this:
-while True:
-    try:
-        x = int(input("What's x? ")) 
-        break
-    except ValueError:
-        print("x is not an integer")
+# while True:
+#     try:
+#         x = int(input("What's x? ")) 
+#         break
+#     except ValueError:
+#         print("x is not an integer")
 
-
-print(f"x is {x}")
+# print(f"x is {x}")
 
 
 
 # random information:
 # scope refers to the portion of code in which a variable exists 
 # input function always returns a string 
+# there is a way to catch all errors but this could 
+# potentially hide bugs in your code so try to 
+# explicitly state the type of error for except keyword
+# as much as possible

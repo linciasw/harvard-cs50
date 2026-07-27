@@ -96,6 +96,10 @@
 #         break 
 
 
+# while True: creates an infinite loop because the condition evaluating the loop is hardcoded to always be true. 
+# It will execute the code block inside it endlessly until it hits an explicit command to stop, 
+# like a break statement, a return statement, or an external system crash.
+
 # alternatively:
 # while True:
 #     n = int(input("What's n? "))
