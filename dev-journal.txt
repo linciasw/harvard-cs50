@@ -312,6 +312,13 @@ datasets that cannot be reasonably stored in memory
 
 
 
+ 27th july
+ - completed twittr.py
+ - encountered the "not in" operator 
+ - 
+
+
+
 
 
 
