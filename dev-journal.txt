@@ -28,6 +28,18 @@ pep 8 python style guide
 https://peps.python.org/pep-0008/
 
 
+
+practice exercises 
+https://www.practicepython.org/
+
+
+
+automate the boring stuff with python
+https://automatetheboringstuff.com/#toc 
+
+
+
+
 learning material
 - watch harvard cs50 
 - read harvard cs50 notes
@@ -323,6 +335,11 @@ datasets that cannot be reasonably stored in memory
 28th july
 - worked on plates.py
 - learnt about isdigit(), isalnum() and isalpha()
+- started watching an alogrithm youtube playlist
+- watched a video on leet code 
+- finished watching how to think like a programmer, need to rewatch attentively
+- got a couple resources; practice python + automatetheboringstuff with python 
+- 
 
 
 
