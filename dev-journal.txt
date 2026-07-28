@@ -317,6 +317,13 @@ datasets that cannot be reasonably stored in memory
  - encountered the "not in" operator 
  - reviewed try, except a little 
  - got an explanation for while True statement 
+- started watching how to think like a programmer 
+
+
+28th july
+- worked on plates.py
+- learnt about isdigit(), isalnum() and isalpha()
+
 
 
 

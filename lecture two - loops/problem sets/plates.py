@@ -14,6 +14,10 @@ For example, AAA222 would be an acceptable … vanity plate; AAA22A would not be
 '''
 
 
+# a conditional with string slicing
+# AAA222
+
+
 def main():
     plate = input("Plate: ")
     if is_valid(plate):
@@ -23,7 +27,26 @@ def main():
 
 
 def is_valid(s):
-    ...
+
+    if s[0:2].isdigit(): 
+        return False
+    
+    if len(s) < 2 or len(s) > 6:
+        return False
+    
+    if not s.isalnum():
+        return False
+
+    if not s[:2].isalpha():
+        return False
+
+
+    for character in s:
+        if s[0:5] == "0":
+            return False
+
+
+        
 
 
 main()
