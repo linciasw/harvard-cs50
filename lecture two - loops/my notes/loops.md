@@ -1,16 +1,16 @@
 # Python Files Documentation
 
-A combined, sectioned reference covering all uploaded .py files, organized by topic.
+A combined, sectioned reference covering all uploaded .py files, organized by topic. Each section includes what the code does and an example of its output.
 
 ## Table of Contents
-- [Functions \& Program Structure](#functions--program-structure)
+- [Functions & Program Structure](#functions-program-structure)
   - [mario.py](#mariopy)
   - [letters.py](#letterspy)
-- [Loops (while \& for)](#loops-while--for)
+- [Loops (while & for)](#loops-while-for)
   - [cat.py](#catpy)
   - [coke.py](#cokepy)
   - [water.py](#waterpy)
-- [Lists \& List Methods](#lists--list-methods)
+- [Lists & List Methods](#lists-list-methods)
   - [results.py](#resultspy)
   - [sokoban.py](#sokobanpy)
 - [Dictionaries](#dictionaries)
@@ -107,6 +107,14 @@ The file preserves earlier iterations of the same idea, showing the thought proc
 #### Key Takeaway
 The core idea demonstrated here is **function decomposition**: as long as a function's name, parameters, and return behavior stay the same, its internal implementation can be rewritten freely without breaking any code that depends on it.
 
+#### Example Output
+
+```
+#####
+#####
+#####
+```
+
 ### letters.py
 
 
@@ -160,7 +168,21 @@ def write_letter(receiver, sender):
 #### Key Takeaway
 Whenever the same operation needs to run once per item in a collection, a `for name in names:` loop is generally more readable and maintainable than either manual repetition or an index-based loop with `range(len(...))`.
 
----
+#### Example Output
+
+One letter of four (for "Mario"):
+```
+    +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+        Dear Mario,
+
+        You are cordially invited to a ball at 
+        Peach's Castle this evening, 7:00 PM. 
+
+        Sincerely,
+        Princess Peach
+    +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+```
+(repeats for Luigi, Daisy, and Yoshi)
 
 ## Loops (while & for)
 
@@ -235,6 +257,16 @@ Takes the validated number and loops `n` times, printing `"meow"` on each pass. 
 #### Key Takeaway
 `while True` combined with a `return` or `break` is a common pattern for **validating user input**: keep asking until the input meets the required condition, then exit the loop naturally.
 
+#### Example Output
+
+Input: `3`
+```
+What's n? 3
+meow
+meow
+meow
+```
+
 ### coke.py
 
 
@@ -276,6 +308,17 @@ Note: the commented-out `else: continue` was considered but is unnecessary — r
 
 #### Key Takeaway
 Use a `for` loop when the number of repetitions is known ahead of time; use a `while` loop when repetition should continue until some condition changes, as with an unpredictable number of coin insertions.
+
+#### Example Output
+
+Inputs: `25`, then `25`
+```
+Amount due: 50
+Insert coin: 25
+Amount due: 25
+Insert coin: 25
+Change owed: 0
+```
 
 ### water.py
 
@@ -334,7 +377,17 @@ This doesn't track change over time, which is why the `while`-loop version repla
 #### Key Takeaway
 A `while` loop is the right tool when a program needs to keep repeating an action *until* some real-world or externally-driven condition changes, rather than for a predetermined number of times.
 
----
+#### Example Output
+
+Using sample moisture readings that happen to come in as 45%, 33%, 27%, then 18%:
+```
+Day 0: Moisture is 45%
+Day 1: Moisture is 33
+Day 2: Moisture is 27
+Day 3: Moisture is 18
+Time to water!
+```
+(Actual output will vary since `sample()` is meant to represent a live, changing sensor reading.)
 
 ## Lists & List Methods
 
@@ -386,6 +439,12 @@ print(results)
 #### Key Takeaway
 `append()` adds one item (even if that "item" is itself a list, it stays nested); `extend()` merges another iterable's *contents* in; `insert()` gives control over *where* an item lands; `reverse()` flips the whole list's order.
 
+#### Example Output
+
+```
+['Donkey Kong Jr', 'Toad', 'Koopa Troopa', 'Yoshi', 'Princess', 'Luigi', 'Mario', 'Bowser']
+```
+
 ### sokoban.py
 
 
@@ -431,7 +490,19 @@ main()
 #### Key Takeaway
 A list's *end* naturally models a "most recent action" stack: appending records new actions, and popping removes the most recently added one — the same underlying idea behind undo functionality in many applications.
 
----
+#### Example Output
+
+Inputs: `push box`, `push box`, `Undo`
+```
+Action: push box
+['push box']
+Action: push box
+['push box', 'push box']
+Action: Undo
+Undone: push box
+['push box']
+```
+(The program then keeps looping forever, asking for the next `Action:`, since there's no built-in exit command.)
 
 ## Dictionaries
 
@@ -495,6 +566,15 @@ The file builds up to this final structure step by step:
 #### Key Takeaway
 As the data a program needs to represent grows more complex (more fields per record), the data structure should grow with it: single list → dictionary → list of dictionaries.
 
+#### Example Output
+
+```
+Hermione, Gryffindor, Otter
+Harry, Gryffindor, Stag
+Ron, Gryffindor, Jack Russell terrier
+Draco, Gryffindor, None
+```
+
 ### distances.py
 
 
@@ -547,6 +627,16 @@ This version loops over the **keys** (`.keys()`) instead, using each name to loo
 
 #### Key Takeaway
 `.values()` is the right choice when a loop only needs a dictionary's values and doesn't care about which key each value belongs to; `.keys()` (paired with bracket lookup) is better when the key itself needs to appear in the output.
+
+#### Example Output
+
+```
+163 AU is 24384452924100 m
+136 AU is 20345310415200 m
+80 AU is 11967829656000 m
+58 AU is 8676676500600 m
+44 AU is 6582306310800 m
+```
 
 ### report.py
 
@@ -613,6 +703,18 @@ This earlier draft used direct bracket access (`spacecraft["name"]`) instead of 
 #### Key Takeaway
 When building a formatted report from a dictionary that might not have every field filled in, `.get(key, default)` is safer than direct bracket indexing, since it prevents the program from crashing on a missing key and instead substitutes a sensible placeholder.
 
+#### Example Output
+
+```
+    ============== REPORT =============
+
+    Name: James Webb Space Telescope
+    Distance: 0.01 AU     
+    Orbit: Sun   
+
+    ===================================
+```
+
 ### bee.py
 
 
@@ -671,6 +773,16 @@ This version actually plays the game:
 
 #### Key Takeaway
 `dict.items()` is the standard way to loop over both keys and values together; `dict.pop(key)` is useful whenever you need to both retrieve a value and remove its entry in a single operation (as with "using up" a guessed word so it can't be guessed again).
+
+#### Example Output
+
+```
+Welcome to Spelling Bee!
+PAIR was worth 4 points.
+HAIR was worth 4 points.
+CHAIR was worth 5 points.
+GRAPHIC was worth 7 points.
+```
 
 ### coreyschafer.py
 
@@ -737,6 +849,15 @@ Loops over every key-value pair in `student` and prints them together.
 #### Key Takeaway
 `del` and `.pop()` both remove a key-value pair, but `.pop()` is preferable when the removed value is still needed afterward, since it returns that value directly. `.get()` (with or without a default) is the safe way to look up a key that might not exist, avoiding a `KeyError`.
 
+#### Example Output
+
+```
+name John
+age 25
+courses {'CompSci', 'Math'}
+```
+(Set ordering isn't guaranteed, so `courses` may print in a different order on another run.)
+
 ### nutrition.py
 
 
@@ -797,7 +918,17 @@ Because the loop uses `break` inside an `else` branch, it stops checking as soon
 #### Key Takeaway
 Dictionaries are well-suited to "look something up by name" problems like this one, since each fruit name maps directly to its calorie value without needing to search through a list.
 
----
+#### Example Output
+
+Input `apple` (the first key in the dictionary) works correctly:
+```
+Item: apple
+Calories: 130
+```
+But input `banana` prints nothing at all after `Item: ` — this confirms the behavior described above: the loop hits `"apple"` first, `"banana"` != `"apple"`, and the `else: break` exits before ever checking the actual `"banana"` key.
+```
+Item: banana
+```
 
 ## Comprehensions
 
@@ -875,6 +1006,14 @@ This condenses the same logic (check each letter, transform it, join the results
 #### Key Takeaway
 All three versions implement identical logic at different levels of compactness: a manual `for` loop with string concatenation, a `for` loop building a list, and a one-line list comprehension. Choosing between them is a tradeoff between readability and conciseness rather than correctness.
 
+#### Example Output
+
+Input: `preferredFirstName`
+```
+camelCase: preferredFirstName
+snake_case: preferred_first_name
+```
+
 ### comprehensions.py
 
 
@@ -931,6 +1070,14 @@ main()
 
 #### Key Takeaway
 This is the baseline, most explicit version of the word-counting logic — a manually written accumulation loop — that later files in the series (`list_comprehensions.py`, `dictionary_comprehensions.py`) refine using comprehensions and case-normalization to fix the "title case counted separately" issue mentioned in the docstring.
+
+#### Example Output
+
+Using a small sample "address.txt" text:
+```
+Saved counts: {'Four': 1, 'score': 1, 'and': 2, 'seven': 1, 'years': 1, 'ago': 1, 'our': 1, 'fathers': 1, 'brought': 1, 'forth': 1, 'on': 1, 'this': 1, 'continent': 1, 'a': 1, 'new': 1, 'nation': 1, 'conceived': 1, 'in': 1, 'liberty': 1, 'dedicated': 1, 'to': 1, 'the': 1, 'proposition': 1, 'that': 1, 'all': 1, 'men': 1, 'are': 1, 'created': 1, 'equal': 1}
+```
+Every word is counted individually, and title-case/lowercase duplicates (e.g. any repeated capitalized word) would be counted separately here — the limitation the docstring mentions.
 
 ### list_comprehensions.py
 
@@ -1011,6 +1158,14 @@ The file notes there's no single hard rule for choosing between them — it come
 #### Key Takeaway
 List comprehensions are a compact way of expressing a "build a new list by transforming and/or filtering an existing collection" loop — but they express the exact same logic as a standard `for` loop, just condensed into one line.
 
+#### Example Output
+
+Using the same sample text (words > 4 characters, lowercased):
+```
+Saved counts: {'score': 1, 'seven': 1, 'years': 1, 'fathers': 1, 'brought': 1, 'forth': 1, 'continent': 1, 'nation': 1, 'conceived': 1, 'liberty': 1, 'dedicated': 1, 'proposition': 1, 'created': 1, 'equal': 1}
+```
+Shorter words (≤4 characters) like "our", "on", "a", "in", "to", "the", "all" are filtered out, and everything is already lowercased before counting.
+
 ### dictionary_comprehensions.py
 
 
@@ -1059,7 +1214,13 @@ Since `.count()` is called once per unique word (even though the loop runs over 
 #### Key Takeaway
 List comprehensions and dictionary comprehensions can be combined in sequence — first filtering/transforming data into a list, then aggregating that list into a dictionary — to express a task that started as an explicit multi-line loop (in `comprehensions.py`) in just two lines of comprehension logic.
 
----
+#### Example Output
+
+Same sample text, same filtering:
+```
+Saved counts: {'score': 1, 'seven': 1, 'years': 1, 'fathers': 1, 'brought': 1, 'forth': 1, 'continent': 1, 'nation': 1, 'conceived': 1, 'liberty': 1, 'dedicated': 1, 'proposition': 1, 'created': 1, 'equal': 1}
+```
+Identical result to `list_comprehensions.py` — same logic, expressed with a dictionary comprehension instead of a manual accumulation loop.
 
 ## Strings
 
@@ -1116,6 +1277,12 @@ Avatar: The Last Airbender, Ben 10, Arthur, Spongebob Squarepants, Phineas And F
 #### Key Takeaway
 String methods can be **chained** together to apply multiple transformations in one expression, which is a concise way to clean up inconsistently formatted text data.
 
+#### Example Output
+
+```
+Avatar: The Last Airbender, Ben 10, Arthur, Spongebob Squarepants, Phineas And Ferb, Kim Possible, Jimmy Neutron, The Proud Family
+```
+
 ### phone.py
 
 
@@ -1154,6 +1321,16 @@ Negative indices count from the *end* of the string backward (`-1` is the last c
 
 #### Key Takeaway
 When the part of a string you need is always at the *end*, slice using negative indices rather than hardcoded positive positions — it keeps the code correct even if content is added earlier in the string.
+
+#### Example Output
+
+```
+617
+617
+1000
+1000
+1000
+```
 
 ### twttr.py
 
@@ -1194,6 +1371,14 @@ Because `vowels` only contains lowercase letters, and the check is `letter not i
 
 #### Key Takeaway
 The `not in` operator is a clean way to check whether a value is absent from a collection — but it's case-sensitive, so exclusion lists built from lowercase values need the letter being tested to also be lowercased *before* the comparison, not just when appending it to the result.
+
+#### Example Output
+
+Input: `Hello World`
+```
+Input: Hello World
+hll wrld
+```
 
 ### plates.py
 
@@ -1252,7 +1437,14 @@ Reads the plate string, delegates the validation logic to `is_valid(plate)`, and
 #### Key Takeaway
 The individual rules are broken into separate `if` conditions inside one validating function — a common pattern for multi-rule validation — though this version highlights how easy it is for a rule (here, "no interior numbers" and "first number can't be 0") to be implemented in a way that doesn't actually enforce it, and for a function to be missing an explicit `return True` at the end.
 
----
+#### Example Output
+
+Input `AAA222` — per the stated rules this *should* print `Valid`, but running the code prints `Invalid` instead:
+```
+Plate: AAA222
+Invalid
+```
+This confirms the bug noted above: the function never reaches an explicit `return True` for a passing plate, so it implicitly returns `None`, which `if is_valid(plate):` treats as falsy.
 
 ## Tuples
 
@@ -1304,3 +1496,11 @@ The file's comments explain the reasoning:
 
 #### Key Takeaway
 Use a tuple instead of a list when the collection of values is fixed and shouldn't change after creation — it communicates intent (immutability) and is more memory-efficient.
+
+#### Example Output
+
+```
+56 bytes
+72 bytes
+```
+(Confirms the tuple takes up less memory than the equivalent list.)
