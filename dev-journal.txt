@@ -347,7 +347,9 @@ datasets that cannot be reasonably stored in memory
 
 
 29th july 
-- 
+- started and completed fruits.py
+- tried creating a markdown file, chatgpt was not cooperating
+- did some work on exception lecture
 
 
 

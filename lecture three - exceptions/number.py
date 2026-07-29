@@ -58,7 +58,8 @@
 # while True: creates an infinite loop because the condition evaluating the loop is hardcoded to always be true. 
 # It will execute the code block inside it endlessly until it hits an explicit command to stop, 
 # like a break statement, a return statement, or an external system crash.
-# once a valid int value is inputted, break ends the while loop
+# once a valid int value is inputted, the try block goes down 
+# to the break statement which ends the while loop
 # essentially, the block will keep looping to the try statement until there's no valueError 
 # and only after it gets a value for x, it will go down to the else 
 # you can generally use break to get out of any loop
@@ -76,7 +77,9 @@ print(f"x is {x}")
 
 
 
-# you can also do this:
+# you can also do the below.
+# if you don't break, it will stay in the loop
+# breaks are generally used in loops
 # while True:
 #     try:
 #         x = int(input("What's x? ")) 
@@ -87,7 +90,6 @@ print(f"x is {x}")
 # print(f"x is {x}")
 
 
-
 # random information:
 # scope refers to the portion of code in which a variable exists 
 # input function always returns a string 
@@ -95,3 +97,25 @@ print(f"x is {x}")
 # potentially hide bugs in your code so try to 
 # explicitly state the type of error for except keyword
 # as much as possible
+
+
+
+# if we want to abstract the function away, 
+# we can create a function to get integers from users 
+
+def main():
+    x = get_int()
+    print(f"x is {x}")
+
+
+def get_int():
+    while True:
+        try:
+            x = int(input("What's x? ")) 
+        except ValueError:
+            print("x is not an integer")
+        else:
+            return x
+
+main()
+
