@@ -39,6 +39,10 @@ https://automatetheboringstuff.com/#toc
 
 
 
+to visualize code 
+https://pythontutor.com/visualize.html#mode=display
+
+
 
 learning material
 - watch harvard cs50 
@@ -339,6 +343,10 @@ datasets that cannot be reasonably stored in memory
 - watched a video on leet code 
 - finished watching how to think like a programmer, need to rewatch attentively
 - got a couple resources; practice python + automatetheboringstuff with python 
+
+
+
+29th july 
 - 
 
 
