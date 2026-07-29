@@ -350,7 +350,11 @@ datasets that cannot be reasonably stored in memory
 - started and completed fruits.py
 - tried creating a markdown file, chatgpt was not cooperating
 - did some work on exception lecture
-- loops markdown file created 
+- loops markdown file created with claude, need to do first 3 lectures like that
+
+
+30th july
+- create markdown file for lecture zero, just to regenerate command 
 
 
 
