@@ -356,6 +356,7 @@ datasets that cannot be reasonably stored in memory
 30th july
 - create markdown file for lecture zero, just to regenerate command [DONE]
 - exceptions lecture finished 
+- added zeros to the folders, for them to display in order
 
 
 
