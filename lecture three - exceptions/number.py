@@ -108,14 +108,53 @@ def main():
     print(f"x is {x}")
 
 
+# def get_int():
+#     while True:
+#         try:
+#             x = int(input("What's x? ")) 
+#         except ValueError:
+#             print("x is not an integer")
+#         else:
+#             return x
+
+
+
+# tightening up the get_int() function
+# one way:
 def get_int():
     while True:
         try:
             x = int(input("What's x? ")) 
+            return x
         except ValueError:
             print("x is not an integer")
-        else:
-            return x
+
+
+# another way:
+def get_int():
+    while True:
+        try:
+            return int(input("What's x? ")) 
+        except ValueError:
+            print("x is not an integer")
+
+# which one is better depends on if you want readability
+# and understanding less than compact code 
+
+
+# the pass keyword
+# if you want to handle an exception in python
+# but you want to pass on doing anything with it 
+# ie you want to catch it but ignore it
+def get_int():
+    while True:
+        try:
+            return int(input("What's x? ")) 
+        except ValueError:
+            pass
 
 main()
 
+# indentation is baked into python 
+# the pythonic way of doing things is to try things, 
+# hope they work but if they don't, handle the exception 
