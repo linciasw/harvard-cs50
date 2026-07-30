@@ -44,6 +44,7 @@ https://pythontutor.com/visualize.html#mode=display
 
 
 
+
 learning material
 - watch harvard cs50 
 - read harvard cs50 notes
