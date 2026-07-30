@@ -103,8 +103,17 @@ print(f"x is {x}")
 # if we want to abstract the function away, 
 # we can create a function to get integers from users 
 
+# def main():
+#     x = get_int()
+#     print(f"x is {x}")
+
+
+# in an effort to make the code more reusable
+# and separate what the caller is doing (main) from 
+# what the callee (get_int) 
+# main() would be abile to create whatever variable the caller wants
 def main():
-    x = get_int()
+    x = get_int("What's x? ")
     print(f"x is {x}")
 
 
@@ -121,22 +130,22 @@ def main():
 
 # tightening up the get_int() function
 # one way:
-def get_int():
-    while True:
-        try:
-            x = int(input("What's x? ")) 
-            return x
-        except ValueError:
-            print("x is not an integer")
+# def get_int():
+#     while True:
+#         try:
+#             x = int(input("What's x? ")) 
+#             return x
+#         except ValueError:
+#             print("x is not an integer")
 
 
 # another way:
-def get_int():
-    while True:
-        try:
-            return int(input("What's x? ")) 
-        except ValueError:
-            print("x is not an integer")
+# def get_int():
+#     while True:
+#         try:
+#             return int(input("What's x? ")) 
+#         except ValueError:
+#             print("x is not an integer")
 
 # which one is better depends on if you want readability
 # and understanding less than compact code 
@@ -146,15 +155,34 @@ def get_int():
 # if you want to handle an exception in python
 # but you want to pass on doing anything with it 
 # ie you want to catch it but ignore it
-def get_int():
+# def get_int():
+#     while True:
+#         try:
+#             return int(input("What's x? ")) 
+#         except ValueError:
+#             pass
+
+
+
+# this makes the code more reusable using the main() function above
+# the caller can use any variable they want and it gets passed into get_int()
+# as an argument
+def get_int(prompt):
     while True:
         try:
-            return int(input("What's x? ")) 
+            return int(input(prompt)) 
         except ValueError:
             pass
+
 
 main()
 
 # indentation is baked into python 
-# the pythonic way of doing things is to try things, 
+
+# could get_int() have been done with a method isdigit()?
+# yes but the pythonic way of doing things is to try things, 
 # hope they work but if they don't, handle the exception 
+# it's up to you really
+
+# you can raise your own exceptions using the keyword raise
+# more on that another time
