@@ -354,11 +354,17 @@ datasets that cannot be reasonably stored in memory
 - loops markdown file created with claude, need to do first 3 lectures like that
 
 
+
 30th july
 - create markdown file for lecture zero, just to regenerate command [DONE]
 - exceptions lecture finished 
 - added zeros to the folders, for them to display in order
-- markdown files created for 3 practice exercises
+- markdown files created for 3 practice exercises; vacation expense calculator, compound interest calculator, loan installment calculator 
+
+
+
+31st july 
+- 
 
 
 
