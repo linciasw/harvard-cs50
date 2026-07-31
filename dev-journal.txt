@@ -366,7 +366,9 @@ datasets that cannot be reasonably stored in memory
 31st july 
 - did some work on the vacationExpense exercise
 - had to ask chatpgt how to create the menu option list 
-- 
+- realized i'm having problems with designing the program before i even start
+- start researching/reading on program design
+- created #program design markdown file
 
 
 

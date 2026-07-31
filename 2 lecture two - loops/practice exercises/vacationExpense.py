@@ -5,6 +5,8 @@ This is the industry standard for creating command-line interface (CLI) tools
 '''
 
 
+
+
 # In Python, functions need to be defined before they're called.
 # define all functions outside of main, call them within main.
 # that's the standard and recommended approach
