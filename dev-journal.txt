@@ -364,6 +364,8 @@ datasets that cannot be reasonably stored in memory
 
 
 31st july 
+- did some work on the vacationExpense exercise
+- had to ask chatpgt how to create the menu option list 
 - 
 
 

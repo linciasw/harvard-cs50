@@ -4,31 +4,43 @@ you use a while True loop paired with an input() statement and conditional if-el
 This is the industry standard for creating command-line interface (CLI) tools
 '''
 
+
 # In Python, functions need to be defined before they're called.
-# define all fnctions outside of main, call them within main.
+# define all functions outside of main, call them within main.
 # that's the standard and recommended approach
+
+trip = {}
+expense = []
 
 
 def create_trip():
-    destination = ""
-    days = 0
-    budget = 0
 
-    destination = input("Destination: ").lower()
-    days = int(input("Days: "))
-    budget = float(int("Budget: "))
+    trip["destination"] = input("Destination: ").strip()
+    trip["days"] = int(input("Days: "))
+    trip["budget"] = float(input("Budget: "))
+
+    print (
+    f"""
+    Trip created successfully!
+
+    Destination: {trip.get("destination")}
+    Trip Length (days): {trip.get("days")}      
+    Budget: ${trip.get("budget")}   
+    """
+    )
+
+    return 
+
+
+
+def add_expense():
+    
 
 
 
 
 
-
-
-
-
-
-
-def main_menu():
+def display_menu():
     # 1. Define the available options in a list
     menu_options = ["1", "2", "3", "4", "5", "6"]
 
@@ -64,7 +76,7 @@ def main_menu():
             view_total_spending()
         elif choice == "5":
             view_category_summary()
-        elif choice == "0":
+        elif choice == "6":
             break
 
 
@@ -74,7 +86,7 @@ def main_menu():
 
 def main():
 
-    main_menu()
+    display_menu()
 
 
 main()
