@@ -37,54 +37,69 @@ def create_trip():
 
 
 
+
+
+
 def add_expense():
 
-    categories = ["flight", "accomodation", "food", "activities", "transport", "esim"]
+    # categories = ["flight", "accomodation", "food", "activities", "transport", "esim"]
     expense = {}
 
 
+    category_choice = input("Enter category: ")
+    expense["Category"] = category_choice
+
+    description = input("Enter description: ")
+    expense["Description"] = description
+
+    amount = float(input("Enter amount: "))
+    expense["Amount"] = amount
 
     for key, value in expense.items():
+        print(key, value)
 
 
-        '''
-        How the below for loop works:
-        enumerate(categories) pairs each item with an index.
-        start=1 makes the numbering begin at 1 instead of Python's default of 0.
-        f"{number}. {category}" formats the output nicely.
-
-        Since you're starting to structure programs more cleanly, 
-        enumerate() is the standard Pythonic way to print numbered lists. It's something you'll use often.
-        '''
-        for number, category in enumerate(categories, start=1):
-            print(f"{number}. {category}")
-
-            category_choice = input("Choose expense category: ")
-            if category_choice in categories:
-                expense["category"] = choice
-            elif category_choice not in categories:
-                print("Invalid category! Please choose from list")
-            else: 
-                continue
+    expenses.append(expense)
 
 
-        
-        description = input("Enter description: ")
-        expense.update["Description": description]
+    # for key, value in expense.items():
 
 
-        amount = float(input("Enter amount: "))
-        expense.update["Amount": amount]
+    '''
+    How the below for loop works:
+    enumerate(categories) pairs each item with an index.
+    start=1 makes the numbering begin at 1 instead of Python's default of 0.
+    f"{number}. {category}" formats the output nicely.
 
+    Since you're starting to structure programs more cleanly, 
+    enumerate() is the standard Pythonic way to print numbered lists. It's something you'll use often.
+    '''
+        # for number, category in enumerate(categories, start=1):
+        #     print(f"{number}. {category}")
 
-        for key, value in expense.items():
-            print(key, value)
+        #     category_choice = input("Choose expense category: ")
+        #     if category_choice in categories:
+        #         expense["category"] = choice
+        #     elif category_choice not in categories:
+        #         print("Invalid category! Please choose from list")
+        #     else: 
+        #         continue
 
 
 
 
-    
+def view_expenses():
+    ... # TO DO
 
+
+
+def view_total_spending():
+    ... # TO DO 
+
+
+
+def view_category_summary():
+    ... # TO DO 
 
 
 
@@ -117,14 +132,19 @@ def display_menu():
 
         if choice == "1":
             create_trip()
+
         elif choice == "2":
             add_expense()
+
         elif choice == "3":
             view_expenses()
+
         elif choice == "4":
             view_total_spending()
+
         elif choice == "5":
             view_category_summary()
+
         elif choice == "6":
             break
 
