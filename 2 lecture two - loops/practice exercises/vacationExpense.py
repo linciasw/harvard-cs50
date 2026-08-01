@@ -11,8 +11,10 @@ This is the industry standard for creating command-line interface (CLI) tools
 # define all functions outside of main, call them within main.
 # that's the standard and recommended approach
 
+
+# all functions will be able to modify/access both these things
 trip = {}
-expense = []
+expenses = []
 
 
 def create_trip():
@@ -36,6 +38,51 @@ def create_trip():
 
 
 def add_expense():
+
+    categories = ["flight", "accomodation", "food", "activities", "transport", "esim"]
+    expense = {}
+
+
+
+    for key, value in expense.items():
+
+
+        '''
+        How the below for loop works:
+        enumerate(categories) pairs each item with an index.
+        start=1 makes the numbering begin at 1 instead of Python's default of 0.
+        f"{number}. {category}" formats the output nicely.
+
+        Since you're starting to structure programs more cleanly, 
+        enumerate() is the standard Pythonic way to print numbered lists. It's something you'll use often.
+        '''
+        for number, category in enumerate(categories, start=1):
+            print(f"{number}. {category}")
+
+            category_choice = input("Choose expense category: ")
+            if category_choice in categories:
+                expense["category"] = choice
+            elif category_choice not in categories:
+                print("Invalid category! Please choose from list")
+            else: 
+                continue
+
+
+        
+        description = input("Enter description: ")
+        expense.update["Description": description]
+
+
+        amount = float(input("Enter amount: "))
+        expense.update["Amount": amount]
+
+
+        for key, value in expense.items():
+            print(key, value)
+
+
+
+
     
 
 
@@ -89,6 +136,7 @@ def display_menu():
 def main():
 
     display_menu()
+
 
 
 main()
