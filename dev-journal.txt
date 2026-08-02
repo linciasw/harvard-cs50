@@ -385,6 +385,8 @@ datasets that cannot be reasonably stored in memory
 2nd august
 - started reading chapter 6 in python crash course
 - took some notes
+- read the entire of chapter 6 
+- got 10 exercises to help with dictionaries
 
 
 
