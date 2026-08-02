@@ -135,6 +135,29 @@ def view_total_spending():
 
 def view_category_summary():
     ... # TO DO 
+    # a for loop for expenses list with an if statement to match category and a += total
+    
+    # go through each expense dictionary and take each category key
+    # and add them to a new list
+    # then go through each expense dictionary again and 
+    # do a check to see if the key names in the new dictionary match 
+    # and if they do, add the corresponding amount to that key 
+    new_dictionary = {}
+
+    for expense in expenses:
+        category = expense["Category"]
+        amount = expense["Amount"]
+
+        if category not in new_dictionary:
+            new_dictionary[category] = 0
+
+
+        new_dictionary[category] += amount
+
+
+    print(new_dictionary)
+    
+
 
 
 
