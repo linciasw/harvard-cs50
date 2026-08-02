@@ -152,7 +152,7 @@ def view_category_summary():
             new_dictionary[category] = 0
 
 
-        new_dictionary[category] += amount
+        new_dictionary[category] += amount          # new_dictionary[category] = new_dictionary[category] + amount
 
 
     print(new_dictionary)

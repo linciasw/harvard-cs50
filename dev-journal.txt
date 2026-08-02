@@ -375,6 +375,10 @@ datasets that cannot be reasonably stored in memory
 - discovered top down program design 
 - used my 2025 journal to map out the top down design of the vacation expense tracker, it was a lot of fun  
 - worked on vacation expense a little bit, it's really difficult
+- finished vacationExpense.py
+- it was a lot of lists and dictionaries with loops, really challenging
+- need to do some exercises in loops with lists and dictionaries
+
 
 
 
