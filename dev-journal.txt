@@ -389,6 +389,11 @@ datasets that cannot be reasonably stored in memory
 - got 10 exercises to help with dictionaries
 
 
+3rd august
+- did 2 practice exercises for dictionaries_nested_lists
+- got some practice exercises for varied real world problems 
+
+
 
 
 

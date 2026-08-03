@@ -80,9 +80,9 @@ products = [
 
 
 # CORRECT
-for product in products:
-    if product["Price"] > 500:
-        print(product["Name"])
+# for product in products:
+#     if product["Price"] > 500:
+#         print(product["Name"])
 
 # Expected Output:
 # Laptop
@@ -108,6 +108,21 @@ transactions = [
 ]
 
 
+
+# CORRECT
+# new_dict = {}
+
+# for transaction in transactions:
+#     category = transaction["Category"]
+
+#     if transaction["Category"] not in new_dict:
+#         new_dict[category] = 1      # new_dict[transaction["Category"]] this line takes the value of transaction["Category"] and makes a new key in new_dict
+#     elif transaction["Category"] in new_dict:
+#         new_dict[category] = new_dict[category] + 1
+#     else:
+#         break
+
+# print(new_dict)
 
 
 # Expected Output:
@@ -136,6 +151,24 @@ students = [
     {"Name": "James", "Grade": 65},
     {"Name": "Lisa", "Grade": 90},
 ]
+
+
+# CORRECT
+# grade = {}
+
+# for student in students:
+#     name = student["Name"]
+#     score = student["Grade"]
+
+#     if name not in grade and score > 70:
+#         grade[name] = "Pass"
+#     elif name not in grade and score < 70:
+#         grade[name] = "Fail"
+#     else:
+#         break
+
+# print(grade)
+
 
 # Expected Output:
 # {
