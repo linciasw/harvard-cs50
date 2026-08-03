@@ -198,6 +198,71 @@ transactions = [
     {"Type": "Withdrawal", "Amount": 100},
 ]
 
+# CORRECT
+# rebuild the entire dictionary and use an accumulator
+# you're transforming the data into a new structure that's more useful for your goal.
+
+'''
+Think of it like this:
+Original (list of records)
+
+[
+  {"Type": "Deposit", "Amount": 1000},
+  {"Type": "Withdrawal", "Amount": 200},
+  {"Type": "Deposit", "Amount": 500},
+  {"Type": "Withdrawal", "Amount": 100}
+]
+
+           │
+           │ loop through each transaction
+           ▼
+
+New structure (summary)
+
+{
+    "Deposit": 1500,
+    "Withdrawal": 300
+}
+'''
+
+'''
+This pattern is one of the most important in programming:
+
+Raw data → Loop → Summary
+Raw data → Loop → Filtered data
+Raw data → Loop → Different data structure
+
+You'll use it constantly in data analysis, backend development, and machine learning preprocessing.
+
+In fact, many real-world programs follow this exact workflow:
+
+Read raw data (CSV, JSON, database, API).
+Loop through each record.
+Build one or more new dictionaries/lists that are easier to work with.
+Use those new structures to calculate totals, generate reports, create charts, or feed into another system.
+This is one of the fundamental patterns behind data processing
+'''
+
+
+# new_dict = {}
+
+# for transaction in transactions:
+#     type = transaction["Type"]
+#     amount = transaction["Amount"]
+
+#     if type not in new_dict:
+#         new_dict[type] = amount
+#     else:
+#         new_dict[type] = new_dict[type] + amount              # new_dict[type] += amount
+
+
+# balance = new_dict["Deposit"] - new_dict["Withdrawal"]
+
+
+# print(f"Deposits: {new_dict["Deposit"]}")
+# print(f"Withdrawals: {new_dict["Withdrawal"]}")
+# print(f"Balance: {balance}")
+
 # Expected Output:
 # Deposits: 1500
 # Withdrawals: 300
