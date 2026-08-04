@@ -406,7 +406,7 @@ datasets that cannot be reasonably stored in memory
 4th august
 - did 2 practice exercises
 - max value, total value loops for a dictionary
-- 
+-  
 
 
 

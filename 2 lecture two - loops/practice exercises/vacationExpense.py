@@ -121,7 +121,7 @@ def view_total_spending():
     print(f"Budget: ${trip["budget"]}")
      
     for expense in expenses:
-        amount += expense["Amount"]
+        expense["Amount"] += amount
 
     print(f"Total spending: ${amount}")
 

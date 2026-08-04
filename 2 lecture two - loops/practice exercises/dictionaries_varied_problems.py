@@ -26,7 +26,18 @@ user = {
 }
 
 
+# 1
+# print(user["name"])
 
+# 2
+# user["age"] = user["age"] + 1
+# print(user["age"])
+
+# 3
+# user["city"] = "San Fernando"
+
+# 4
+# print(user)
 
 
 
@@ -44,10 +55,34 @@ user = {
 # 4. Remove "Eggs".
 # ==========================================================
 
+
+
 cart = {
     "customer": "Sarah",
     "items": ["Bread", "Eggs", "Butter"]
 }
+
+
+print(cart["items"])
+
+grocery_items = cart["items"]
+amount = 0
+
+for items in grocery_items:
+    amount += 1
+    
+
+print(amount)
+
+
+
+print(cart)
+
+
+
+
+
+
 
 
 # ==========================================================
