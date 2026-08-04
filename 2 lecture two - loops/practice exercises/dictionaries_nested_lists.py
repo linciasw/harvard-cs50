@@ -198,6 +198,15 @@ transactions = [
     {"Type": "Withdrawal", "Amount": 100},
 ]
 
+
+new_transactions = {}
+
+for transaction in transactions:
+    if transaction["Amount"] not in new_transactions:
+        
+
+
+
 # Expected Output:
 # Deposits: 1500
 # Withdrawals: 300
