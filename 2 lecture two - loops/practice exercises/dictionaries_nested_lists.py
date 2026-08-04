@@ -287,6 +287,23 @@ expenses = [
     {"Category": "Bills", "Amount": 500},
 ]
 
+
+# CORRECT
+# new_dict = {}
+
+# for expense in expenses:
+#     category = expense["Category"] 
+#     amount = expense["Amount"]
+
+#     if category not in new_dict:
+#         new_dict[category] = amount
+#     elif category in new_dict:
+#         new_dict[category] += amount
+
+# print(new_dict)
+
+
+
 # Expected Output:
 # {
 #     "Food": 80,
@@ -311,6 +328,24 @@ employees = [
     {"Name": "Mike", "Department": "IT"},
     {"Name": "Lisa", "Department": "Finance"},
 ]
+
+
+# CORRECT
+# new_dict = {}
+
+# for employee in employees:
+#     department = employee["Department"]
+#     amount = 1
+
+
+#     if department not in new_dict:
+#         new_dict[department] = amount
+#     else:
+#         new_dict[department] += amount
+
+
+# print(new_dict)
+
 
 # Expected Output:
 # {
@@ -339,6 +374,49 @@ sales = [
     {"Region": "North", "Amount": 300},
     {"Region": "East", "Amount": 900},
 ]
+
+
+new_dict = {}
+
+for sale in sales:
+    region = sale["Region"]
+    amount = sale["Amount"]
+    
+
+    if region not in new_dict:
+        new_dict[region] = amount
+    else:
+        new_dict[region] += amount
+
+print(new_dict)
+
+
+
+# to find the highest-selling region
+for key, value in new_dict.items():
+    max_value = 0
+    max_key = None
+
+    if value > max_value:
+        max_value = value
+        max_key = key
+
+
+print(f"Highest-selling region: {max_key}")
+
+
+
+
+# to calculate total sales of all regions
+total_sum = 0
+
+for total in new_dict.values():
+    total_sum += total
+
+print(total_sum)
+
+
+
 
 # Expected Output:
 # {

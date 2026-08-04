@@ -395,7 +395,13 @@ datasets that cannot be reasonably stored in memory
 - did 2 practice exercises for dictionaries_nested_lists
 - got some practice exercises for varied real world problems 
 - i think dictionaries are finally clicking, you're just creating a new dictionary and doing operations on it
+- learnt a bit about certain key concepts
+- mutable versus immutable, args versus kwargs, nested list comprehensions, arguments versus parameters; tech with time
 
+
+4th august
+- did 2 practice exercises
+- max value, total value loops for a dictionary
 
 
 
