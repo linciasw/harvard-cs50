@@ -198,6 +198,7 @@ transactions = [
     {"Type": "Withdrawal", "Amount": 100},
 ]
 
+<<<<<<< HEAD
 
 new_transactions = {}
 
@@ -206,6 +207,72 @@ for transaction in transactions:
         
 
 
+=======
+# CORRECT
+# rebuild the entire dictionary and use an accumulator
+# you're transforming the data into a new structure that's more useful for your goal.
+
+'''
+Think of it like this:
+Original (list of records)
+
+[
+  {"Type": "Deposit", "Amount": 1000},
+  {"Type": "Withdrawal", "Amount": 200},
+  {"Type": "Deposit", "Amount": 500},
+  {"Type": "Withdrawal", "Amount": 100}
+]
+
+           │
+           │ loop through each transaction
+           ▼
+
+New structure (summary)
+
+{
+    "Deposit": 1500,
+    "Withdrawal": 300
+}
+'''
+
+'''
+This pattern is one of the most important in programming:
+
+Raw data → Loop → Summary
+Raw data → Loop → Filtered data
+Raw data → Loop → Different data structure
+
+You'll use it constantly in data analysis, backend development, and machine learning preprocessing.
+
+In fact, many real-world programs follow this exact workflow:
+
+Read raw data (CSV, JSON, database, API).
+Loop through each record.
+Build one or more new dictionaries/lists that are easier to work with.
+Use those new structures to calculate totals, generate reports, create charts, or feed into another system.
+This is one of the fundamental patterns behind data processing
+'''
+
+
+# new_dict = {}
+
+# for transaction in transactions:
+#     type = transaction["Type"]
+#     amount = transaction["Amount"]
+
+#     if type not in new_dict:
+#         new_dict[type] = amount
+#     else:
+#         new_dict[type] = new_dict[type] + amount              # new_dict[type] += amount
+
+
+# balance = new_dict["Deposit"] - new_dict["Withdrawal"]
+
+
+# print(f"Deposits: {new_dict["Deposit"]}")
+# print(f"Withdrawals: {new_dict["Withdrawal"]}")
+# print(f"Balance: {balance}")
+>>>>>>> 48cad34e2a23a607fe788be4f47fddffac0bddcf
 
 # Expected Output:
 # Deposits: 1500
@@ -231,6 +298,23 @@ expenses = [
     {"Category": "Bills", "Amount": 500},
 ]
 
+
+# CORRECT
+# new_dict = {}
+
+# for expense in expenses:
+#     category = expense["Category"] 
+#     amount = expense["Amount"]
+
+#     if category not in new_dict:
+#         new_dict[category] = amount
+#     elif category in new_dict:
+#         new_dict[category] += amount
+
+# print(new_dict)
+
+
+
 # Expected Output:
 # {
 #     "Food": 80,
@@ -255,6 +339,24 @@ employees = [
     {"Name": "Mike", "Department": "IT"},
     {"Name": "Lisa", "Department": "Finance"},
 ]
+
+
+# CORRECT
+# new_dict = {}
+
+# for employee in employees:
+#     department = employee["Department"]
+#     amount = 1
+
+
+#     if department not in new_dict:
+#         new_dict[department] = amount
+#     else:
+#         new_dict[department] += amount
+
+
+# print(new_dict)
+
 
 # Expected Output:
 # {
@@ -283,6 +385,49 @@ sales = [
     {"Region": "North", "Amount": 300},
     {"Region": "East", "Amount": 900},
 ]
+
+
+new_dict = {}
+
+for sale in sales:
+    region = sale["Region"]
+    amount = sale["Amount"]
+    
+
+    if region not in new_dict:
+        new_dict[region] = amount
+    else:
+        new_dict[region] += amount
+
+print(new_dict)
+
+
+
+# to find the highest-selling region
+for key, value in new_dict.items():
+    max_value = 0
+    max_key = None
+
+    if value > max_value:
+        max_value = value
+        max_key = key
+
+
+print(f"Highest-selling region: {max_key}")
+
+
+
+
+# to calculate total sales of all regions
+total_sum = 0
+
+for total in new_dict.values():
+    total_sum += total
+
+print(total_sum)
+
+
+
 
 # Expected Output:
 # {

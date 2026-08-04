@@ -57,9 +57,11 @@ learning material
 
 
 NEXT SESSION 
+- finish make notes on python crash course chapter on dictionaries
+- read documentation on dictionaries
+- read documentation on exceptions
 - watch a video on list & dictionary comprehensions
 - research string slicing ie when would it be necessary
-- watch loops shorts, 10 of them 
 - read chapter on loops, python crash course
 - do 10 practice exercises, including 5 from problem sets 
 - transfer notes on identity is from picture on phone 
@@ -392,8 +394,19 @@ datasets that cannot be reasonably stored in memory
 3rd august
 - did 2 practice exercises for dictionaries_nested_lists
 - got some practice exercises for varied real world problems 
+<<<<<<< HEAD
 - 
+=======
+- i think dictionaries are finally clicking, you're just creating a new dictionary and doing operations on it
+- learnt a bit about certain key concepts
+- mutable versus immutable, args versus kwargs, nested list comprehensions, arguments versus parameters; tech with time
+>>>>>>> 48cad34e2a23a607fe788be4f47fddffac0bddcf
 
+
+4th august
+- did 2 practice exercises
+- max value, total value loops for a dictionary
+- 
 
 
 
