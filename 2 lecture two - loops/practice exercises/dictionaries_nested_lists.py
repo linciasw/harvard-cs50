@@ -198,7 +198,6 @@ transactions = [
     {"Type": "Withdrawal", "Amount": 100},
 ]
 
-<<<<<<< HEAD
 
 new_transactions = {}
 
@@ -207,7 +206,6 @@ for transaction in transactions:
         
 
 
-=======
 # CORRECT
 # rebuild the entire dictionary and use an accumulator
 # you're transforming the data into a new structure that's more useful for your goal.
@@ -272,7 +270,6 @@ This is one of the fundamental patterns behind data processing
 # print(f"Deposits: {new_dict["Deposit"]}")
 # print(f"Withdrawals: {new_dict["Withdrawal"]}")
 # print(f"Balance: {balance}")
->>>>>>> 48cad34e2a23a607fe788be4f47fddffac0bddcf
 
 # Expected Output:
 # Deposits: 1500
@@ -387,44 +384,44 @@ sales = [
 ]
 
 
-new_dict = {}
+# new_dict = {}
 
-for sale in sales:
-    region = sale["Region"]
-    amount = sale["Amount"]
+# for sale in sales:
+#     region = sale["Region"]
+#     amount = sale["Amount"]
     
 
-    if region not in new_dict:
-        new_dict[region] = amount
-    else:
-        new_dict[region] += amount
+#     if region not in new_dict:
+#         new_dict[region] = amount
+#     else:
+#         new_dict[region] += amount
 
-print(new_dict)
+# print(new_dict)
 
 
 
 # to find the highest-selling region
-for key, value in new_dict.items():
-    max_value = 0
-    max_key = None
+# for key, value in new_dict.items():
+#     max_value = 0
+#     max_key = None
 
-    if value > max_value:
-        max_value = value
-        max_key = key
-
-
-print(f"Highest-selling region: {max_key}")
+#     if value > max_value:
+#         max_value = value
+#         max_key = key
 
 
+# print(f"Highest-selling region: {max_key}")
 
 
-# to calculate total sales of all regions
-total_sum = 0
 
-for total in new_dict.values():
-    total_sum += total
 
-print(total_sum)
+# # to calculate total sales of all regions
+# total_sum = 0
+
+# for total in new_dict.values():
+#     total_sum += total
+
+# print(total_sum)
 
 
 
