@@ -390,7 +390,6 @@ sales = [
 #     region = sale["Region"]
 #     amount = sale["Amount"]
     
-
 #     if region not in new_dict:
 #         new_dict[region] = amount
 #     else:

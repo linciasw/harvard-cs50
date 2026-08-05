@@ -97,12 +97,34 @@ cart = {
 # 4. Sort the skills alphabetically.
 # ==========================================================
 
-employee = {
-    "name": "James",
-    "skills": ["Excel", "SQL", "Power BI"]
-}
+
+# CORRECT
+# employee = {
+#     "name": "James",
+#     "skills": ["Excel", "SQL", "Power BI"]
+# }
+
+# skills = employee["skills"] 
+
+# 1. Print every skill.
+# print(employee["skills"])
 
 
+# 2. Check if "Python" exists.
+# if "Python" in skills:
+#     print("Python does exist!")
+# else:
+#     print("Python does not exist!")
+
+
+# 3. Add "Docker".
+# skills.append("Docker")
+# print(skills)
+
+
+# 4. Sort the skills alphabetically.
+# skills.sort()
+# print(skills)
 
 
 
@@ -125,6 +147,40 @@ grades = {
     "Science": 90,
     "History": 80
 }
+
+
+
+# 1. Print each subject and grade.
+# for subject, grade in grades.items(): 
+#     print(f"{subject}: {grade}")
+
+
+
+# 2. Find the highest grade.
+# max_value = 0
+
+# for grade in grades.values():
+#     if grade > max_value:
+#         max_value = grade
+
+
+# print(f"Highest grade: {max_value}")
+
+
+# 3. Calculate the average 
+# amount = 0 
+
+# for key, grade in grades.items():
+#     amount += grade
+
+#     print(amount)
+
+#     average = amount / 4 
+
+# print(f"Average of all grades: {average}")
+
+
+
 
 
 # ==========================================================
