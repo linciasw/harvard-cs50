@@ -201,8 +201,6 @@ transactions = [
 
 new_transactions = {}
 
-for transaction in transactions:
-    if transaction["Amount"] not in new_transactions:
         
 
 
@@ -343,13 +341,11 @@ employees = [
 
 # for employee in employees:
 #     department = employee["Department"]
-#     amount = 1
-
 
 #     if department not in new_dict:
-#         new_dict[department] = amount
+#         new_dict[department] = 1
 #     else:
-#         new_dict[department] += amount
+#         new_dict[department] += 1
 
 
 # print(new_dict)
@@ -400,16 +396,19 @@ sales = [
 
 
 # to find the highest-selling region
+
+# max_key = key
+
 # for key, value in new_dict.items():
 #     max_value = 0
-#     max_key = None
+#     max_key = key
 
 #     if value > max_value:
 #         max_value = value
 #         max_key = key
 
 
-# print(f"Highest-selling region: {max_key}")
+# print(f"Highest-selling region: {key}")
 
 
 

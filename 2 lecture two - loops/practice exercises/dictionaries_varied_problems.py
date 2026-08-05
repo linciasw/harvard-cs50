@@ -292,20 +292,40 @@ transactions = account["transactions"]
 
 # 4. Count deposits.
 # 5. Count withdrawals.
-deposit_amount = 0
-withdrawal_amount = 0
+# deposit_amount = 0
+# withdrawal_amount = 0
 
-for transaction in transactions:
-    type = transaction["type"]
+# for transaction in transactions:
+#     type = transaction["type"]
 
 
-    if type == "Deposit":
-        deposit_amount += 1
-    elif type == "Withdrawal":
-        withdrawal_amount += 1
+#     if type == "Deposit":
+#         deposit_amount += 1
+#     elif type == "Withdrawal":
+#         withdrawal_amount += 1
         
-print(deposit_amount)
-print(withdrawal_amount)
+# print(deposit_amount)
+# print(withdrawal_amount)
+
+'''
+You usually do not put counter = 0 inside a for loop. You put it before the loop.
+When would you initialize something inside a loop?
+You do this when you want a fresh variable for each iteration.
+See code below for an example:
+
+students = {
+    "Alice": [80, 90, 100],
+    "Bob": [70, 75, 85]
+}
+
+for student in students:
+    total = 0          # New total for THIS student
+
+    for score in students[student]:
+        total += score
+
+    print(student, total)
+'''
 
 
 
