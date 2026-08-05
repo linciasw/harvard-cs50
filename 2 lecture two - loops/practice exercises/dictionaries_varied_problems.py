@@ -171,7 +171,7 @@ grades = {
 # amount = 0 
 
 # for key, grade in grades.items():
-#     amount += grade
+#     amount += grade           # amount = amount + grade
 
 #     print(amount)
 
@@ -207,6 +207,28 @@ config = {
 }
 
 
+
+# 1.
+#print(config["host"])
+
+
+# 2. 
+# database = config["database"]
+# print(database["name"])
+
+
+# 3.
+# config["debug"] = False
+# print(config)
+
+
+# 4.
+# database["password"] = "Password!23"
+# print(config)
+
+
+
+
 # ==========================================================
 # Exercise 6 - Bank Customer
 #
@@ -231,6 +253,60 @@ account = {
         {"type": "Deposit", "amount": 400}
     ]
 }
+
+
+# 1. Print the account holder.
+# print(account["holder"])
+
+
+# 2. Print every transaction.
+transactions = account["transactions"]
+
+# for transaction in transactions:
+#     print(transaction)
+
+
+# 3. Calculate the account balance.
+# total_deposits = 0
+# total_withdrawals = 0
+
+# for transaction in transactions:
+#     type = transaction["type"]
+#     amount = transaction["amount"]
+
+#     if type == "Deposit":
+#         total_deposits += amount
+#     else:
+#         total_withdrawals += amount
+
+
+# DEBUGGING
+# print(total_withdrawals)
+# print(total_deposits)
+
+# balance = total_deposits - total_withdrawals
+# print(f"Account balance: {balance}")
+
+
+
+
+# 4. Count deposits.
+# 5. Count withdrawals.
+deposit_amount = 0
+withdrawal_amount = 0
+
+for transaction in transactions:
+    type = transaction["type"]
+
+
+    if type == "Deposit":
+        deposit_amount += 1
+    elif type == "Withdrawal":
+        withdrawal_amount += 1
+        
+print(deposit_amount)
+print(withdrawal_amount)
+
 
 
 # ==========================================================
