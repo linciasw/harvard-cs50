@@ -52,21 +52,9 @@ learning material
 - read textbooks 
 - read documentation
 - do harvard problem sets after each video lesson 
-- get chatgpt exercise
+- get chatgpt exercises
 
 
-
-NEXT SESSION 
-- finish make notes on python crash course chapter on dictionaries
-- read documentation on dictionaries
-- read documentation on exceptions
-- watch a video on list & dictionary comprehensions
-- research string slicing ie when would it be necessary
-- read chapter on loops, python crash course
-- do 10 practice exercises, including 5 from problem sets 
-- transfer notes on identity is from picture on phone 
-- research how to read documentation
-- research python style guide
 
 
 
@@ -406,7 +394,13 @@ datasets that cannot be reasonably stored in memory
 4th august
 - did 2 practice exercises
 - max value, total value loops for a dictionary
--  
+- learnt a couple list methods to help with nested dictionary exercises
+
+
+05th august
+- finished an exercise
+- created a separate to-do list to help with studying
+- 
 
 
 

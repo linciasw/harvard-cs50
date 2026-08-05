@@ -1,0 +1,17 @@
+
+
+NEXT SESSION 
+- research print() 
+- finish make notes on python crash course chapter on dictionaries
+- continue exercises for dictionary; 2x a day
+- get some exercises for lists
+- finish shorts for exceptions
+- research how to do read documentation
+- read documentation on dictionaries
+- read documentation on exceptions
+- watch a video on list & dictionary comprehensions
+- research string slicing ie when would it be necessary
+- read chapter on loops, python crash course
+- do 10 practice exercises, including 5 from problem sets 
+- transfer notes on identity is from picture on phone 
+- research python style guide; PEP8
