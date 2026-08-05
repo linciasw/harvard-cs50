@@ -62,24 +62,23 @@ cart = {
     "items": ["Bread", "Eggs", "Butter"]
 }
 
+# CORRECT
+# print(cart["items"])
 
-print(cart["items"])
+# grocery_items = cart["items"]
+# amount = 0
 
-grocery_items = cart["items"]
-amount = 0
-
-for items in grocery_items:
-    amount += 1
+# for items in grocery_items:
+#     amount += 1
     
-
-print(amount)
-
+# print(amount)
 
 
-print(cart)
+# grocery_items.append("Milk")
+# print(cart)
 
-
-
+# grocery_items.remove("Eggs")
+# print(cart)
 
 
 
@@ -102,6 +101,10 @@ employee = {
     "name": "James",
     "skills": ["Excel", "SQL", "Power BI"]
 }
+
+
+
+
 
 
 # ==========================================================
