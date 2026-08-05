@@ -382,13 +382,9 @@ datasets that cannot be reasonably stored in memory
 3rd august
 - did 2 practice exercises for dictionaries_nested_lists
 - got some practice exercises for varied real world problems 
-<<<<<<< HEAD
-- 
-=======
 - i think dictionaries are finally clicking, you're just creating a new dictionary and doing operations on it
 - learnt a bit about certain key concepts
 - mutable versus immutable, args versus kwargs, nested list comprehensions, arguments versus parameters; tech with time
->>>>>>> 48cad34e2a23a607fe788be4f47fddffac0bddcf
 
 
 4th august
@@ -400,7 +396,9 @@ datasets that cannot be reasonably stored in memory
 05th august
 - finished an exercise
 - created a separate to-do list to help with studying
-- 
+- did some more practice exercises
+- decided to finish the practice exercises and the exceptions shorts before moving on to random things and exceptions problem sets
+
 
 
 
