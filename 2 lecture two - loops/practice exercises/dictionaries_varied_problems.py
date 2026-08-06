@@ -350,6 +350,36 @@ school = {
     ]
 }
 
+# 1. Print every student's name.
+# students = school["students"] 
+# print(students)
+
+
+# 2. Find the oldest student.
+# max_value = 0
+
+# for student in students:
+#     if student["age"] > max_value:
+#         max_value = student["age"]
+
+# print(max_value)
+    
+
+
+# 3. Calculate the average age.
+# total_age = 0 
+# average_age = 0
+# count = 0
+
+# for student in students:
+#     count += 1
+#     total_age += student["age"] 
+
+# average_age = total_age / count
+
+# print(average_age)
+
+
 
 # ==========================================================
 # Exercise 8 - Company Departments
@@ -378,6 +408,34 @@ company = {
         "employees": 5
     }
 }
+
+
+# 1. Print every department.
+# print(company)
+
+
+
+# 2. Print the manager of IT.
+# print(company["IT"]["manager"])
+
+
+
+# 3. Count employees in each department.
+# ??
+
+
+# 4. Find the department with the most employees.
+max_value = 0
+
+for key, value in company.items():
+    print(key)
+    print(value)
+
+    if value["employees"] > max_value:
+        max_value = value
+
+        
+print(max_value)
 
 
 # ==========================================================
