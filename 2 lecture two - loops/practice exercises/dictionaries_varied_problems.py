@@ -482,27 +482,21 @@ response = {
 
 # 3. Print each forecast day.
 forecast = response["forecast"]
-print(forecast)
+# print(forecast)
 
-for day in forecast:
-    print(day)
-
-
-# 4. Find the hottest forecast.
-max_value = 0
-temp = forecast["temp"]
-
-print(forecast["temp"])
-
-for day in forecast:
-    if temp > max_value:
-        max_value = temp
+# for day in forecast:
+#     print(day)
 
 
-print(max_value)
+# # 4. Find the hottest forecast.
+# max_value = 0 
+
+# for temp in forecast:
+#     if temp["temp"] > max_value:
+#         max_value = temp["temp"]
 
 
-
+# print(max_value)
 
 
 

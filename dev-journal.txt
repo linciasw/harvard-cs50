@@ -402,6 +402,9 @@ datasets that cannot be reasonably stored in memory
 
 6th august
 - learnt how to use the debugging thing on the side bar
+- solved some dictionary exercises, feels good
+- realizing the same alogrithms like things for finding the highest value, counting things etc keep recurring
+- 
 
 
 
