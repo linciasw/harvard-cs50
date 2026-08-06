@@ -410,6 +410,8 @@ company = {
 }
 
 
+# print(company.items())
+
 # 1. Print every department.
 # print(company)
 
@@ -425,16 +427,20 @@ company = {
 
 
 # 4. Find the department with the most employees.
-max_value = 0
+# max_value = 0
+# largest_department = None
 
-for key, value in company.items():
-    print(key)
-    print(value)
+# for key, value in company.items():
+    # print(key)
+    # print(value)
 
-    if value["employees"] > max_value:
-        max_value = value
+#     if value["employees"] > max_value:
+#         max_value = value["employees"]
+#         largest_department = key
         
-print(max_value)
+# print(f"Largest department is {key} with {max_value}")
+
+
 
 
 # ==========================================================
@@ -465,6 +471,19 @@ response = {
         {"day": "Wednesday", "temp": 29}
     ]
 }
+
+# 1. Print the weather.
+# print(response["current"]["weather"])
+
+
+# 2. Print the temperature.
+# print(response["current"]["temperature"])
+
+
+# 3. Print each forecast day.
+
+
+
 
 
 # ==========================================================
