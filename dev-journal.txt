@@ -393,11 +393,16 @@ datasets that cannot be reasonably stored in memory
 - learnt a couple list methods to help with nested dictionary exercises
 
 
-05th august
+5th august
 - finished an exercise
 - created a separate to-do list to help with studying
 - did some more practice exercises
 - decided to finish the practice exercises and the exceptions shorts before moving on to random things and exceptions problem sets
+
+
+6th august
+- learnt how to use the debugging thing on the side bar
+
 
 
 
