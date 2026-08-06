@@ -404,7 +404,10 @@ datasets that cannot be reasonably stored in memory
 - learnt how to use the debugging thing on the side bar
 - solved some dictionary exercises, feels good
 - realizing the same alogrithms like things for finding the highest value, counting things etc keep recurring
-- 
+- discovered a new streamer, ThePrimeTime; he streams about development content on youtube and twitch, i really like him
+- decided to start a mission of building 1000 apps; micro, macro and everything in between
+- created practice applications folder to start creating 
+- got some practice exercises for exceptions
 
 
 

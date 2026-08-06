@@ -1,6 +1,9 @@
 
 
 NEXT SESSION 
+- read the seven pages in crash course tetbook about exceptions
+- do last 2 shorts for exceptions
+- do exceptions practice exercises 
 - research print() 
 - finish make notes on python crash course chapter on dictionaries
 - continue exercises for dictionary; 2x a day
