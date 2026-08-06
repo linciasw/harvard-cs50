@@ -433,7 +433,6 @@ for key, value in company.items():
 
     if value["employees"] > max_value:
         max_value = value
-
         
 print(max_value)
 
