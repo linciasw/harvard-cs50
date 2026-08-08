@@ -412,7 +412,12 @@ datasets that cannot be reasonably stored in memory
 
 
 7th august
-- created distances.py under exceptions short 
+- created distances.py for handling exceptions short 
+
+
+
+8th august
+- finished handling exceptions short
 
 
 
