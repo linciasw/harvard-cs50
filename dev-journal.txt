@@ -418,6 +418,7 @@ datasets that cannot be reasonably stored in memory
 
 8th august
 - finished handling exceptions short
+- created pace.py for raising exceptions
 
 
 
