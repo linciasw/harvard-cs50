@@ -419,6 +419,13 @@ datasets that cannot be reasonably stored in memory
 8th august
 - finished handling exceptions short
 - created pace.py for raising exceptions
+- started reading the exception chapter in the quick python guide 
+
+
+
+9th august
+- created markdown reference templates; markdown reference guide, a README reference guide, and a not-taking reference guide
+- 
 
 
 
