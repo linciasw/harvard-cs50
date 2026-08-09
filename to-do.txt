@@ -1,14 +1,15 @@
 
 
 NEXT SESSION 
-- read the seven pages in crash course tetbook about exceptions
-- do last 2 shorts for exceptions
-- do exceptions practice exercises 
+- do exceptions problem sets
+- finish read exceptions chapter in the quick python book
+- do over notes for each module done using note take guide template
+- read the seven pages in crash course textbook about exceptions [DONE]
+- do last 2 shorts for exceptions [DONE]
 - research print() 
-- finish make notes on python crash course chapter on dictionaries
+- finish make notes on python crash course chapter on dictionaries 
 - continue exercises for dictionary; 2x a day
 - get some exercises for lists
-- finish shorts for exceptions
 - research how to do read documentation
 - read documentation on dictionaries
 - read documentation on exceptions
