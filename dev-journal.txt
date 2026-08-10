@@ -430,7 +430,9 @@ datasets that cannot be reasonably stored in memory
 
 
 10th august
-- 
+- started work on fuel.py
+- created # rabbit holes.md
+- started researching split() method
 
 
 
