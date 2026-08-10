@@ -4,7 +4,8 @@ For instance 1/4 indicates that a tank is 25% full, 1/2 indicates that a tank is
 and 3/4 indicates that a tank is 75% full.
 
 In a file called fuel.py, implement a program that prompts the user for a fraction, formatted as X/Y, 
-wherein X is a non-negative integer and Y is a positive integer, and then outputs, as a percentage rounded to the nearest integer, how much fuel is in the tank. 
+wherein X is a non-negative integer and Y is a positive integer, and then outputs, as a percentage 
+rounded to the nearest integer, how much fuel is in the tank. 
 If, though, 1% or less remains, output E instead to indicate that the tank is essentially empty. 
 And if 99% or more remains, output F instead to indicate that the tank is essentially full.
 
@@ -18,22 +19,32 @@ If, though, X or Y is not an integer, X is greater than Y, or Y is 0, instead pr
 
 def main():
 
-    fraction = input("Fraction: ")
-    convert_to_percentage(fraction)
+    while True:
+        try:
+            x, y = input("Fraction: ").split("/")
+        except ValueError:
+            pass
+        else:
+            try:
+                x = int(x)
+                y = int(y)
 
+                if x > y:
+                    continue
 
-def convert_to_percentage(percentage):
-    x, y = percentage.split("/")
+                percentage = (x / y) * 100
+            except (ValueError, ZeroDivisionError):
+                pass
+            else:
+                break
 
-
-    percentage = (int(x) / int(y)) * 100
-    print(f"{percentage}%")
-     
-    
-
-
-
-    # print(x, y)
+    if percentage == 100:
+        print("F")
+    elif percentage <= 1:
+        print("E")
+    else:
+        print(f"{round(percentage)}%")
 
 
 main()
+
