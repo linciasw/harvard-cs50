@@ -425,6 +425,11 @@ datasets that cannot be reasonably stored in memory
 
 9th august
 - created markdown reference templates; markdown reference guide, a README reference guide, and a not-taking reference guide
+- started problem set fuel.py
+- read out the quick python book chapter on exceptions
+
+
+10th august
 - 
 
 
