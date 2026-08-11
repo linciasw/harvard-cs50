@@ -23,32 +23,18 @@ def main():
     }
 
 
+    count = 0
+
     while True:
-        count = 0
+
+        choice = input("Item: ")
 
         for item, price in food.items():
-            choice = input("Item: ")
-
-            if choice in food:
-                price += count
-            elif choice not in food:
-                pass
+            if choice == item:
+                count += price
+                print(count)
             else:
-                break
-
-
-            print(price)
-            print(count)
-            print(item)
-
-
-
-
-                
-
-
-
-
+                pass
 
 
 
