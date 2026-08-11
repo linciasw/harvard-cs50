@@ -27,14 +27,20 @@ def main():
 
     while True:
 
-        choice = input("Item: ")
-
-        for item, price in food.items():
-            if choice == item:
-                count += price
-                print(count)
-            else:
-                pass
+        try:
+            choice = input("Item: ").title()
+        except EOFError: # CTRL+Z
+            print("Good Bye!")
+            break
+        else:
+            for item, price in food.items():
+                if choice == item:
+                    count += price
+                    print(f"Bill so far: {count}")
+                elif choice != item:
+                    # put in an exception for the keyError
+                else:
+                    pass
 
 
 
