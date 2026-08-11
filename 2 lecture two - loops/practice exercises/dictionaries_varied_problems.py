@@ -26,17 +26,20 @@ user = {
 }
 
 
-# 1
+# 1. Print the user's name.
 # print(user["name"])
 
-# 2
+
+# 2. Increase their age by 1.
 # user["age"] = user["age"] + 1
 # print(user["age"])
 
-# 3
+
+# 3. Change the city to "San Fernando".
 # user["city"] = "San Fernando"
 
-# 4
+
+# 4. Print the updated dictionary.
 # print(user)
 
 
