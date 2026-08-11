@@ -442,6 +442,8 @@ datasets that cannot be reasonably stored in memory
 11th august
 - started taqueria.py
 - edited exception notes 
+- started reviewing things i've learnt 
+- 
 
 
 

@@ -8,5 +8,51 @@ Treat the user’s input case insensitively. Ignore any input that isn’t an it
 Assume that every item on the menu will be titlecased.
 '''
 
-int("cat")
-int("12.5")
+
+def main():
+    food = {
+            "Baja Taco": 4.25,
+            "Burrito": 7.50,
+            "Bowl": 8.50,
+            "Nachos": 11.00,
+            "Quesadilla": 8.50,
+            "Super Burrito": 8.50,
+            "Super Quesadilla": 9.50,
+            "Taco": 3.00,
+            "Tortilla Salad": 8.00
+    }
+
+
+    while True:
+        count = 0
+
+        for item, price in food.items():
+            choice = input("Item: ")
+
+            if choice in food:
+                price += count
+            elif choice not in food:
+                pass
+            else:
+                break
+
+
+            print(price)
+            print(count)
+            print(item)
+
+
+
+
+                
+
+
+
+
+
+
+
+main()
+
+
+

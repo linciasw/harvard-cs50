@@ -1,10 +1,20 @@
 # Python Primitive Data Types Cheat Sheet
 
-Python has several built-in data types. The three most common primitive data types are:
+Python has several built-in data types. The four most common primitive data types are:
 
 - `int` – Whole numbers
 - `float` – Decimal numbers
+- `complex` – Real & imaginary numbers
 - `str` – Text (strings)
+
+
+Complex numbers are commonly used in:
+- Electrical engineering (AC circuit analysis)
+- Signal processing
+- Physics
+- Mathematics
+- Fourier transforms
+
 
 ---
 
@@ -299,6 +309,7 @@ Numbers are added mathematically.
 |-----------|---------|---------|
 | `int` | Whole numbers | `10` |
 | `float` | Decimal numbers | `3.14` |
+| `complex` | Real & Imaginary | `3 + 4j` |
 | `str` | Text | `"hello"` |
 
 ### Common Integer Operations
