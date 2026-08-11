@@ -16,27 +16,23 @@ If, though, X or Y is not an integer, X is greater than Y, or Y is 0, instead pr
 # look at problem sets in conditionals re: the split method
 # intepreter. py and meal.py
 
-
 def main():
 
     while True:
         try:
             x, y = input("Fraction: ").split("/")
-        except ValueError:
+            x = int(x)
+            y = int(y)
+
+            if x > y:
+                continue
+
+            percentage = (x / y) * 100
+
+        except (ValueError, ZeroDivisionError):
             pass
         else:
-            try:
-                x = int(x)
-                y = int(y)
-
-                if x > y:
-                    continue
-
-                percentage = (x / y) * 100
-            except (ValueError, ZeroDivisionError):
-                pass
-            else:
-                break
+            break
 
     if percentage == 100:
         print("F")

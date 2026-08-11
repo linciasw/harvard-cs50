@@ -3,6 +3,7 @@
 ## What are they?
 
 Exceptions are events that occur during the execution of a program when something unexpected or invalid happens.
+Python itself throws the exception depending on what you're trying to do. 
 
 Examples:
 
@@ -81,7 +82,7 @@ Using `else` allows us to run code involving `x` only when the `try` block succe
 
 ## ValueError
 
-The value has the correct general type but is not an appropriate value for the operation.
+The value has the correct general type but is not an appropriate value for the operation. In the below example, int() requires an integer in the string to convert. It cannot convert "cat" but "cat" will work as input. float() also does this. It's part of the contract of the function. 
 
 ```python
 x = int("cat")
@@ -181,6 +182,27 @@ except ValueError:
 Be as specific as possible when handling exceptions.
 
 Avoid catching every possible exception unless you have a good reason.
+
+We can also ask for multiple errors like so:
+```python
+    while True:
+        try:
+            x, y = input("Fraction: ").split("/")
+            x = int(x)
+            y = int(y)
+
+            if x > y:
+                continue
+
+            percentage = (x / y) * 100
+
+        except (ValueError, ZeroDivisionError):
+            pass
+        else:
+            break
+```
+
+The `pass` keyword does nothing when the program has an exception but goes back to the start of the while loop. 
 
 ---
 

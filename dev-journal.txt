@@ -434,6 +434,14 @@ datasets that cannot be reasonably stored in memory
 - created # rabbit holes.md
 - started researching split() method
 - finished fuel.py
+- need to research value errors, not fully understanding it
+- need to research parts of fuel.py code
+
+
+
+11th august
+- started taqueria.py
+- edited exception notes 
 
 
 
