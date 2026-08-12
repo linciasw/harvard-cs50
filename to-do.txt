@@ -19,3 +19,6 @@ NEXT SESSION
 - do 10 practice exercises, including 5 from problem sets 
 - transfer notes on identity is from picture on phone 
 - research python style guide; PEP8
+
+
+
