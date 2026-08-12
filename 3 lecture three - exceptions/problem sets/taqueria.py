@@ -27,6 +27,7 @@ def main():
 
     while True:
 
+<<<<<<< HEAD
         try:
             choice = input("Item: ").title()
         except EOFError: # if the user presses CTRL+Z
@@ -42,6 +43,16 @@ def main():
                     # put in an exception for the keyError
                 else:
                     pass
+=======
+        choice = input("Item: ")
+
+        for item, price in food.items():
+            if choice == item:
+                count += price
+                print(count)
+            else:
+                pass
+>>>>>>> ed818499b24637dbb66c4a93b7adc6723447b743
 
 
 
@@ -49,3 +60,48 @@ main()
 
 
 
+"""
+Taqueria Order Program — Review Notes
+
+This program uses a dictionary to store menu items as keys and their
+prices as values. The user's input is compared against the dictionary's
+keys to determine whether the item exists.
+
+Important concept:
+Checking whether an item exists with:
+
+```
+    if item in food:
+
+checks the dictionary's keys by default. It does NOT attempt to
+access a value, so this type of check does not raise a KeyError.
+```
+
+A KeyError happens when you try to access a dictionary key that does
+not exist, for example:
+
+```
+food[item]
+
+if item is not a key in food, Python raises KeyError.
+```
+
+This program avoids that problem because it first checks whether the
+user's input is a valid key before using it.
+
+General lesson:
+Not every possible error needs to be handled with try/except.
+If the program can be designed so that an exception is never
+triggered, that can be simpler and clearer.
+
+The important distinction is:
+
+```
+- `item in food` → checks whether the key exists.
+- `food[item]` → retrieves the value associated with the key and
+  can raise KeyError if the key does not exist.
+```
+
+This is an example of preventing an error through program logic rather
+than catching the error after it happens.
+"""
