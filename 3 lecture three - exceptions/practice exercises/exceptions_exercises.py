@@ -180,11 +180,11 @@ Highest: 20
 # print(f"Average: {average}")
 
 
-
+# max_value = 0
 # for tag in list:
-#     max_value = 0
+
 #     if tag > max_value:
-#         max_value = max_value + tag
+#         max_value = tag
 
 
 # print(f"Highest price: {max_value}")

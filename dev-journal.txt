@@ -446,6 +446,7 @@ datasets that cannot be reasonably stored in memory
 
 
 12th august
+- did 3 exceptions practice exercises, trying to do some every day
 - 
 
 
