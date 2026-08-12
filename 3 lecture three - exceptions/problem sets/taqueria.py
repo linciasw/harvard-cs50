@@ -29,15 +29,16 @@ def main():
 
         try:
             choice = input("Item: ").title()
-        except EOFError: # CTRL+Z
+        except EOFError: # if the user presses CTRL+Z
             print("Good Bye!")
             break
         else:
             for item, price in food.items():
                 if choice == item:
                     count += price
-                    print(f"Bill so far: {count}")
-                elif choice != item:
+                    print(f"Bill so far: ${count:.2f}")
+                # elif choice != item:
+
                     # put in an exception for the keyError
                 else:
                     pass
