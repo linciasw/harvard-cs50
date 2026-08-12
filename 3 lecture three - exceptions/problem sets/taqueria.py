@@ -27,7 +27,6 @@ def main():
 
     while True:
 
-<<<<<<< HEAD
         try:
             choice = input("Item: ").title()
         except EOFError: # if the user presses CTRL+Z
@@ -38,22 +37,8 @@ def main():
                 if choice == item:
                     count += price
                     print(f"Bill so far: ${count:.2f}")
-                # elif choice != item:
-
-                    # put in an exception for the keyError
                 else:
                     pass
-=======
-        choice = input("Item: ")
-
-        for item, price in food.items():
-            if choice == item:
-                count += price
-                print(count)
-            else:
-                pass
->>>>>>> ed818499b24637dbb66c4a93b7adc6723447b743
-
 
 
 main()

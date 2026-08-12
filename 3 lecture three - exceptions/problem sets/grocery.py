@@ -16,8 +16,8 @@ def main():
         try:
             item = input("Grocery list item: ")
         except EOFError:
-            ("End of list")
-            print(grocery_items)
+            for key, value in sorted(grocery_items.items()):
+                print(value, key.upper())
             break
 
         if item not in grocery_items:

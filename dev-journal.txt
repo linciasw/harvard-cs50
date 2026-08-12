@@ -447,15 +447,12 @@ datasets that cannot be reasonably stored in memory
 
 
 12th august
-<<<<<<< HEAD
 - started and finished grocery.py
-
-=======
 - did 3 exceptions practice exercises, trying to do some every day
 - edited rabbit holes file 
 - got a list of casual reading resources for python 
-- 
->>>>>>> ed818499b24637dbb66c4a93b7adc6723447b743
+- got some books
+- created outdated.py
 
 
 
