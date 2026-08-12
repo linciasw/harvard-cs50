@@ -443,7 +443,12 @@ datasets that cannot be reasonably stored in memory
 - started taqueria.py
 - edited exception notes 
 - started reviewing things i've learnt 
-- 
+
+
+
+12th august
+- started and finished grocery.py
+
 
 
 
