@@ -30,6 +30,7 @@ def main():
 
     # format output
     # research how to use sorted
+    # think about where to put keyError
 
 
 
