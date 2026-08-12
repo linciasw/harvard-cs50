@@ -26,6 +26,7 @@ def main():
     count = 0
 
     while True:
+
         choice = input("Item: ")
 
         for item, price in food.items():
