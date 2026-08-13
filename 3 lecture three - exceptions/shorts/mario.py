@@ -4,7 +4,7 @@
 
 
 '''
-print() is a nice tool  for debugging.
+print() is a nice tool for debugging.
 it's a nice way to see what's inside your code.
 '''
 

@@ -455,6 +455,16 @@ datasets that cannot be reasonably stored in memory
 - created outdated.py
 
 
+13th august
+- created a python_exceptions_reference markdown file to reference 
+- read https://openpython.org/articles/python-sort-list-dictionary-objects
+- did some research on how best to understand the python documentation
+- realized i can google the python documentation and get a much easier to understand source
+- did some research on the split function 
+- https://realpython.com/videos/splitting-strings-overview/ 
+- 
+
+
 
 
 

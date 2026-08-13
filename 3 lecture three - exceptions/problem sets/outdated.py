@@ -24,10 +24,121 @@ formatted like 9/8/1636 or September 8, 1636, wherein the month in the latter mi
     "November",
     "December"
 ]
+
+
+
+
+NOTES:
+- a delimiter is just some character that you put between different items to separate them
+
 '''
+
+# help(str.split)
 
 
 def main():
 
+    date = input("Date: ")
+
+
+
+    # text_1 = "9/8/1636"
+    # print(text_1.split())
+
+    # text_2 = "September 8, 1636"
+    # print(text_2.split(maxsplit=2))
 
 main()
+
+
+
+"""
+str.split(sep=None, maxsplit=-1) -> list[str]
+
+Return a list of the words in the string, using `sep` as the delimiter.
+
+## Parameters
+
+sep : str | None, optional
+The delimiter used to split the string.
+
+```
+If `sep` is None (the default):
+    - Splits on whitespace.
+    - Consecutive whitespace is treated as one separator.
+    - Leading and trailing whitespace is ignored.
+    - Whitespace includes spaces, tabs, and newlines.
+
+If `sep` is a string:
+    - Splits strictly at each occurrence of that string.
+    - Consecutive delimiters produce empty strings (`''`).
+```
+
+maxsplit : int, optional
+The maximum number of splits to perform.
+
+```
+- `-1` (default): No limit; split the entire string.
+- `0`: No splits are performed.
+- Positive integer `N`: Perform at most `N` splits.
+  The remaining text becomes the final element.
+```
+
+## Returns
+
+list[str]
+A list containing the resulting substrings.
+
+## Examples
+
+Default behavior:
+
+```
+>>> "   Python    is   fun   ".split()
+['Python', 'is', 'fun']
+```
+
+Using a specific delimiter:
+
+```
+>>> "apple,,banana,cherry".split(",")
+['apple', '', 'banana', 'cherry']
+```
+
+Limiting the number of splits:
+
+```
+>>> "2026-08-13 ERROR Failed to connect to database".split(maxsplit=2)
+['2026-08-13', 'ERROR', 'Failed to connect to database']
+```
+
+Using a delimiter with maxsplit:
+
+```
+>>> "name:John Smith".split(":", maxsplit=1)
+['name', 'John Smith']
+```
+
+## Notes
+
+`split()` and `split(" ")` behave differently.
+
+```
+>>> "Python    is    fun".split()
+['Python', 'is', 'fun']
+
+>>> "Python    is    fun".split(" ")
+['Python', '', '', '', 'is', '', '', '', 'fun']
+```
+
+`split()` with no argument handles all whitespace, while
+`split(" ")` splits only on literal space characters.
+
+General rule:
+
+```
+maxsplit = N
+maximum number of resulting elements = N + 1
+```
+
+"""
