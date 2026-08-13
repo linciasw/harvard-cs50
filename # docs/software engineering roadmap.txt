@@ -1,0 +1,132 @@
+SOFTWARE ENGINEERING PROJECT ROADMAP
+
+1. PYTHON FUNDAMENTALS
+----------------------
+- Compound Interest Calculator
+- Loan Payment Calculator
+- Vacation Expense Tracker
+- Personal Budget Tracker
+- Bank Account Simulator
+- Expense Categorizer
+
+
+2. PYTHON + DATA
+----------------
+- Bank Statement Analyzer
+- Personal Finance Analyzer
+- Investment Portfolio Tracker
+- Stock/ETF Performance Analyzer
+- Spending Dashboard
+- CSV Data Cleaning & Reporting Tool
+
+
+3. PYTHON + SQL
+---------------
+- Personal Finance Database
+- Banking Transaction Database
+- Customer Account Management System
+- Expense Tracking Database
+- Investment Portfolio Database
+
+
+4. PYTHON + APIs
+----------------
+- Currency Exchange Tracker
+- Stock/ETF Data Application
+- Financial News Aggregator
+- Investment Price Alert System
+- Banking/Financial Data API Client
+
+
+5. WEB APPLICATIONS
+-------------------
+- Personal Finance Dashboard
+- Bank Statement Analyzer Web App
+- Investment Portfolio Dashboard
+- Expense Management Web App
+- Loan Calculator Web App
+- Simple Banking Application
+
+
+6. BACKEND PROJECTS
+-------------------
+- RESTful Banking API
+- Transaction Processing API
+- User Authentication System
+- Personal Finance API
+- Investment Portfolio API
+- Expense Management Backend
+
+
+7. ADVANCED FINTECH PROJECTS
+----------------------------
+- Fraud Detection System
+- Credit Risk Prediction Model
+- Automated Financial Report Generator
+- Investment Portfolio Optimizer
+- Budget Forecasting Application
+- Financial Transaction Anomaly Detector
+
+
+8. CAPSTONE PROJECT
+-------------------
+Build one serious application combining:
+
+- Python
+- SQL/PostgreSQL
+- REST API
+- Authentication
+- Database design
+- Testing
+- Git
+- Web frontend
+- Data analysis
+- Deployment
+- Documentation
+
+
+MY 5 PRIORITY PROJECTS
+----------------------
+1. Vacation Expense Tracker
+   Python fundamentals
+
+2. Bank Statement Analyzer
+   Python + Pandas + data analysis
+
+3. Investment Portfolio Analyzer
+   Python + financial data + APIs
+
+4. Personal Finance Web Application
+   Frontend + backend + database
+
+5. Banking REST API
+   Backend + SQL + authentication + software engineering
+
+
+OVERALL PROGRESSION
+-------------------
+
+Python
+   ↓
+Python + Data
+   ↓
+SQL + Databases
+   ↓
+APIs
+   ↓
+Web Development
+   ↓
+Backend Development
+   ↓
+Fintech Applications
+   ↓
+Advanced Software Engineering
+
+
+PORTFOLIO STORY
+---------------
+
+"I started learning Python, learned to work with
+data, applied it to finance, learned web development,
+then developed backend and software engineering skills
+to build financial applications."
