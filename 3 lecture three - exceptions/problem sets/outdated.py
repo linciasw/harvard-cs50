@@ -26,55 +26,89 @@ formatted like 9/8/1636 or September 8, 1636, wherein the month in the latter mi
 ]
 
 
-
-
 NOTES:
 - a delimiter is just some character that you put between different items to separate them
+- pass statement does absolutely nothing, just acts as a placeholder 
 
 '''
+
+
 
 # help(str.split)
 
 
+
 def main():
+        
+        months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ]
 
 
-    months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-]
+        while True:
+            
+                date = input("Date: ")
+
+                try:
+
+                    if "/" in date:
+                        
+                        month, day, year = date.split("/")
+
+                        month = int(month)
+                        day = int(day)
+                        year = int(year)
 
 
-    
+                        if 1 <= month <= 12 and 1 <= day <= 31:
+                            print(f"{year}/{month:02}/{day:02}")
+                            break
 
-    date = input("Date: ")
 
-    if "/" in date:
-        month, day, year = (date.split(sep="/"))
-        print(f"{year}/{month}/{date}")
-    elif "," in date:
-        replacement = date.replace(",", "")
-        month, day, year = replacement.split(maxsplit=2)
+                    elif "," in date:
 
-        if month in months:
-            new_month = months.index(month) + 1
-        print(f"{year}/{new_month}/{date}")
-    else:
-        pass
+                        replacement = date.replace(",", "")
+
+                        month, day, year = replacement.split(maxsplit=2)
+
+                        if month in months:
+
+                            new_month = months.index(month) + 1
+                            day = int(day)
+                            year = int(year)
+
+
+                            if 1 <= day <= 31:
+                                pass
+                            print(f"{year}/{new_month:02}/{day:>02}")
+                            break
+
+                        elif month not in months:
+                            pass
+                        else:
+                            break
+
+                except ValueError:
+                     pass
+
+
 
 
 
     # put in try-except block
+    # keyError, valueError
+    # put in leading zeros
 
 
     # if month in months:
@@ -83,9 +117,6 @@ def main():
 
 
     #     print(f"{day}/{new_month}/{year}")
-
-
-
 
 
     # text_1 = "9/8/1636"

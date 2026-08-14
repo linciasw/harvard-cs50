@@ -25,6 +25,7 @@ Start with one question and follow your curiosity.
 * What's a namespace?
 * What's the difference between a module, package, and library?
 * What does `import` actually do?
+* Research VSC in depth 
 
 ## Rule
 
