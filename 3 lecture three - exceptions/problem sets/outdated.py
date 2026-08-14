@@ -38,7 +38,53 @@ NOTES:
 
 def main():
 
+
+    months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
+
+
+    
+
     date = input("Date: ")
+
+    if "/" in date:
+        month, day, year = (date.split(sep="/"))
+        print(f"{year}/{month}/{date}")
+    elif "," in date:
+        replacement = date.replace(",", "")
+        month, day, year = replacement.split(maxsplit=2)
+
+        if month in months:
+            new_month = months.index(month) + 1
+        print(f"{year}/{new_month}/{date}")
+    else:
+        pass
+
+
+
+    # put in try-except block
+
+
+    # if month in months:
+    #     new_month = months.index(month) + 1
+    #     print(new_month)
+
+
+    #     print(f"{day}/{new_month}/{year}")
+
+
 
 
 
@@ -53,6 +99,7 @@ main()
 
 
 """
+PYTHON DOCUMENTATION NOTES
 str.split(sep=None, maxsplit=-1) -> list[str]
 
 Return a list of the words in the string, using `sep` as the delimiter.

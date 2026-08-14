@@ -462,7 +462,15 @@ datasets that cannot be reasonably stored in memory
 - realized i can google the python documentation and get a much easier to understand source
 - did some research on the split function 
 - https://realpython.com/videos/splitting-strings-overview/ 
-- 
+
+
+
+14th august
+- got the bones of outdated.py done
+- learnt a little about list.index()
+- https://www.datacamp.com/tutorial/python-list-index
+- learnt a little about the replace() function 
+
 
 
 
