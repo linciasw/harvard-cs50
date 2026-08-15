@@ -477,6 +477,8 @@ datasets that cannot be reasonably stored in memory
 - learnt a litte about pass keyword
 - started libraries lecture
 - learnt a bit about the math module (randint, choice, shuffle)
+- learnt a bit about the statistics module (mean)
+- learnt a bit about the sys module (sys.argv, sys.exit), using a for loop on sys.argv
 - 
 
 
