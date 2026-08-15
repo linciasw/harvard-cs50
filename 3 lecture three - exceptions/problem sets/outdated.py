@@ -100,30 +100,10 @@ def main():
                             break
 
                 except ValueError:
-                     pass
+                     print("Invalid values!")
 
 
 
-
-
-    # put in try-except block
-    # keyError, valueError
-    # put in leading zeros
-
-
-    # if month in months:
-    #     new_month = months.index(month) + 1
-    #     print(new_month)
-
-
-    #     print(f"{day}/{new_month}/{year}")
-
-
-    # text_1 = "9/8/1636"
-    # print(text_1.split())
-
-    # text_2 = "September 8, 1636"
-    # print(text_2.split(maxsplit=2))
 
 main()
 
