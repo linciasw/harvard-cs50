@@ -476,6 +476,8 @@ datasets that cannot be reasonably stored in memory
 15th august
 - learnt a litte about pass keyword
 - started libraries lecture
+- learnt a bit about the math module (randint, choice, shuffle)
+- 
 
 
 
