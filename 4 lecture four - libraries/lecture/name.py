@@ -33,6 +33,11 @@ print(sys.argv)
 
 
 # we can also write an if-elif-else block to get around this
+# you don't always have to do a try-exception block if you 
+# can succintly and intelligently take care of the things you're
+# worried about.
+# this way, we can also instruct the user a little better
+# we can't have multiple else statemets
 if len(sys.argv) < 2:
     print("Too few arguments")
 elif len(sys.argv) > 2:
