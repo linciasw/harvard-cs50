@@ -1,4 +1,5 @@
 # FROM LECTURE
+# REACH 10:54
 
 '''
 libraries are files of code that other people have written that
@@ -28,7 +29,7 @@ https://docs.python.org/3/library/random.html#module-random
 '''
 
 # to import everything in the module
-# import random 
+import random 
 
 
 # because we have imported everything from the module, we'll have
@@ -37,11 +38,17 @@ https://docs.python.org/3/library/random.html#module-random
 # print(coin)
 
 
-# if we want to just use the choice function, we do 
-from random import choice
+# if we want to just use the choice function, we do
+# to prevent any function, variable names that's already in the module
+# from clashing with  
+# from random import choice
 
-coin = choice(["heads", "tails"])
-print(coin)
+# coin = choice(["heads", "tails"])
+# print(coin)
+
+
+# random.randint(a, b)
+
 
 
 
