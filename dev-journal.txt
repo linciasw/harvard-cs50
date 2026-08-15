@@ -479,7 +479,9 @@ datasets that cannot be reasonably stored in memory
 - learnt a bit about the math module (randint, choice, shuffle)
 - learnt a bit about the statistics module (mean)
 - learnt a bit about the sys module (sys.argv, sys.exit), using a for loop on sys.argv
-- 
+- created loan-installment.py
+- thinking to learn tkinter, or streamlit for loan-installment.py to make a small app
+
 
 
 
