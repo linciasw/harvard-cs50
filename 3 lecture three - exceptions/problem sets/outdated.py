@@ -28,7 +28,10 @@ formatted like 9/8/1636 or September 8, 1636, wherein the month in the latter mi
 
 NOTES:
 - a delimiter is just some character that you put between different items to separate them
-- pass statement does absolutely nothing, just acts as a placeholder 
+- pass statement does absolutely nothing, just acts as a syntactic placeholder where python requires 
+code to be present, but you have no logic to execute yet. because python relies on indentation 
+rather than curly braces {} to define code blocks, you cannot leave a block completely empty without
+triggering an indentation error
 
 '''
 
