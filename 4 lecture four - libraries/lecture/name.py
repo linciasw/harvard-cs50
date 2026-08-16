@@ -3,6 +3,10 @@
 
 # command-line arguments
 # the sys module 
+# mainly used to input values into the application without prompting using sys.argv[].
+# using the command line will feel faster as you get more comfortable programming,
+# ie entering values on the command line might be faster for testing different values
+# as opposed to constantly entering values in an input prompt.
 
 '''
 >>> dir(sys)
@@ -40,8 +44,7 @@ print(sys.argv)
 
 
 # the below can give an indexError as that's one of the 
-# most common errors whenever you're dealing with a list,
-# dict, tuple etc
+# most common errors whenever you're dealing with a list, dict, tuple etc
 # to prevent this, we can use a try-except block 
 # try:
 #     print("hello, my name is", sys.argv[1])
@@ -51,10 +54,10 @@ print(sys.argv)
 
 
 
-# we can also write an if-elif-else block to get around this
+# we can also write an if-elif-else block to get around this.
 # you don't always have to do a try-exception block if you 
 # can succintly and intelligently take care of the things you're
-# worried about.
+# worried about using a conditional.
 # this way, we can also instruct the user a little better
 # we can't have multiple else statemets
 # if len(sys.argv) < 2:
@@ -66,7 +69,7 @@ print(sys.argv)
 
 
 
-# if we remove the else like the below, to separate different parts of the code
+# if we remove the else block like below, to separate different parts of the code,
 # we'll get an IndexError if nothing is inputted because the print statement will 
 # always try to go for the first index despite us checking the length in the conditional
 # Check for errors
@@ -107,7 +110,7 @@ print(sys.argv)
 
 
 
-# to remove index 0, name of the program, we can use slicing as below
+# to remove index 0 (the name of the program), we can use slicing as below
 # SLICING
 # Check for errors
 if len(sys.argv) < 2:
@@ -116,5 +119,7 @@ if len(sys.argv) < 2:
 # Print name tags
 for arg in sys.argv[1:]:
     print("hello, my name is", arg)
+
+
 
 

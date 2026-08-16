@@ -6,7 +6,7 @@
 
 '''
 libraries are files of code that other people have written that
-you can use in your own's program or a library's code that you have
+you can use in your own program or a library's code that you have
 written that you can use in your own program  
 
 it does this by using modules.
