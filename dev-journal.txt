@@ -484,7 +484,11 @@ datasets that cannot be reasonably stored in memory
 
 
 16th august
-- worked on loan installment calculator
+- worked on loan installment calculator:
+    - created functions for all calculations
+    - put in a try-except and conditional block to handle input validation
+    - researched the formula a little bit
+
 - 
 
 
