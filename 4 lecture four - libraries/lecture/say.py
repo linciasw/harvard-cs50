@@ -11,6 +11,7 @@
 
 # read up on cowsay
 # pypi.org/project/cowsay
+# ASCII art; legacy art that was there before GIFs, jpegs etc 
 
 # pip, package manager
 
