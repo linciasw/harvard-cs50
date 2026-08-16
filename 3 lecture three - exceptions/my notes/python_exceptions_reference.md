@@ -3,6 +3,26 @@
 A reference for Python's built-in exception hierarchy and the exceptions
 that are most important to learn first.
 
+
+  - [Exception Hierarchy](#1-exception-hierarchy)
+  - [Important Exception Relationships](#2-important-exception-relationships)
+    - [Arithmetic Errors](#arithmetic-errors)
+    - [Import Errors](#import-errors)
+    - [Lookup Errors](#lookup-errors)
+    - [Name Errors](#name-errors)
+    - [Operating System Errors](#operating-system-errors)
+    - [Syntax Errors](#syntax-errors)
+    - [Unicode Errors](#unicode-errors)
+  - [Top Exceptions to Learn First](#3-top-exceptions-to-learn-first)
+  - [The Five Most Important Mental Models](#4-the-five-most-important-mental-models)
+  - [Quick Debugging Guide](#5-quick-debugging-guide)
+  - [Exceptions You Can Learn Later](#6-exceptions-you-can-learn-later)
+  - [The Most Important Thing to Remember](#7-the-most-important-thing-to-remember)
+
+
+
+
+
 ---
 
 # 1. Exception Hierarchy

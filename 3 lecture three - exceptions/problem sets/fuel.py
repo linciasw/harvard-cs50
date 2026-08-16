@@ -30,7 +30,7 @@ def main():
             percentage = (x / y) * 100
 
         except (ValueError, ZeroDivisionError):
-            pass
+            continue
         else:
             break
 

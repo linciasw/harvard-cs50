@@ -32,6 +32,7 @@ A combined, sectioned reference covering all uploaded .py files, organized by to
   - [plates.py](#platespy)
 - [Tuples](#tuples)
   - [location.py](#locationpy)
+- [Loop Keywords](#loop-keywords)
 
 ---
 
@@ -1504,3 +1505,14 @@ Use a tuple instead of a list when the collection of values is fixed and shouldn
 72 bytes
 ```
 (Confirms the tuple takes up less memory than the equivalent list.)
+
+
+## Loop Keywords
+pass: A do-nothing placeholder used when code is required by syntax rules, 
+but you want no action taken. 
+It lets the normal flow of code continue downward.
+
+continue: Stops the current loop run right away and jumps back to the top to 
+evaluate the while condition for the next round.
+
+break: Exits the loop entirely and moves on to the code right below the loop block.

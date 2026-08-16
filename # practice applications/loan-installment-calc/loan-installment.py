@@ -1,36 +1,76 @@
-def main():
 
-    principal = int(input("Enter loan amount: "))
-    rate = float(input("Enter annual interest rate (%): "))
-    term = int(input("Enter loan term (years): "))
-
-
-    number_of_payments = term * 12
-    monthly_interest_rate = rate / 12 / 100
-
-
-    monthly_installment = principal * monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_payments / ((1 + monthly_interest_rate) ** number_of_payments - 1)
-    total_payment = monthly_installment * number_of_payments
-    total_interest = total_payment - principal
-
-
-    print(f"Loan amount: ${principal}")
-    print(f"Interest rate: {rate}%")
-    print(f"Loan Term: {term} years")
-
-
-    print(f"Monthly payment: ${monthly_installment:0.02f}")
-    print(f"Total payment: ${total_payment:0.02f}")
-    print(f"Total interest: {total_interest:0.2f}")
-
-
-
-    # create function for monthly installment 
-    # separate the numerator and denominator, see below
-    # put in try-except block
+    # create function for monthly installment [DONE]
+    # separate the numerator and denominator, see below [DONE]
+    # create functions for each calculation [DONE]
+    # put in try-except block/conditional to handle input validation
     # optional: learn the tkinter module to create a tiny program
 
 
+
+def calculate_monthly_installment(p, mir, nofp):
+
+            numerator = p * mir * (1 + mir) ** nofp
+            denominator = ((1 + mir) ** nofp -1)
+
+            MI = numerator / denominator
+
+            return float(MI)
+            
+            # principal * monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_payments / 
+            # ((1 + monthly_interest_rate) ** number_of_payments - 1)
+
+
+
+
+def calculate_monthly_interest(r):
+        return r / 12 /100
+
+
+def calculate_number_of_payments(t):
+        return t * 12
+
+
+def create_summary(p, r, t, mi, tp, ti):
+    print(f"""
+    === Loan Summary ===
+    Loan amount: ${p:,}
+    Interest rate: {r}%
+    Loan term: {t} years
+
+
+    Monthly payment: $${mi:.2f}
+    Total payment: ${tp:,.2f}
+    Total interest: ${ti:,.2f}
+
+    ====================
+
+    """
+    )
+        
+        
+
+
+def main():
+    f"""
+    === Loan Installment Calculator ===
+    """
+
+while True:
+    try:
+        principal = int(input("Enter loan amount: "))
+        rate = float(input("Enter annual interest rate (%): "))
+        term = int(input("Enter loan term (years): "))
+
+        if principal <= 0 or rate <= 0 or term <= 0:
+            print("All values must be greater than zero")
+            continue
+            
+
+    except (ValueError, NameError): # parentheses are necessary for multiple errors
+        print("All values must be numerical")
+        continue # clear indicator to restart the loop safely 
+    else:
+          break
 
 
 main()
@@ -66,3 +106,39 @@ main()
 
 # installment = calculate_monthly_installment(p, r, n)
 # print(f"Monthly Installment: ${installment:.2f}")
+
+
+
+
+## LOAN PAYMENT FORMULA
+#
+#             P × r × (1 + r)^n
+# PMT = -----------------------------
+#                 (1 + r)^n - 1
+#
+# Key:
+# PMT = monthly loan payment
+# P   = principal (original loan amount)
+# r   = monthly interest rate (annual rate / 12)
+# n   = total number of payments (years × 12)
+#
+# Example:
+# P = 50,000
+# Annual interest rate = 6.5% = 0.065
+# r = 0.065 / 12
+# n = 5 × 12 = 60
+#
+# The formula calculates the fixed monthly payment
+# required to pay off the loan over the specified term.
+
+
+
+# LOOP KEYWORDS
+# pass: A do-nothing placeholder used when code is required by syntax rules, 
+# but you want no action taken. 
+# It lets the normal flow of code continue downward.
+
+# continue: Stops the current loop run right away and jumps back to the top to 
+# evaluate the while condition for the next round.
+
+# break: Exits the loop entirely and moves on to the code right below the loop block.

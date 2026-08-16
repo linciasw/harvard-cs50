@@ -483,6 +483,10 @@ datasets that cannot be reasonably stored in memory
 - thinking to learn tkinter, or streamlit for loan-installment.py to make a small app
 
 
+16th august
+- worked on loan installment calculator
+- 
+
 
 
  
