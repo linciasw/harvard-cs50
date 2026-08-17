@@ -505,6 +505,7 @@ datasets that cannot be reasonably stored in memory
 - worked on loan-installment calculator
     - added a while loop in main to prompt the user if they have another loan
     - created functions for everything
+- renamed all files to match naming conventions of python
 
 
 
