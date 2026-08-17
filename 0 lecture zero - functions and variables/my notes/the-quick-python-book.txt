@@ -1,0 +1,151 @@
+- basic syntax for a python function definition:
+def name(parameter1, parameter2, ...)
+    body
+
+
+- the intention of docstrings is to describe the external behavior of a function and the parameter it takes, whereas comments should document internal information about how the code works
+- you can get a docstring's value by function-name.__doc__
+- basic syntax for a python function definition:
+def name(parameter1, parameter2, ...)
+    body
+
+
+- the intention of docstrings is to describe the external behavior of a function and the parameter it takes, whereas comments should document internal information about how the code works
+- you can get a docstring's value by function-name.__doc__
+
+- in other languages, a procedure is a function that doesn't return a value
+- in python, if no explicit return is executed in the procedure body, the special python value None is returned
+- nothing else in the function body is executed once a return has been executed 
+
+
+# PARAMETER OPTIONS
+- positional parameters
+- the simplest way to pass parameters to a function is by position
+- the parameters used in the function call are matched to the function's parameter variables based on their order
+- function parameters can have default values which remains as the default value unless you specify otherwise
+
+
+- passing arguments by parameter name aka keyword passing
+- if (x, y) are the parameters for a function, you can pass (y=2, x=3) and it'll work
+>>> power(2, 3)
+8
+>>> power(3, 2)
+9
+>>> power(y=2, x=3)
+9
+
+- you can combine keyword passing with default values to identify what you want from a function specifically
+- if the default values are all set to False and you specify which ones you want by putting True, the function will pull just those
+
+
+
+
+- variable numbers of arguments
+- if you use the * like (*numbers), you can send a list of items 
+>>> def maximum(*numbers):
+... if len(numbers) == 0:
+... return None
+... else:
+... maxnum = numbers[0]
+... for n in numbers[1:]:
+... if n > maxnum:
+... maxnum = n
+... return maxnum
+...
+Now, test out the behavior of the function:
+>>> maximum(3, 2, 8)
+8
+>>> maximum(1, 5, 9, -2, 2)
+- in other languages, a procedure is a function that doesn't return a value
+- in python, if no explicit return is executed in the procedure body, the special python value None is returned
+- nothing else in the function body is executed once a return has been executed 
+
+
+# PARAMETER OPTIONS
+- positional parameters
+- the simplest way to pass parameters to a function is by position
+- the parameters used in the function call are matched to the function's parameter variables based on their order
+- function parameters can have default values which remains as the default value unless you specify otherwise
+
+
+- passing arguments by parameter name aka keyword passing
+- if (x, y) are the parameters for a function, you can pass (y=2, x=3) and it'll work
+>>> power(2, 3)
+8
+>>> power(3, 2)
+9
+>>> power(y=2, x=3)
+9
+
+- you can combine keyword passing with default values to identify what you want from a function specifically
+- if the default values are all set to False and you specify which ones you want by putting True, the function will pull just those
+
+
+
+
+- variable numbers of arguments
+- if you use the * like (*numbers), you can send a list of items 
+>>> def maximum(*numbers):
+... if len(numbers) == 0:
+... return None
+... else:- basic syntax for a python function definition:
+def name(parameter1, parameter2, ...)
+    body
+
+
+- the intention of docstrings is to describe the external behavior of a function and the parameter it takes, whereas comments should document internal information about how the code works
+- you can get a docstring's value by function-name.__doc__
+
+- in other languages, a procedure is a function that doesn't return a value
+- in python, if no explicit return is executed in the procedure body, the special python value None is returned
+- nothing else in the function body is executed once a return has been executed 
+
+
+# PARAMETER OPTIONS
+- positional parameters
+- the simplest way to pass parameters to a function is by position
+- the parameters used in the function call are matched to the function's parameter variables based on their order
+- function parameters can have default values which remains as the default value unless you specify otherwise
+
+
+- passing arguments by parameter name aka keyword passing
+- if (x, y) are the parameters for a function, you can pass (y=2, x=3) and it'll work
+>>> power(2, 3)
+8
+>>> power(3, 2)
+9
+>>> power(y=2, x=3)
+9
+
+- you can combine keyword passing with default values to identify what you want from a function specifically
+- if the default values are all set to False and you specify which ones you want by putting True, the function will pull just those
+
+
+
+
+- variable numbers of arguments
+- if you use the * like (*numbers), you can send a list of items 
+>>> def maximum(*numbers):
+... if len(numbers) == 0:
+... return None
+... else:
+... maxnum = numbers[0]
+... for n in numbers[1:]:
+... if n > maxnum:
+... maxnum = n
+... return maxnum
+...
+Now, test out the behavior of the function:
+>>> maximum(3, 2, 8)
+8
+>>> maximum(1, 5, 9, -2, 2)
+... maxnum = numbers[0]
+... for n in numbers[1:]:
+... if n > maxnum:
+... maxnum = n
+... return maxnum
+...
+Now, test out the behavior of the function:
+>>> maximum(3, 2, 8)
+8
+>>> maximum(1, 5, 9, -2, 2)
