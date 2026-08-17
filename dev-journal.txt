@@ -502,6 +502,9 @@ datasets that cannot be reasonably stored in memory
 
 17th august
 - got an updated vacation expense tracker spec sheet
+- worked on loan-installment calculator
+    - added a while loop in main to prompt the user if they have another loan
+    - created functions for everything
 
 
 
