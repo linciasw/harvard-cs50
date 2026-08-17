@@ -1,19 +1,17 @@
 
 
 NEXT SESSION 
-- do exceptions problem sets
-- finish read exceptions chapter in the quick python book
-- do over notes for each module done using note take guide template
-- read the seven pages in crash course textbook about exceptions [DONE]
-- do last 2 shorts for exceptions [DONE]
+- read until 9.5 in the quick python book
+- read libraries and modules chapter in the quick python book
+- do libraries problem sets
+- do over notes for each module done using note take guide template 
 - research print() 
 - finish make notes on python crash course chapter on dictionaries 
 - continue exercises for dictionary; 2x a day
 - get some exercises for lists
-- research how to do read documentation
+- research how to do read documentation [DONE]
 - read documentation on dictionaries
 - read documentation on exceptions
-- watch a video on list & dictionary comprehensions
 - research string slicing ie when would it be necessary
 - read chapter on loops, python crash course
 - do 10 practice exercises, including 5 from problem sets 
