@@ -6,6 +6,42 @@
     # optional: learn the tkinter module to create a tiny program
 
 
+def get_loan_info():
+    print(f"""
+    === Loan Installment Calculator ===
+    """)
+       
+    while True:
+        try:
+            principal = int(input("Enter loan amount: "))
+            rate = float(input("Enter annual interest rate (%): "))
+            term = int(input("Enter loan term (years): "))
+
+            if principal <= 0 or rate <= 0 or term <= 0:
+                print("All values must be greater than zero")
+                continue
+
+
+        except (ValueError, NameError): # parentheses are necessary for multiple errors
+            print("All values must be numerical")
+            continue # clear indicator to restart the loop safely 
+        else: 
+            break
+
+
+
+    return principal, rate, term
+      
+
+
+def calculate_monthly_interest(r):
+        return r / 12 /100
+
+
+def calculate_number_of_payments(t):
+        return t * 12
+
+
 
 def calculate_monthly_installment(p, mir, nofp):
 
@@ -21,16 +57,10 @@ def calculate_monthly_installment(p, mir, nofp):
 
 
 
-
-def calculate_monthly_interest(r):
-        return r / 12 /100
-
-
-def calculate_number_of_payments(t):
-        return t * 12
-
-
 def create_summary(p, r, t, mi, tp, ti):
+
+
+
     print(f"""
     === Loan Summary ===
     Loan amount: ${p:,}
@@ -51,27 +81,27 @@ def create_summary(p, r, t, mi, tp, ti):
 
 
 def main():
-    f"""
-    === Loan Installment Calculator ===
-    """
 
-while True:
-    try:
-        principal = int(input("Enter loan amount: "))
-        rate = float(input("Enter annual interest rate (%): "))
-        term = int(input("Enter loan term (years): "))
+    while True:
 
-        if principal <= 0 or rate <= 0 or term <= 0:
-            print("All values must be greater than zero")
+        principal, rate, term = get_loan_info()
+        monthly_interest_rate = calculate_monthly_interest(rate)
+        number_of_payments = calculate_number_of_payments(term)
+        monthly_installment = calculate_monthly_installment(principal, monthly_interest_rate, number_of_payments)
+
+        total_payment = number_of_payments * monthly_installment
+        total_interest = total_payment - principal
+
+
+        create_summary(principal, rate, term, monthly_installment, total_payment, total_interest)
+
+
+        choice = input("Do you want to calculate a next loan? ").lower()
+        if choice == "yes" or choice == "y":
             continue
-            
-
-    except (ValueError, NameError): # parentheses are necessary for multiple errors
-        print("All values must be numerical")
-        continue # clear indicator to restart the loop safely 
-    else:
-          break
-
+        else:
+                break
+        
 
 main()
 
