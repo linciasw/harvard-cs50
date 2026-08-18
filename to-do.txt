@@ -1,9 +1,15 @@
 
 
 NEXT SESSION 
+- do libraries shorts
 - read until 9.5 in the quick python book
 - read libraries and modules chapter in the quick python book
 - do libraries problem sets
+- think of one library you want to learn 
+- get some practice exercises for libraries you want to learn
+- clean up github notes
+- create a README for github 
+- get an example github you want to fashion after
 - do over notes for each module done using note take guide template 
 - research print() 
 - finish make notes on python crash course chapter on dictionaries 

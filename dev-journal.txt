@@ -508,6 +508,8 @@ datasets that cannot be reasonably stored in memory
 - renamed all files to match naming conventions of python
 - finished lecture, learnt about custom libraries and how to not call the entire program when importing
 - read a little bit from the quick python book functions chapter
+- tried to get resources for numpy
+    - got a 
 
 
 
