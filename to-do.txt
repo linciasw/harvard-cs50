@@ -3,6 +3,7 @@
 NEXT SESSION 
 - do libraries shorts [1 DOWN, 3 MORE TO GO]
 - start working on compound interest calculator
+- research the .json() function
 - read until 9.5 in the quick python book
 - read libraries and modules chapter in the quick python book
 - do libraries problem sets
