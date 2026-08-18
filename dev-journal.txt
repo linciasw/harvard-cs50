@@ -509,7 +509,15 @@ datasets that cannot be reasonably stored in memory
 - finished lecture, learnt about custom libraries and how to not call the entire program when importing
 - read a little bit from the quick python book functions chapter
 - tried to get resources for numpy
-    - got a 
+    - got a book, the data science handbook 
+    - also a couple of video tutorials 
+
+
+
+18th august
+- saved a data-science handbook file with resources
+- completed short - api.py, using the chicago art institute api
+- 
 
 
 
