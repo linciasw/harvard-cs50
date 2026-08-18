@@ -149,3 +149,13 @@ Now, test out the behavior of the function:
 >>> maximum(3, 2, 8)
 8
 >>> maximum(1, 5, 9, -2, 2)
+
+
+
+- arguments are passed in by object reference to a function 
+- the parameter that the function receives, becomes a new reference to the object 
+- for immutable objects (such as tuples, strings, and numbers), what
+is done with a parameter has no effect outside the function. But if you pass in a mutable
+object (for example, a list, dictionary, or class instance), any change made to the
+object will change what the argument is referencing outside the function
+- 

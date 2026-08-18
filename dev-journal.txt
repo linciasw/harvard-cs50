@@ -517,6 +517,7 @@ datasets that cannot be reasonably stored in memory
 18th august
 - saved a data-science handbook file with resources
 - completed short - api.py, using the chicago art institute api
+- read a little bit about passing mutable objects to functions 
 - 
 
 
