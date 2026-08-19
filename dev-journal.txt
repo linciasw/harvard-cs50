@@ -519,7 +519,13 @@ datasets that cannot be reasonably stored in memory
 - completed short - api.py, using the chicago art institute api
 - read a little bit about passing mutable objects to functions 
 - completed short - creating modules and packages
--
+
+
+
+19th august
+- completed short - random, card.py
+    - learnt a little about random functions
+    - learnt a little about random.seed()
 
 
 
