@@ -1,8 +1,9 @@
 
 
 NEXT SESSION 
-- do libraries shorts [1 DOWN, 3 MORE TO GO]
+- do libraries shorts [2 DOWN, 2 MORE TO GO]
 - start working on compound interest calculator
+- read random module documentation
 - research the .json() function
 - read until 9.5 in the quick python book
 - read libraries and modules chapter in the quick python book
