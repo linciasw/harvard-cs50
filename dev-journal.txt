@@ -529,8 +529,11 @@ datasets that cannot be reasonably stored in memory
 - started the compound interest calculator
 
 
+
 20th august
 - finished the logic for the compound interest calculator 
+- finished the compound interest calculator fully
+- 
 
 
 
