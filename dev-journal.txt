@@ -526,6 +526,11 @@ datasets that cannot be reasonably stored in memory
 - completed short - random, card.py
     - learnt a little about random functions
     - learnt a little about random.seed()
+- started the compound interest calculator
+
+
+20th august
+- finished the logic for the compound interest calculator 
 
 
 

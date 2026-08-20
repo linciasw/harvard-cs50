@@ -1,11 +1,12 @@
 
 
 NEXT SESSION 
+- research python style guide; PEP8
 - do libraries shorts [2 DOWN, 2 MORE TO GO]
-- start working on compound interest calculator
+- start working on compound interest calculator [STARTED]
 - read random module documentation
 - research the .json() function
-- read until 9.5 in the quick python book
+- read until 9.5 in the quick python book [DONE, FINISH MAKE NOTES]
 - read libraries and modules chapter in the quick python book
 - do libraries problem sets
 - think of one library you want to learn 
@@ -25,7 +26,20 @@ NEXT SESSION
 - read chapter on loops, python crash course
 - do 10 practice exercises, including 5 from problem sets 
 - transfer notes on identity is from picture on phone 
-- research python style guide; PEP8
+
+
+
+
+pep8 short
+- reached 8:57
+- python enhancement proposal
+- if your code is not readable or properly formatted, you run the risk of introducing bugs 
+- peps.python.org/pep-0008
+- pylint, a library to help with formatting
+- pylint is noisy, overwhelming
+- pycodestyle, pycodestyle.pycqa.org; will fix your formatting for you
+- black is another tool, black.readthedocs.io
+- 
 
 
 
