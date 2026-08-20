@@ -11,8 +11,8 @@ NEXT SESSION
 - do libraries problem sets
 - think of one library you want to learn 
 - get some practice exercises for libraries you want to learn
-- clean up github notes
-- create a README for github 
+- clean up github notes [DOING]
+- create a README for github [DONE]
 - get an example github you want to fashion after
 - do over notes for each module done using note take guide template 
 - research print() 
