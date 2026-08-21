@@ -533,7 +533,13 @@ datasets that cannot be reasonably stored in memory
 20th august
 - finished the logic for the compound interest calculator 
 - finished the compound interest calculator fully
-- 
+- read a little bit about functions 
+
+
+
+21st august
+- did emojize.py, problem set
+- created file for figlet.py, problem set 
 
 
 
