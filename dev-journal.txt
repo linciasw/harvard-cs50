@@ -544,6 +544,7 @@ datasets that cannot be reasonably stored in memory
 
 22nd august
 - worked on figlet.py a little bit
+- finished the style short 
 
 
 
