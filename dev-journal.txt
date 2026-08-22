@@ -542,6 +542,11 @@ datasets that cannot be reasonably stored in memory
 - created file for figlet.py, problem set 
 
 
+22nd august
+- worked on figlet.py a little bit
+
+
+
 
 
 
