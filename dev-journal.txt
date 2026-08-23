@@ -547,6 +547,18 @@ datasets that cannot be reasonably stored in memory
 - finished the style short 
 
 
+23rd august
+- finished figlet.py
+- finished adieu.py
+- site to read documentation
+    - https://www.programiz.com/python-programming/modules/random
+    - https://realpython.com/ref/stdlib/
+    - https://realpython.com/ref/stdlib/random/
+
+- finished game.py
+- need to read random documentation
+
+
 
 
 
