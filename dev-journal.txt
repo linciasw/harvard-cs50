@@ -557,6 +557,8 @@ datasets that cannot be reasonably stored in memory
 
 - finished game.py
 - need to read random documentation
+- got a 12-month learning plan
+- 
 
 
 
