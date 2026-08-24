@@ -564,7 +564,7 @@ datasets that cannot be reasonably stored in memory
 - started professor.py
 - got stuck on professor.py, had to ask chatgpt
 - the indentation thing clocked to me, there's lines in vsc in any case
-- 
+- learnt a little bit about how to identify nested loops 
 
 
 
