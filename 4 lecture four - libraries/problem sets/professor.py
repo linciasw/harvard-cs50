@@ -1,23 +1,22 @@
 
 
-
+# need to find a way to call generate_integer() after the users gets it wrong 3 timesa 
+# and the correct answer prints
 
 
 import random
 
 
 def main():
+
     user_level = get_level()
     x, y = generate_integer(user_level)
-
-    # answer = x + y
-    # user_answer = input(f"{x} + {y} = ")
 
     i = 0
     j = 0
     count = 0
 
-    while i < 10:
+    while i < 11:
         try:
             answer = x + y
             user_answer = int(input(f"{x} + {y} = "))
@@ -26,27 +25,32 @@ def main():
             continue
 
 
-
         if user_answer == answer:
             i += 1
             count += 1
-            generate_integer()
-
-            
-        elif user_answer != answer: 
-            print("EEE")
-            user_answer = int(input(f"{x} + {y} = "))
-            j + 1
             continue
-        elif user_answer != answer and j == 3:
-            print(f"{x} + {y} = ", {answer})
+        elif user_answer != answer and j < 2: 
+            j += 1
+            print("EEE")
+            continue
+        elif user_answer != answer and j == 2:
+            print(f"{x} + {y} = {answer}")
+            # x, y = generate_integer(user_level)
+            continue
+        elif i == 10: 
+            print(f"Total correct: ", {count})
             break
 
-
-
-
-
     
+
+        # else:
+        #     print(f"Total correct: ", {count})
+        #     # generate_integer(user_level)
+        #     continue
+            
+
+
+
 
 
 
@@ -56,7 +60,6 @@ def get_level():
     ...
     # range(1, 4)
     while True:
-
         try:
             user_level = int(input("Level: "))
         except ValueError:
@@ -70,6 +73,10 @@ def get_level():
 
 
     return user_level
+
+
+
+
 
 
 def generate_integer(level):
