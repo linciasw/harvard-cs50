@@ -10,36 +10,41 @@ import random
 def main():
 
     user_level = get_level()
-    x, y = generate_integer(user_level)
-
-    i = 0
-    j = 0
     count = 0
 
-    while i < 11:
-        try:
-            answer = x + y
-            user_answer = int(input(f"{x} + {y} = "))
-        except ValueError:
-            print("Enter a number please")
-            continue
 
 
-        if user_answer == answer:
-            i += 1
-            count += 1
-            continue
-        elif user_answer != answer and j < 2: 
-            j += 1
-            print("EEE")
-            continue
-        elif user_answer != answer and j == 2:
-            print(f"{x} + {y} = {answer}")
-            # x, y = generate_integer(user_level)
-            continue
-        elif i == 10: 
-            print(f"Total correct: ", {count})
-            break
+    for i in range(10):
+            
+            x, y = generate_integer(user_level)
+            attempts = 0
+
+
+            while attempts < 3:
+
+                try:
+                    answer = x + y
+                    user_answer = int(input(f"{x} + {y} = "))
+                except ValueError:
+                    print("Enter a number please")
+                    continue
+
+
+                if user_answer == answer:
+                    count += 1
+                    break
+
+                elif attempts < 2: 
+                    attempts += 1
+                    print("EEE")
+                    continue
+
+                elif attempts == 2:
+                    print(f"{x} + {y} = {answer}")
+                    break
+
+
+    print(f"Total correct: ", {count})
 
     
 
@@ -47,13 +52,6 @@ def main():
         #     print(f"Total correct: ", {count})
         #     # generate_integer(user_level)
         #     continue
-            
-
-
-
-
-
-
 
 
 def get_level():
@@ -75,10 +73,6 @@ def get_level():
     return user_level
 
 
-
-
-
-
 def generate_integer(level):
     ...
     if level == 1:
@@ -98,5 +92,9 @@ def generate_integer(level):
 
 
 
+
+
+
+            
 if __name__ == "__main__":
     main()

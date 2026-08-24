@@ -562,6 +562,9 @@ datasets that cannot be reasonably stored in memory
 
 24th august
 - started professor.py
+- got stuck on professor.py, had to ask chatgpt
+- the indentation thing clocked to me, there's lines in vsc in any case
+- 
 
 
 
