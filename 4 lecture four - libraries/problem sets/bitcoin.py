@@ -43,7 +43,18 @@ API_KEY = "acc97ed45d648a8fd5ac30c1e039c1a7420408e9b48076f38032f91f25d47475"
 def main():
 
 
-    bitcoin = float(sys.argv[1])
+    print(sys.argv)
+
+    if len(sys.argv) == 1:
+        print("Missing command-line argument")
+        sys.exit()
+
+
+    try:
+        bitcoin = float(sys.argv[1])
+    except ValueError:
+        print("Command-line argument is not a number")
+        sys.exit()
 
 
     response = requests.get(

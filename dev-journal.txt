@@ -491,7 +491,7 @@ datasets that cannot be reasonably stored in memory
     - put in a try-except and conditional block to handle input validation
     - researched the formula a little bit
 
-- watched the lecture a little
+- watched the libraries lecture a little
     - learnt a little about packages
     - got introduced to the cowsay module
     - learnt a little about the point of the sys module, note in name.py
@@ -542,9 +542,12 @@ datasets that cannot be reasonably stored in memory
 - created file for figlet.py, problem set 
 
 
+
 22nd august
 - worked on figlet.py a little bit
 - finished the style short 
+
+
 
 
 23rd august
@@ -567,18 +570,14 @@ datasets that cannot be reasonably stored in memory
 - learnt a little bit about how to identify nested loops 
 
 
+
+
 25th august
 - had to use chatgpt for the coincap api
-- need to research how to use requests library
+    - i wasn't clear on how to use it 
+    - realized i need to research how to use requests library
     - got a little confused on the headers parameter
 - got some api exercises to help with reading documentation etc
-- changed the movie recommendation engine to use an API
-- started reading about the requests library
-    - https://realpython.com/python-requests/
-    - https://requests.readthedocs.io/en/latest/
-- 
-
-
 
 
 
