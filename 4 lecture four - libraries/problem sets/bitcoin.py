@@ -1,3 +1,9 @@
+# put in try-except block for API requests
+
+
+
+
+
 # https://pro.coincap.io/dashboard
 # https://pro.coincap.io/api-docs/
 
@@ -40,7 +46,7 @@ def main():
     bitcoin = float(sys.argv[1])
 
 
-    response= requests.get(
+    response = requests.get(
         "https://rest.coincap.io/v3/price/bysymbol/BTC",
         headers={"Authorization": f"Bearer {API_KEY}"}
     )
