@@ -578,7 +578,8 @@ datasets that cannot be reasonably stored in memory
     - realized i need to research how to use requests library
     - got a little confused on the headers parameter
 - got some api exercises to help with reading documentation etc
-- 
+- finished bitcoin.py 95%
+    - need to put in the exception for the API block
 
 
 
