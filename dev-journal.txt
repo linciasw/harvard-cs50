@@ -567,6 +567,13 @@ datasets that cannot be reasonably stored in memory
 - learnt a little bit about how to identify nested loops 
 
 
+25th august
+- had to use chatgpt for the coincap api
+- need to research how to use requests library
+    - got a little confused on the headers parameter
+- got some api exercises to help with reading documentation etc
+
+
 
 
 
