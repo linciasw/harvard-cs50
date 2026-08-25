@@ -572,6 +572,13 @@ datasets that cannot be reasonably stored in memory
 - need to research how to use requests library
     - got a little confused on the headers parameter
 - got some api exercises to help with reading documentation etc
+- changed the movie recommendation engine to use an API
+- started reading about the requests library
+    - https://realpython.com/python-requests/
+    - https://requests.readthedocs.io/en/latest/
+- 
+
+
 
 
 
