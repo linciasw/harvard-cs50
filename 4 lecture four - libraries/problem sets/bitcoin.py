@@ -44,10 +44,11 @@ def main():
         sys.exit()
 
 
-
-    bitcoin = float(sys.argv[1])
-
-
+    try:
+        bitcoin = float(sys.argv[1])
+    except ValueError:
+        print("Command-line argument is not a number")
+        sys.exit()
 
 
     response= requests.get(
