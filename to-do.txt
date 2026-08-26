@@ -1,15 +1,17 @@
 
 
 NEXT SESSION 
+- start studying APIs
+- start working on movie recommendation engine
 - research python style guide; PEP8
-- do libraries shorts [3 DOWN, 1 MORE TO GO]
-- start working on compound interest calculator [STARTED]
+- do libraries shorts [3 DOWN, 1 MORE TO GO] [DONE]
+- start working on compound interest calculator [DONE]
 - read random module documentation
 - research the .json() function
 - read until 9.5 in the quick python book [DONE, FINISH MAKE NOTES; DONE]
 - create markdown file for the quick python book notes on functions
 - read libraries and modules chapter in the quick python book
-- do libraries problem sets
+- do libraries problem sets [DONE]
 - think of one library you want to learn 
 - get some practice exercises for libraries you want to learn
 - clean up github notes [DOING]

@@ -578,6 +578,24 @@ datasets that cannot be reasonably stored in memory
     - realized i need to research how to use requests library
     - got a little confused on the headers parameter
 - got some api exercises to help with reading documentation etc
+- learnt a little bit about HTTP
+    - what's in a request to the server [verb, header, parameter etc]
+    - what's in the response to the client 
+    - need to make a note on it 
+
+
+
+
+26th august
+- started lecture 5 - unit testing 
+- started researching APIs 
+    - got some resources to learn about it a little more
+    - created a .md file to take notes on it
+
+
+
+
+
 
 
 
