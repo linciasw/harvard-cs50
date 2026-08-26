@@ -591,6 +591,11 @@ datasets that cannot be reasonably stored in memory
 - started researching APIs 
     - got some resources to learn about it a little more
     - created a .md file to take notes on it
+    - realized i needed to read the documentation after trying to avoid it
+    - learnt a bit about what's in a URL
+- learnt how to add a picture to vsc markdown [drag, hold down shift, drop]
+- 
+
 
 
 
