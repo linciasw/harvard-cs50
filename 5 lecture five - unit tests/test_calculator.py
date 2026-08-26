@@ -1,3 +1,6 @@
+# FROM LECTURE
+# REACHED 16:50, PYTEST
+
 # testing is writing more code to test the code you've written as below
 
 # we changed the * in calculator.py to a + but 
