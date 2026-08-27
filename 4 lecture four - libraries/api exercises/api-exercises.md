@@ -8,8 +8,10 @@ The goal with these projects is to practice the following workflow:
 
 ## 1. 🌤️ Weather CLI
 
-**API:** Open-Meteo
+**API:** Open-Meteo 
+<br>
 **API Key:** Not required
+<br>
 **Difficulty:** ⭐⭐
 
 ### Goal
@@ -44,7 +46,9 @@ Weather: Partly cloudy
 ## 2. 💱 Currency Converter
 
 **API:** Frankfurter or ExchangeRate API
+<br>
 **API Key:** Depends on API
+<br>
 **Difficulty:** ⭐⭐½
 
 ### Goal
@@ -83,7 +87,9 @@ python convert.py GBP TTD 50
 ## 3. 🎬 Movie Search CLI
 
 **API:** OMDb API
+<br>
 **API Key:** Required
+<br>
 **Difficulty:** ⭐⭐⭐
 
 ### Goal
@@ -125,7 +131,9 @@ python movie.py "Interstellar"
 ## 4. 📈 Cryptocurrency Price Tracker
 
 **API:** CoinCap
+<br>
 **API Key:** Required
+<br>
 **Difficulty:** ⭐⭐⭐
 
 ### Goal
@@ -174,7 +182,9 @@ Solana         $182.43
 ## 5. 💰 Stock / Portfolio Tracker
 
 **API:** Alpha Vantage or another market-data API
+<br>
 **API Key:** Required
+<br>
 **Difficulty:** ⭐⭐⭐½
 
 ### Goal
