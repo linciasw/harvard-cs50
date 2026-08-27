@@ -601,7 +601,7 @@ datasets that cannot be reasonably stored in memory
 - did a 10 minutes of unit testing lecture
 - worked on weather cli for about 45 minutes
     - just to format output and try to get name matched to coordinates
-
+- 
 
 
 
