@@ -594,7 +594,13 @@ datasets that cannot be reasonably stored in memory
     - realized i needed to read the documentation after trying to avoid it
     - learnt a bit about what's in a URL
 - learnt how to add a picture to vsc markdown [drag, hold down shift, drop]
-- 
+
+
+
+27th august
+- did a 10 minutes of unit testing lecture
+- worked on weather cli for about 45 minutes
+    - just to format output and try to get name matched to coordinates
 
 
 
