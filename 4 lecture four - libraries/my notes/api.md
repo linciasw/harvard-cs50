@@ -12,10 +12,13 @@ https://ics.uci.edu/%7Efielding/pubs/dissertation/top.htm
 
 
 <br>
+
 # video courses
+
 <br>
 check description to get all videos
 <br>
+
 https://www.youtube.com/watch?v=WXsD0ZgxjRw#:~:text=This%20course%20provides%20an,their%20benefits.
 
 
