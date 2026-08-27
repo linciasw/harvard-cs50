@@ -8,7 +8,11 @@ The goal with these projects is to practice the following workflow:
 
 ## 1. 🌤️ Weather CLI
 
+<<<<<<< HEAD
 **API:** Open-Meteo 
+=======
+**API:** Open-Meteo
+>>>>>>> 2d5930fe2e1892784cce6a2d7ccdf8c202c9c0d6
 <br>
 **API Key:** Not required
 <br>
@@ -184,7 +188,11 @@ Solana         $182.43
 **API:** Alpha Vantage or another market-data API
 <br>
 **API Key:** Required
+<<<<<<< HEAD
 <br>
+=======
+
+>>>>>>> 2d5930fe2e1892784cce6a2d7ccdf8c202c9c0d6
 **Difficulty:** ⭐⭐⭐½
 
 ### Goal

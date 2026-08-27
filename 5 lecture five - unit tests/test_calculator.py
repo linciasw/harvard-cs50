@@ -1,5 +1,5 @@
 # FROM LECTURE
-# REACHED 16:50, PYTEST
+# REACHED 22:28, PYTEST
 
 # testing is writing more code to test the code you've written as below
 
@@ -19,7 +19,16 @@
 
 # think in terms of corner and edge cases when testing
 
+# PYTEST
+# to automate the testing of code
+# does not have to write as much lines of code 
 
+# unit testing 
+# testing different units of your program, unit means functions 
+# pretty user-friendly as far as testing frameworks go and allows us to dive right in 
+
+# documentation:
+# docs.pytest.org
 
 
 
@@ -28,8 +37,15 @@
 from calculator import square 
 
 
-def main():
-    test_square()
+# def main():
+
+def test_square():
+    assert square(2) == 4
+    assert square(3) == 9
+    assert square(-2) == 4
+    assert square(-3) == 9
+    assert square(0) == 0
+
 
 
 # def test_square():
@@ -40,27 +56,27 @@ def main():
 
 
 # USING ASSERT
-def test_square():
-    try:
-        assert square(2) == 4
-    except AssertionError:
-        print("2 squared was not 4")
-    try:
-        assert square(3) == 9
-    except AssertionError:
-        print("3 squared was not 9")
-    try:
-        assert square(-2) == 4
-    except AssertionError:
-        print("-2 squared was not 4")
-    try:
-        assert square(-3) == 9
-    except AssertionError:
-        print("-3 squared was not 9")
-    try:
-        assert square(0) == 0
-    except AssertionError:
-        print("0 squared was not 0")
+# def test_square():
+#     try:
+#         assert square(2) == 4
+#     except AssertionError:
+#         print("2 squared was not 4")
+#     try:
+#         assert square(3) == 9
+#     except AssertionError:
+#         print("3 squared was not 9")
+#     try:
+#         assert square(-2) == 4
+#     except AssertionError:
+#         print("-2 squared was not 4")
+#     try:
+#         assert square(-3) == 9
+#     except AssertionError:
+#         print("-3 squared was not 9")
+#     try:
+#         assert square(0) == 0
+#     except AssertionError:
+#         print("0 squared was not 0")
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
