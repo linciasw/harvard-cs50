@@ -601,7 +601,16 @@ datasets that cannot be reasonably stored in memory
 - did a 10 minutes of unit testing lecture
 - worked on weather cli for about 45 minutes
     - just to format output and try to get name matched to coordinates
-- 
+
+
+
+28th august
+- continued with unit testing lecture 
+
+- continued working on the weather-cli
+    - finally understand open-meteo API, with the help of chatgpt
+    - just to learn the geocoding API to resolve the coordinates to a place name
+    - create functions, send the coordinates from the geocoding func to the weather func
 
 
 
