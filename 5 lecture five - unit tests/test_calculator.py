@@ -34,6 +34,8 @@
 
 
 
+
+
 from calculator import square 
 
 
@@ -45,6 +47,30 @@ def test_square():
     assert square(-2) == 4
     assert square(-3) == 9
     assert square(0) == 0
+
+
+
+'''
+# error with pytest
+test_calculator.py F                                                             [100%]
+
+====================================== FAILURES =======================================
+_____________________________________ test_square _____________________________________
+
+    def test_square():
+        assert square(2) == 4
+>       assert square(3) == 9
+E       assert 6 == 9
+E        +  where 6 = square(3)
+
+test_calculator.py:44: AssertionError
+=============================== short test summary info ===============================
+FAILED test_calculator.py::test_square - assert 6 == 9
+================================== 1 failed in 0.57s ==================================
+(venv) PS C:\Users\linci\OneDrive\Desktop\python\harvard-cs50\5 lecture five - unit tests> 
+
+'''
+
 
 
 
