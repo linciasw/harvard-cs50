@@ -40,12 +40,44 @@ containing coordinates (latitude, longitude) and desired metrics (current, hourl
 '''
 
 
-def main():
+
+def get_coordinates():
+
+    import requests
+
+    location = input("Location: ")
+
+
+    response = requests.get(
+        "https://geocoding-api.open-meteo.com/v1/search",
+        params = {
+            "name": location,
+            "language": "en",
+            "format": "json",
+            "count": 1,
+        }
+        
+    )
+
+
+    content = response.json()
+    # print(content)
+
+    for data in content['results']:
+        # print(f"{data['latitude']}, {data['longitude']}")
+        latitude = data['latitude']
+        longitude = data['longitude']
+        # print(latitude, longitude)
+
+
+    return latitude, longitude
+
+
+
+def get_weather(latitude, longitude):
 
 
     import openmeteo_requests
-    import sys
-
 
 
     # create a client object
@@ -63,8 +95,8 @@ def main():
     # with the checkboxes on the api site 
     # 2m means 2 metres above ground
     params = {
-        "latitude": 52.52,
-        "longitude": 13.41,
+        "latitude": float(latitude),
+        "longitude": float(longitude),
         "current": ["temperature_2m", "cloud_cover", "wind_speed_10m"],
     }
 
@@ -73,7 +105,9 @@ def main():
     responses = openmeteo.weather_api(url, params = params)
 
 
-    print(responses)
+
+    # DEBUGGING 
+    # print(responses)
     # this outputs:
     # [<openmeteo_sdk.WeatherApiResponse.WeatherApiResponse object at 0x000001EE26A0CB80>]
     # to access the data inside this object,
@@ -82,9 +116,33 @@ def main():
     # printing the object only shows its memory address.
 
 
+    # print(type(responses))
+    # this outputs:
+    # <class 'list'>
+    # you have the type of object you're interacting with
+
+
+    # print(dir(response))
+    # this outputs:
+    # you can drill into the object a little more
+    # ['Current', 'Daily', 'Elevation', 'GenerationTimeMilliseconds', 'GetRootAs', 'GetRootAsWeatherApiResponse', 
+    # 'Hourly', 'Init', 'Latitude', 'LocationId', 'Longitude', 'Minutely15', 'Model', 'Monthly', 'Timezone', 'TimezoneAbbreviation', 
+    # 'UtcOffsetSeconds', 'Weekly', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__firstlineno__', '__format__', 
+    # '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', 
+    # '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
+    # '__setattr__', '__sizeof__', '__slots__', '__static_attributes__', '__str__', '__subclasshook__', '_tab']
+
+
+
+    # help(responses)
+    # help on particular object
+    # shows the methods/functions you can use on it
+
+
 
     # view location metadata
-    # 
+    # response is equal to the first list
+    # even if there is only one location in the list, we still need to initialize it 
     response = responses[0]
 
     print(f"Coordinates: {response.Latitude()}°N {response.Longitude()}°E")
@@ -97,7 +155,7 @@ def main():
     current = response.Current()
     current_temperature_2m = current.Variables(0).Value()
     current_cloud_cover = current.Variables(1).Value()
-    current_wind_speed_2m = current.Variables(1).Value()
+    current_wind_speed_2m = current.Variables(2).Value()
 
     # print(f"Current time: {current.Time()}")
     print(f"Current temperature_2m: {current_temperature_2m} ")
@@ -105,19 +163,21 @@ def main():
     print(f"Current wind speed_2m: {current_wind_speed_2m} ")
 
 
+
+
+
+
+def main():
+    
+    latitude, longitude = get_coordinates()
+    get_weather(latitude, longitude)
+
+
 main()
 
 
 
 
-"""
-METADATA PRINTED OUT
-print(dir(response))
 
-['Current', 'Daily', 'Elevation', 'GenerationTimeMilliseconds', 'GetRootAs', 'GetRootAsWeatherApiResponse', 
- 'Hourly', 'Init', 'Latitude', 'LocationId', 'Longitude', 'Minutely15', 'Model', 'Monthly', 'Timezone', 'TimezoneAbbreviation', 
- 'UtcOffsetSeconds', 'Weekly', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__firstlineno__', '__format__', 
- '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', 
- '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', 
- '__setattr__', '__sizeof__', '__slots__', '__static_attributes__', '__str__', '__subclasshook__', '_tab']
- """
+
+
