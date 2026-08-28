@@ -1,5 +1,5 @@
 # FROM LECTURE
-# REACHED 22:28, PYTEST
+# REACHED 32:38, PYTEST
 
 # testing is writing more code to test the code you've written as below
 
@@ -10,12 +10,6 @@
 # the less code we write to test, the more likely we'll do it 
 # and also fewer opportunities for mistakes.
 # this is where the assert keyword comes in.
-
-# ASSERT
-# to claim something is true; if it is, nothing happens on the screen 
-# if it's not true ie false, you'll see an AssertionError on the screen.
-# it's not 100% user-friendly but it'll show the line etc.
-
 
 # think in terms of corner and edge cases when testing
 
@@ -41,35 +35,54 @@ from calculator import square
 
 # def main():
 
-def test_square():
+# def test_square():
+#     assert square(2) == 4
+#     assert square(3) == 9
+#     assert square(-2) == 4
+#     assert square(-3) == 9
+#     assert square(0) == 0
+
+
+
+
+# categories of test
+def test_positive():
     assert square(2) == 4
     assert square(3) == 9
+
+
+def test_negative():
     assert square(-2) == 4
     assert square(-3) == 9
+
+
+def test_zero():
     assert square(0) == 0
 
 
 
-'''
+
+
+
 # error with pytest
-test_calculator.py F                                                             [100%]
+# test_calculator.py F                                                             [100%]
 
-====================================== FAILURES =======================================
-_____________________________________ test_square _____________________________________
+# ====================================== FAILURES =======================================
+# _____________________________________ test_square _____________________________________
 
-    def test_square():
-        assert square(2) == 4
->       assert square(3) == 9
-E       assert 6 == 9
-E        +  where 6 = square(3)
+#     def test_square():
+#         assert square(2) == 4
+# >       assert square(3) == 9
+# E       assert 6 == 9
+# E        +  where 6 = square(3)
 
-test_calculator.py:44: AssertionError
-=============================== short test summary info ===============================
-FAILED test_calculator.py::test_square - assert 6 == 9
-================================== 1 failed in 0.57s ==================================
-(venv) PS C:\Users\linci\OneDrive\Desktop\python\harvard-cs50\5 lecture five - unit tests> 
+# test_calculator.py:44: AssertionError
+# =============================== short test summary info ===============================
+# FAILED test_calculator.py::test_square - assert 6 == 9
+# ================================== 1 failed in 0.57s ==================================
+# (venv) PS C:\Users\linci\OneDrive\Desktop\python\harvard-cs50\5 lecture five - unit tests> 
 
-'''
+
 
 
 
@@ -81,7 +94,16 @@ FAILED test_calculator.py::test_square - assert 6 == 9
 #         print("3 squared was not 9")
 
 
+
+
+
 # USING ASSERT
+# ASSERT
+# to claim something is true; if it is, nothing happens on the screen 
+# if it's not true ie false, you'll see an AssertionError on the screen.
+# it's not 100% user-friendly but it'll show the line etc.
+
+
 # def test_square():
 #     try:
 #         assert square(2) == 4
