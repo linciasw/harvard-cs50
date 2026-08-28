@@ -610,9 +610,9 @@ datasets that cannot be reasonably stored in memory
 - continued working on weather-cli.py
     - finally understand open-meteo API, with the help of chatgpt
     - just to learn the geocoding API to resolve the coordinates to a place name
-    - create functions, send the coordinates from the geocoding func to the weather func
+    - to create functions, send the coordinates from the geocoding func to the weather func
     - weather-cli.py is finally working!
-    - got the geocoding api to resolve get the name and resolve it into coordinates for the weather api to pull the weather information
+    - got the geocoding api to resolve the name and resolve it into coordinates for the weather api to pull the weather information
     - tiny program, 2 functions right now
     - need to put in try-except blocks and research the weather information to actually make it useful 
     - write a small article on what i learnt from this
