@@ -606,7 +606,6 @@ datasets that cannot be reasonably stored in memory
 
 28th august
 - continued with unit testing lecture 
-
 - continued working on weather-cli.py
     - finally understand open-meteo API, with the help of chatgpt
     - just to learn the geocoding API to resolve the coordinates to a place name
@@ -616,6 +615,11 @@ datasets that cannot be reasonably stored in memory
     - tiny program, 2 functions right now
     - need to put in try-except blocks and research the weather information to actually make it useful 
     - write a small article on what i learnt from this
+
+
+
+29th august
+- finished unit test testing lecture
 
 
 
