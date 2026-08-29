@@ -25,12 +25,18 @@ Practice:
     Reading API documentation
 
 
+    
+WEATHER API
 https://open-meteo.com/en/docs?hourly=&location_mode=csv_coordinates
+
+
+GOECODING API (NEEDED TO CHANGE NAMES TO COORDINATES FOR THE WEATHER API)
+https://open-meteo.com/en/docs/geocoding-api
+
+
+RANDOM
 https://www.geopythontutorials.com/notebooks/openmeteo_weather_forecast.html#get-daily-forecast
 
-
-need to use geocoding to get the latitude and longitude from place name
-https://nominatim.org/release-docs/latest/library/Getting-Started/#__tabbed_1_2
 
 
 The API client is initialized with openmeteo_requests.Client, 
@@ -97,7 +103,7 @@ def get_weather(latitude, longitude):
     params = {
         "latitude": float(latitude),
         "longitude": float(longitude),
-        "current": ["temperature_2m", "cloud_cover", "wind_speed_10m"],
+        "current": ["weather_code", "cloud_cover", "wind_speed_10m"],
     }
 
     # returns a list of responses
@@ -148,21 +154,63 @@ def get_weather(latitude, longitude):
     print(f"Coordinates: {response.Latitude()}°N {response.Longitude()}°E")
     print(f"Elevation: {response.Elevation()} m asl")
     print(f"Timezone difference to GMT+0: {response.UtcOffsetSeconds()}s")
+    print()
 
 
+    # put in temperature variable
     # view current weather data (if requested in params)
     # be mindful of the order
     current = response.Current()
-    current_temperature_2m = current.Variables(0).Value()
+    current_weather_code = current.Variables(0).Value()
     current_cloud_cover = current.Variables(1).Value()
-    current_wind_speed_2m = current.Variables(2).Value()
+    current_wind_speed_10m = current.Variables(2).Value()
+    current_temperature_2m = current.Variables(3).Value()
 
+
+    # write conditionals for weather code 
+    # write conditions for cloud cover
+
+
+    print(f"===== Current Weather === ")
     # print(f"Current time: {current.Time()}")
-    print(f"Current temperature_2m: {current_temperature_2m} ")
-    print(f"Current cloud cover: {current_cloud_cover} ")
-    print(f"Current wind speed_2m: {current_wind_speed_2m} ")
+    print(f"Current weather_code: {current_weather_code} ")
+    print(f"Current cloud cover: {current_cloud_cover:,.0f} ")
+    print(f"Current wind speed_10m: {current_wind_speed_10m:,.0f}km/h ")
+    print(f"Current temperature_2m: {current_temperature_2m:,.0f} ")
 
 
+
+    # cloud cover:
+    # %
+    # Total cloud cover as an area fraction 
+    # Cloud Cover Categories and Percentages0% to 10% (Clear / Sunny): The sky is mostly or completely free of clouds. You will see bright, uninterrupted sunshine.
+    # 10% to 25% (Few / Mostly Clear): Only a few small clouds are visible. Most of the sky remains open and clear.
+    # 25% to 50% (Scattered / Partly Cloudy): Clouds cover up to half of the sky. You get a mix of bright sunshine and passing cloud patches.
+    # 50% to 90% (Broken / Mostly Cloudy): Most of the sky is hidden by a heavy layer of clouds. Sunlight only breaks through occasionally.
+    # 90% to 100% (Overcast / Cloudy): The entire sky is completely filled with a solid blanket of clouds. 
+    # No patches of blue sky or direct sunlight are visible.
+
+
+    # weather code:
+    # WMO Weather interpretation codes (WW):
+    # Code	Description
+    # 0	Clear sky
+    # 1, 2, 3	Mainly clear, partly cloudy, and overcast
+    # 45, 48	Fog and depositing rime fog
+    # 51, 53, 55	Drizzle: Light, moderate, and dense intensity
+    # 56, 57	Freezing Drizzle: Light and dense intensity
+    # 61, 63, 65	Rain: Slight, moderate and heavy intensity
+    # 66, 67	Freezing Rain: Light and heavy intensity
+    # 71, 73, 75	Snow fall: Slight, moderate, and heavy intensity
+    # 77	Snow grains
+    # 80, 81, 82	Rain showers: Slight, moderate, and violent
+    # 85, 86	Snow showers slight and heavy
+    # 95 *	Thunderstorm: Slight or moderate
+    # 96, 99 *	Thunderstorm with slight and heavy hail
+
+
+    # wind speed:
+    # kmh
 
 
 
