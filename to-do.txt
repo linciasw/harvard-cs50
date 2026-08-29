@@ -5,6 +5,7 @@ https://www.youtube.com/watch?v=tb8gHvYlCFs
 
 
 NEXT SESSION 
+- do short for unit testing
 - start studying APIs
 - start working on tt-finance-index
 - continue watching CS50 data structures lecture
