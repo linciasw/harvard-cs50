@@ -27,5 +27,6 @@ def test_argument():
     # assert hello("David") == "hello, David"
     
 
+# each test you do should be simple and small
 
 
