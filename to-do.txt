@@ -7,6 +7,7 @@ https://www.youtube.com/watch?v=tb8gHvYlCFs
 NEXT SESSION 
 - start studying APIs
 - start working on tt-finance-index
+- continue watching CS50 data structures lecture
 - create blog on portfotlio site, write about things you wish you knew 
 - research python style guide; PEP8
 - do libraries shorts [3 DOWN, 1 MORE TO GO] [DONE]
