@@ -28,7 +28,8 @@
 
 
 
-
+# to use the raises() function for the TypeError
+import pytest
 
 from calculator import square 
 
@@ -41,46 +42,6 @@ from calculator import square
 #     assert square(-2) == 4
 #     assert square(-3) == 9
 #     assert square(0) == 0
-
-
-
-
-# categories of test
-def test_positive():
-    assert square(2) == 4
-    assert square(3) == 9
-
-
-def test_negative():
-    assert square(-2) == 4
-    assert square(-3) == 9
-
-
-def test_zero():
-    assert square(0) == 0
-
-
-
-
-
-
-# error with pytest
-# test_calculator.py F                                                             [100%]
-
-# ====================================== FAILURES =======================================
-# _____________________________________ test_square _____________________________________
-
-#     def test_square():
-#         assert square(2) == 4
-# >       assert square(3) == 9
-# E       assert 6 == 9
-# E        +  where 6 = square(3)
-
-# test_calculator.py:44: AssertionError
-# =============================== short test summary info ===============================
-# FAILED test_calculator.py::test_square - assert 6 == 9
-# ================================== 1 failed in 0.57s ==================================
-# (venv) PS C:\Users\linci\OneDrive\Desktop\python\harvard-cs50\5 lecture five - unit tests> 
 
 
 
@@ -128,3 +89,67 @@ def test_zero():
 
 # if __name__ == "__main__":
 #     main()
+
+
+
+
+
+# categories of test
+def test_positive():
+    assert square(2) == 4
+    assert square(3) == 9
+
+
+def test_negative():
+    assert square(-2) == 4
+    assert square(-3) == 9
+
+
+def test_zero():
+    assert square(0) == 0
+
+
+def test_str():
+    with pytest.raises(TypeError):
+        square("cat")
+
+
+
+
+
+
+# error with pytest:
+# test_calculator.py F                                                             [100%]
+
+# ====================================== FAILURES =======================================
+# _____________________________________ test_square _____________________________________
+
+#     def test_square():
+#         assert square(2) == 4
+# >       assert square(3) == 9
+# E       assert 6 == 9
+# E        +  where 6 = square(3)
+
+# test_calculator.py:44: AssertionError
+# =============================== short test summary info ===============================
+# FAILED test_calculator.py::test_square - assert 6 == 9
+# ================================== 1 failed in 0.57s ==================================
+# (venv) PS C:\Users\linci\OneDrive\Desktop\python\harvard-cs50\5 lecture five - unit tests> 
+
+
+
+# output if test passes:
+# > pytest test_calculator.py                                                            
+# ================================= test session starts =================================
+# platform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0
+# rootdir: C:\Users\linci\OneDrive\Desktop\python\harvard-cs50\5 lecture five - unit tests
+# plugins: typeguard-4.6.0
+# collected 3 items                                                                      
+
+# test_calculator.py ...                                                           [100%]
+
+# ================================== 3 passed in 0.11s ==================================
+# (venv) PS C:\Users\linci\OneDrive\Desktop\python\harvard-cs50\5 lecture five - unit test
+
+
+
