@@ -18,10 +18,17 @@
     - [Meaning](#meaning-1)
   - [NameError](#nameerror)
     - [Meaning](#meaning-2)
-  - [TypeError](#typeerror) 
+  - [TypeError](#typeerror)
     - [Meaning](#meaning-3)
   - [ValueError](#valueerror)
     - [Meaning](#meaning-4)
+  - [TypeError vs ValueError](#typeerror-vs-valueerror)
+    - [The Simple Rule](#the-simple-rule)
+    - [TypeError](#typeerror-1)
+    - [ValueError](#valueerror-1)
+    - [Important: ValueError ≠ Just Conversions](#important-valueerror--just-conversions)
+    - [Quick Mental Model](#quick-mental-model)
+    - [Remember](#remember)
   - [IndexError](#indexerror)
     - [Meaning](#meaning-5)
   - [KeyError](#keyerror)
@@ -58,8 +65,8 @@
   - [Unicode Errors](#unicode-errors)
 - [17. Complete Exception Hierarchy](#17-complete-exception-hierarchy)
 - [18. Exception Mental Models](#18-exception-mental-models)
-  - [TypeError](#typeerror-1)
-  - [ValueError](#valueerror-1)
+  - [TypeError](#typeerror-2)
+  - [ValueError](#valueerror-2)
   - [IndexError](#indexerror-1)
   - [KeyError](#keyerror-1)
   - [NameError](#nameerror-1)
@@ -513,6 +520,93 @@ ValueError
 ```
 
 The function's contract determines what values it can accept.
+
+---
+## TypeError vs ValueError
+
+### The Simple Rule
+
+> **TypeError = Wrong type**
+>
+> **ValueError = Right type, wrong value**
+
+---
+
+### TypeError
+
+Python is saying:
+
+> "I can't perform this operation with this type."
+
+```python
+"35" + 5
+```
+
+* `"35"` → `str`
+* `5` → `int`
+* The types don't work together → **TypeError**
+
+Another example:
+
+```python
+len(10)
+```
+
+An `int` doesn't have a length → **TypeError**
+
+---
+
+### ValueError
+
+Python is saying:
+
+> "I understand the type, but the value isn't acceptable."
+
+```python
+int("hello")
+```
+
+`int()` accepts a `str`, but `"hello"` isn't a valid integer representation → **ValueError**
+
+```python
+int("35")       # Works
+int("hello")    # ValueError
+```
+
+---
+
+### Important: ValueError ≠ Just Conversions
+
+Conversions often produce `ValueError`, but that's **not what defines it**.
+
+```python
+numbers = [1, 2, 3]
+
+numbers.index(5)
+```
+
+`index()` accepts an integer, so the type is fine.
+
+But `5` isn't in the list → **ValueError**
+
+---
+
+### Quick Mental Model
+
+When you see an exception, ask:
+
+**"Is Python complaining about the TYPE or the VALUE?"**
+
+| Error        | Meaning                         |
+| ------------ | ------------------------------- |
+| `TypeError`  | Wrong type                      |
+| `ValueError` | Right type, inappropriate value |
+
+### Remember
+
+**TypeError:** "I don't accept this type."
+
+**ValueError:** "I accept this type, but not this value."
 
 ---
 
