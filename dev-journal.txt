@@ -620,6 +620,20 @@ datasets that cannot be reasonably stored in memory
 
 29th august
 - finished unit test testing lecture
+- watch a little bit of tech with tim's unit testing tutorial
+- worked on the weather-cli app
+    - got the conditionals to put in for the different conditions
+    - also need to put in the try-except block 
+- thinking to learn streamlit, to make my finance calculators accessible 
+
+
+
+
+30th august
+- put in a note in exceptions note about TypeErrors versus ValueErrors
+- encountered isinstance() and the "with" statement for the first time
+- worked on twttr.py problem set 
+- 
 
 
 

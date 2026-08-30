@@ -5,6 +5,7 @@ https://www.youtube.com/watch?v=tb8gHvYlCFs
 
 
 NEXT SESSION 
+- make a note for libraries and unit testing module 
 - do short for unit testing
 - start studying APIs
 - start working on tt-finance-index
