@@ -46,6 +46,12 @@ containing coordinates (latitude, longitude) and desired metrics (current, hourl
 '''
 
 
+# TO DO 
+# put in try-except error handling
+# put in conditionals for cloud cover
+# put in conditionals for weather code 
+
+
 
 def get_coordinates():
 
