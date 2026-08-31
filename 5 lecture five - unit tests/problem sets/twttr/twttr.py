@@ -15,9 +15,7 @@ each of whose names should begin with test_ so that you can execute your tests w
 
 
 
-def main():
-
-
+def get_word():
 # once you're in a try-except block and an error comes up, it wil look for the except to know what to do
 # in the below loop, it stays in the while loop because the break is only if the try does not give a ValueError
 
@@ -34,10 +32,8 @@ def main():
             print("Please enter a word")
 
 
+    return word
 
-
-    shortened_word = shorten(word)
-    print(shortened_word)
 
 
 
@@ -52,6 +48,16 @@ def shorten(word):
             continue
 
     return new_word
+
+
+
+
+def main():
+
+    word_from_user = get_word()
+    shortened_word  = shorten(word_from_user)
+    print(shortened_word)
+
 
 
 

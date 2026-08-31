@@ -3,7 +3,7 @@
 import pytest
 
 from twttr import shorten
-import twttr
+from twttr import get_word
 
 
 
@@ -21,9 +21,13 @@ def test_shorten():
 
 
 # to test try except block
-def test_error():
+def test_get_word(monkeypatch):
+    def fake_input(prompt):
+        return "555"
+
+    monkeypatch.setattr("builtins.input", fake_input)
     with pytest.raises(ValueError):
-        shorten("555")
+        get_word()
 
 
 
