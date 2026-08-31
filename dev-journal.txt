@@ -633,7 +633,27 @@ datasets that cannot be reasonably stored in memory
 - put in a note in exceptions note about TypeErrors versus ValueErrors
 - encountered isinstance() and the "with" statement for the first time
 - worked on twttr.py problem set 
-- 
+
+
+
+31st august
+- worked on test_twttr.py a little bit
+    - encountered monkeypatch for pytest for the first time
+    - i was trying to test a try-0except block in a function where the user enters a word and it's returned
+    - didn't work, i'll revisit it soon
+
+- worked on and completed weather-cli.py
+    - it was a lot of fun
+- created currency-converter.py for the second api exercise
+
+- started lecture 6 file i/o
+
+
+
+
+
+
+
 
 
 
