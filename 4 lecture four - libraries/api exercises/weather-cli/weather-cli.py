@@ -109,7 +109,7 @@ def get_weather(latitude, longitude):
     params = {
         "latitude": float(latitude),
         "longitude": float(longitude),
-        "current": ["weather_code", "cloud_cover", "wind_speed_10m"],
+        "current": ["weather_code", "cloud_cover", "wind_speed_10m", "temperature_2m"],
     }
 
     # returns a list of responses
@@ -157,8 +157,8 @@ def get_weather(latitude, longitude):
     # even if there is only one location in the list, we still need to initialize it 
     response = responses[0]
 
-    print(f"Coordinates: {response.Latitude()}°N {response.Longitude()}°E")
-    print(f"Elevation: {response.Elevation()} m asl")
+    print(f"Coordinates: Latitude ({response.Latitude()}°N), Longitude({response.Longitude()}°E)")
+    print(f"Elevation: {response.Elevation()}m asl")
     print(f"Timezone difference to GMT+0: {response.UtcOffsetSeconds()}s")
     print()
 
@@ -173,30 +173,8 @@ def get_weather(latitude, longitude):
     current_temperature_2m = current.Variables(3).Value()
 
 
-    # write conditionals for weather code 
-    # write conditions for cloud cover
 
-
-    print(f"===== Current Weather === ")
-    # print(f"Current time: {current.Time()}")
-    print(f"Current weather_code: {current_weather_code} ")
-    print(f"Current cloud cover: {current_cloud_cover:,.0f} ")
-    print(f"Current wind speed_10m: {current_wind_speed_10m:,.0f}km/h ")
-    print(f"Current temperature_2m: {current_temperature_2m:,.0f} ")
-
-
-
-    # cloud cover:
-    # %
-    # Total cloud cover as an area fraction 
-    # Cloud Cover Categories and Percentages0% to 10% (Clear / Sunny): The sky is mostly or completely free of clouds. You will see bright, uninterrupted sunshine.
-    # 10% to 25% (Few / Mostly Clear): Only a few small clouds are visible. Most of the sky remains open and clear.
-    # 25% to 50% (Scattered / Partly Cloudy): Clouds cover up to half of the sky. You get a mix of bright sunshine and passing cloud patches.
-    # 50% to 90% (Broken / Mostly Cloudy): Most of the sky is hidden by a heavy layer of clouds. Sunlight only breaks through occasionally.
-    # 90% to 100% (Overcast / Cloudy): The entire sky is completely filled with a solid blanket of clouds. 
-    # No patches of blue sky or direct sunlight are visible.
-
-
+    
     # weather code:
     # WMO Weather interpretation codes (WW):
     # Code	Description
@@ -213,6 +191,76 @@ def get_weather(latitude, longitude):
     # 85, 86	Snow showers slight and heavy
     # 95 *	Thunderstorm: Slight or moderate
     # 96, 99 *	Thunderstorm with slight and heavy hail
+
+    if current_weather_code == 0:
+        weather_code = "Clear Sky"
+    elif current_weather_code in (1, 2, 3):
+        weather_code = "Mainly clear, partly cloudy, or overcast"
+    elif current_weather_code in (45, 48):
+        weather_code = "Fog"
+    elif current_weather_code in (51, 53, 55):
+        weather_code = "Drizzle"
+    elif current_weather_code in (56, 57):
+        weather_code = "Freezing drizzle"
+    elif current_weather_code in (61, 63, 65):
+        weather_code = "Rain"
+    elif current_weather_code in (66, 67):
+        weather_code = "Freezing rain"
+    elif current_weather_code in (71, 73, 75):
+        weather_code = "Snow fall"
+    elif current_weather_code == 77:
+        weather_code = "Snow grains"
+    elif current_weather_code in (80, 81, 82):
+        weather_code = "Rain showers"
+    elif current_weather_code in (85, 86):
+        weather_code = "Snow showers"
+    elif current_weather_code == 95:
+        weather_code = "Thunderstorm"
+    elif current_weather_code in (96, 99):
+        weather_code = "Thunderstorm with hail"
+    else:
+        weather_code = "Unknown weather condition"
+
+
+
+
+
+
+    if current_cloud_cover > 0 and current_cloud_cover <= 10:
+        cloud_cover = "Clear/Sunny Skies"
+    elif current_cloud_cover > 10 and current_cloud_cover <= 25:
+        cloud_cover = "Few Clouds/Mostly Clear Skies"
+    elif current_cloud_cover > 25 and current_cloud_cover <= 50:
+        cloud_cover = "Scatted/Partly Cloudly Skies"
+    elif current_cloud_cover > 50 and current_cloud_cover <= 90:
+        cloud_cover = "Broken/Mostly Cloudly Skies"
+    elif current_cloud_cover > 90 and current_cloud_cover <= 100:
+        cloud_cover = "Overcast/Coudly Skies"
+    else:
+        cloud_cover = "No pathces of blue sky or direct sunlight are visible"
+
+        ...
+
+
+
+
+
+
+
+    # write conditionals for weather code 
+    # write conditions for cloud cover
+
+
+    print(f"===== Current Weather === ")
+    # print(f"Current time: {current.Time()}")
+    print(f"Current weather_code: {weather_code} ")
+    print(f"Current cloud cover: {cloud_cover} ")
+    print(f"Current wind speed_10m: {current_wind_speed_10m:,.0f}km/h ")
+    print(f"Current temperature_2m: {current_temperature_2m:,.0f}°C")
+
+
+
+
 
 
     # wind speed:
