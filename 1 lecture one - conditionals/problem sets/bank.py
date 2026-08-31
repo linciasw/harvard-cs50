@@ -18,17 +18,18 @@ def main():
 
 
     if greeting.startswith("hello"):
-        say_greeting("$0")
+        value("$0")
     elif greeting.startswith("h"):
-        say_greeting("$20")
+        value("$20")
     else: 
-        say_greeting("$100")
+        value("$100")
 
 
 
 
-def say_greeting(finalGreeting):
-    print(finalGreeting)
+def value(final_greeting):
+    print(final_greeting)
+
 
 
 main()
