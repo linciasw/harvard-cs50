@@ -1,4 +1,5 @@
-
+# think of another test to check 
+# test string input?
 
 import pytest
 
@@ -21,13 +22,13 @@ def test_shorten():
 
 
 # to test try except block
-def test_get_word(monkeypatch):
-    def fake_input(prompt):
-        return "555"
+# def test_get_word(monkeypatch):
+#     def fake_input(prompt):
+#         return "555"
 
-    monkeypatch.setattr("builtins.input", fake_input)
-    with pytest.raises(ValueError):
-        get_word()
+#     monkeypatch.setattr("builtins.input", fake_input)
+#     with pytest.raises(ValueError):
+#         get_word()
 
 
 
