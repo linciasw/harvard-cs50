@@ -4,6 +4,9 @@ Start with one question and follow your curiosity.
 
 ## Other Rabbit Holes
 
+* Research.json() function 
+* Research print() function 
+* Check out python standard library, builtin modules, functions etc 
 * Why are strings immutable?
 * The hierarchy of exceptions
 * How does exceptions work under the hood
@@ -26,6 +29,7 @@ Start with one question and follow your curiosity.
 * What's the difference between a module, package, and library?
 * What does `import` actually do?
 * Research VSC in depth 
+* Research git in depth 
 
 ## Rule
 
