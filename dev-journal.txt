@@ -649,6 +649,9 @@ datasets that cannot be reasonably stored in memory
 - started lecture 6 file i/o
 
 
+1st september 
+- continued with lecture 6, file IO 
+- open, with keywords
 
 
 
