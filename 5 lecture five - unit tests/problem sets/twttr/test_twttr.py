@@ -19,6 +19,15 @@ def test_shorten():
     assert shorten("yard") == "yrd"
 
 
+def test_number():
+    with pytest.raises(TypeError):
+        shorten(555)
+
+
+
+
+
+
 
 
 # to test try except block
