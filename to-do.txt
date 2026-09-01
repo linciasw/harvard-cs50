@@ -4,6 +4,7 @@ NEXT SESSION
 - do unit testing problem exercises 
 - make reference note for unit testing 
 - read modules chapter in the quick python book, 10.1
+- read testing chapter in the quick python book
 - start working on tt-finance-index
 - continue watching CS50 data structures lecture
 - create blog on portfolio site, write about things you wish you knew [APIs, how to read documentation]
