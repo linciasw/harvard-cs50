@@ -8,7 +8,7 @@ NEXT SESSION
 - start working on tt-finance-index
 - continue watching CS50 data structures lecture
 - create blog on portfolio site, write about things you wish you knew [APIs, how to read documentation]
-- put link 
+- put link for python applications repo under projects section on portfolio site
 - research python style guide; PEP8 [MAKE NOTES ON TECH WITH TIM'S VIDEO, check out actual style guide]
 - research the .json() function
 - think of one library you want to learn 
