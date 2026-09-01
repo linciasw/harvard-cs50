@@ -1,42 +1,18 @@
-WATCH API VIDEOS
-https://www.youtube.com/watch?v=Xnbef8F_Yfc&t=259s
-https://www.youtube.com/watch?v=tb8gHvYlCFs
-
 
 
 NEXT SESSION 
-- make a note for libraries and unit testing module 
-- do short for unit testing
-- start studying APIs
+- do unit testing problem exercises 
+- make reference note for unit testing 
+- read modules chapter in the quick python book, 10.1
 - start working on tt-finance-index
 - continue watching CS50 data structures lecture
-- create blog on portfotlio site, write about things you wish you knew 
-- research python style guide; PEP8
-- do libraries shorts [3 DOWN, 1 MORE TO GO] [DONE]
-- start working on compound interest calculator [DONE]
-- read random module documentation
+- create blog on portfolio site, write about things you wish you knew [APIs, how to read documentation]
+- put link 
+- research python style guide; PEP8 [MAKE NOTES ON TECH WITH TIM'S VIDEO, check out actual style guide]
 - research the .json() function
-- read until 9.5 in the quick python book [DONE, FINISH MAKE NOTES; DONE]
-- create markdown file for the quick python book notes on functions
-- read libraries and modules chapter in the quick python book
-- do libraries problem sets [DONE]
 - think of one library you want to learn 
-- get some practice exercises for libraries you want to learn
-- clean up github notes [DOING]
-- create a README for github [DONE]
 - get an example github you want to fashion after
-- do over notes for each module done using note take guide template 
-- research print() 
-- finish make notes on python crash course chapter on dictionaries 
-- continue exercises for dictionary; 2x a day
-- get some exercises for lists
-- research how to do read documentation [DONE]
-- read documentation on dictionaries
-- read documentation on exceptions
-- research string slicing ie when would it be necessary
-- read chapter on loops, python crash course
-- do 10 practice exercises, including 5 from problem sets 
-- transfer notes on identity is from picture on phone 
+ 
 
 
 
