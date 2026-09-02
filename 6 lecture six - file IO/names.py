@@ -1,5 +1,5 @@
 # FROM LECTURE
-# REACHED 13:56
+# REACHED 15:30
 
 
 
@@ -27,18 +27,36 @@
 
 name = input("What's your name? ")
 
+# file = open("names.txt", "w")
+# file.write(f"{name}\n") 
+# file.close()
+
+
+
 # open just requires the name of the file we want to open and optionally,
 # how we want to open it. 
 # if file doesn't exist, it'll create it.
 # open returns a file handle, a special file that allows you to access that file subsequently
 
+
+# creates 3 new files with the new file overwriting the previous one
 # file = open("names.txt", "w")
 
 
-file = open("names.txt", "a") 
-# file.write(name) # this outputs harryronhermione 
-file.write(f"{name}\n") # this outputs each name on a new line
-file.close()
+
+# to get all names in, we'll need to append
+# to do this, we change "w" or write to "a" or append.
+# this outputs harryronhermione though
+# file = open("names.txt", "a") 
+
+
+# this just writes the input to the file
+# file.write(name) 
+
+# this outputs each name on a new line
+# file.write(f"{name}\n") 
+
+# file.close()
 
 
 # running the above with "w" 3x, creates 3 new files with the new file overwriting the previous one
@@ -50,4 +68,9 @@ file.close()
 # to get it all on new lines, we'll have to do it manually in the file.write(name) line
 
 
+# with
+# sometimes we forget to close files using the .close() function
+# tells python to open and close file
+with open("names.txt", "a") as file:
+    file.write(f"{name}\n") 
 
