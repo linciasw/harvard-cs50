@@ -656,8 +656,8 @@ datasets that cannot be reasonably stored in memory
 
 
 2nd september
-- 
-
+- worked on test_plates.py problem set for unit tests a little bit
+- continued with lecture 6, file IO 
 
 
 
