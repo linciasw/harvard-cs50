@@ -661,6 +661,11 @@ datasets that cannot be reasonably stored in memory
 
 
 
+5th september 
+- didn't do anything on 3rd and 4th 
+- had to work out a study timetable because this was the first week of my masters lectures
+- continued with lecture 6, file IO 
+    - learnt a bit about sorting using open
 
 
 

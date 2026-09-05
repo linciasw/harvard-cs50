@@ -1,5 +1,5 @@
 # FROM LECTURE
-# REACHED 20:14
+# REACHED 29:00
 # READ DOCUMENTATION ON FILE I/O
 
 
@@ -103,9 +103,45 @@
 
 
 # we can shorten everything above by doing:
-with open("nJames.txt", "r") as file:
-    for line in file:
+# with open("names.txt", "r") as file:
+#     for line in file:
+#         print("hello,", line.rstrip())
+
+
+
+
+# TO SORT NAMES IN FILE 
+# create a list to enable sorting
+# names = []
+
+# no need to put "r" if you're opening a file to read it
+# append to add names on ata the end of the file
+# with open("names.txt") as file:
+#     for line in file:
+#         names.append(line.rstrip())
+
+# to iterate through a sorted list 
+# for name in sorted(names):
+#     print(f"hello, {name}")
+
+
+
+# if you just want to sort the list:
+with open("names.txt") as file:
+    for line in sorted(file):
         print("hello,", line.rstrip())
+
+
+# check out documentation on sorted
+# documentation: sorted(iterable, /, *, key=None, reverse=False)
+# reverse is to sort in descending order 
+
+
+
+
+
+
+
 
 
 
