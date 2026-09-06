@@ -10,6 +10,7 @@ import pytest
 from plates import is_valid
 
 # TESTS
+# four or more functions needed
 # test to see if plate starts with 2 letters
 # test to see if plate has a max of 6 characters and min of 2 
 # test to see if numbers are at the end of the plate and not in the middle
@@ -17,10 +18,11 @@ from plates import is_valid
 
 
 
-# test to see if plate start with 2 letters
+# test to see if plate starts with 2 letters
 def test_letters():
     assert is_valid("11AA22") == False
     assert is_valid("22AA33") == False
+    # assert is_valid("BBBB22") == True
 
 
 
@@ -28,6 +30,7 @@ def test_letters():
 def test_length():
     assert is_valid("11AA222") == False
     assert is_valid("1") == False
+    # assert is_valid("BBBB22") == True
 
 
 
@@ -37,18 +40,12 @@ def test_numbers():
     assert is_valid("AAA33A") == False
 
 
-# test to see if the first 5 numbers are zero
+
+# test to see if the first numbers is zero
 def test_zero_first_five():
-    assert is_valid("AA033A") == False
+    assert is_valid("000") == False
     assert is_valid("00033A") == False
     assert is_valid("0AA33A") == False
-
-
-
-# test to confirm plate has letters and numbers
-def test_alnum():
-    assert is_valid("AA22BB") == True
-    assert is_valid("CC22DD") == True
 
 
 

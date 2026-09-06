@@ -668,6 +668,10 @@ datasets that cannot be reasonably stored in memory
     - learnt a bit about sorting using open
 
 
+6th september
+- 
+
+
 
 
 

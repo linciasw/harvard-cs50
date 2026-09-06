@@ -1,5 +1,6 @@
 # think of another test to check 
 # test string input?
+# ONE OR MORE FUNCTIONS 
 
 import pytest
 

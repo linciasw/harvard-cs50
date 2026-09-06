@@ -1,5 +1,4 @@
-# test three functions
-# 
+# test three or more functions
 
 
 import pytest
