@@ -668,8 +668,10 @@ datasets that cannot be reasonably stored in memory
     - learnt a bit about sorting using open
 
 
+
 6th september
-- 
+- worked on unit testing problem sets, just one more to go
+
 
 
 
